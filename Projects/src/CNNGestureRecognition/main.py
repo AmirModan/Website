@@ -181,7 +181,7 @@ class Connection:
                 features = preProcessing(mav1,mav2,mav3,mav4,mav5,mav6,mav7,mav8,zc1,zc2,zc3,zc4,zc5,zc6,zc7,zc8)
                 
                 #Trains Neural Network
-                self.model = trainData(self.model, features, label, len(features), len(GESTURES))
+                self.model = trainData(self.model, features, label, 16, len(GESTURES))
                 
                 #Updates GUI label to signal completion
                 label5.config(text = "Training Complete")
