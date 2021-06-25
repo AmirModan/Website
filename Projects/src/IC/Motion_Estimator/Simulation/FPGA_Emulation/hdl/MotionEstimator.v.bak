@@ -1,0 +1,110 @@
+module Lab5 (Clock, Reset, INC1, INC10, DigitL, DigitR);
+input Clock, Reset, INC1, INC10;
+output [6:0] DigitL, DigitR;
+reg State, INC1Temp, INC10Temp, ResetTemp, INC1Sync, INC10Sync, ResetSync, INC1SyncD, INC10SyncD;
+wire INC1Sp, INC10Sp;
+reg [3:0] BCD1, BCD0;
+reg [2:0] Resetcnt;
+reg [6:0] Number[0:9];
+
+initial
+begin
+	BCD1 = 4'b0000;
+	BCD0 = 4'b0000;
+	Resetcnt = 0;
+	State = 0;
+
+	// Look-Up Table for Seven-Segment Display
+	Number[0] = 7'b1000000;
+	Number[1] = 7'b1111001;
+	Number[2] = 7'b0100100;
+	Number[3] = 7'b0110000;
+	Number[4] = 7'b0011001;
+	Number[5] = 7'b0010010;
+	Number[6] = 7'b0000011;
+	Number[7] = 7'b1111000;
+	Number[8] = 7'b0000000;
+	Number[9] = 7'b0011000;
+end
+always @(posedge Clock)
+begin
+	// Debounce and Synchronize Inputs
+	INC1Temp <= INC1;
+	INC1Sync <= INC1Temp;
+	INC1SyncD <= INC1Sync;
+	INC10Temp <= INC10;
+	INC10Sync <= INC10Temp;
+	INC10SyncD <= INC10Sync;
+	ResetTemp <= Reset;
+	ResetSync <= ResetTemp;
+	
+	case (State)
+	// Reset Display and Reset Count
+	0:
+	begin
+		BCD1 <=4'b0000;
+		BCD0 <= 4'b0000;
+		Resetcnt <= 0;
+		State <= 1;
+	end
+	1:
+	begin
+		// Reset is Active
+		if (ResetSync == 1'b1)
+		begin
+			if (Resetcnt == 4)
+			begin
+				// Reset Display and Reset Count when Reset is high for 4 Clock Cycles
+				State <= 0;
+			end
+			else
+			begin
+				// Increment Reset Count if Reset is not active for 4 Clock Cycles
+				Resetcnt <= Resetcnt + 1;
+			end
+		end
+		
+		// INC1 is Active and INC10 is Inactive
+		else if (INC1Sp == 1'b0 && INC10Sp == 1'b1)
+		begin
+			Resetcnt <= 0;
+			if (BCD0 < 4'b1001)
+			begin
+				// Increment 1's Display if less than 9
+				BCD0 <= BCD0 + 1;
+			end
+			else if (BCD1 < 4'b1001)
+			begin
+				// Increment 10's Display and reset 1'Display if 1's is equal to 9
+				BCD1 <= BCD1 + 1;
+				BCD0 <= 4'b0000;
+			end
+		end
+		
+		// INC10 is Active and INC1 is Inactive
+		else if (INC10Sp == 1'b0 && INC1Sp == 1'b1)
+		begin
+			Resetcnt <= 0;
+			if (BCD1 < 4'b1001)
+			begin
+				// Increment 10's Display if less than 9
+				BCD1 <= BCD1 + 1;
+			end
+		end
+		
+		// Default Case
+		else
+		begin
+			Resetcnt <= 0;
+		end
+	end
+	endcase
+ end
+// Generate Single Pulsers
+assign INC1Sp = INC1SyncD && ~INC1Sync;
+assign INC10Sp = INC10SyncD && ~INC10Sync;
+
+// Assign Displays using LUT
+assign DigitR = Number[BCD0];
+assign DigitL = Number[BCD1];
+endmodule

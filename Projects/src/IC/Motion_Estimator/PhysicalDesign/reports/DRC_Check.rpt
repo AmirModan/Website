@@ -1,0 +1,554 @@
+ 
+****************************************
+check_design summary:
+Version:     O-2018.06-SP4
+Date:        Tue Dec 15 10:43:55 2020
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                    254
+    Unloaded inputs (LINT-8)                                      100
+    Unconnected ports (LINT-28)                                   144
+    Shorted outputs (LINT-31)                                       8
+    Constant outputs (LINT-52)                                      2
+
+Cells                                                              88
+    Connected to power or ground (LINT-32)                         87
+    Nets connected to multiple pins on same cell (LINT-33)          1
+
+Nets                                                              100
+    Unloaded nets (LINT-2)                                        100
+--------------------------------------------------------------------------------
+
+Warning: In design 'MotionEstimator', net 'pe_u/pe8/add_85/VSS' driven by pin 'pe_u/pe8/add_85/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe8/sub_83/VSS' driven by pin 'pe_u/pe8/sub_83/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe8/sub_79/VSS' driven by pin 'pe_u/pe8/sub_79/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe9/add_85/VSS' driven by pin 'pe_u/pe9/add_85/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe9/sub_83/VSS' driven by pin 'pe_u/pe9/sub_83/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe9/sub_79/VSS' driven by pin 'pe_u/pe9/sub_79/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe10/add_85/VSS' driven by pin 'pe_u/pe10/add_85/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe10/sub_83/VSS' driven by pin 'pe_u/pe10/sub_83/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe10/sub_79/VSS' driven by pin 'pe_u/pe10/sub_79/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe11/add_85/VSS' driven by pin 'pe_u/pe11/add_85/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe11/sub_83/VSS' driven by pin 'pe_u/pe11/sub_83/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe11/sub_79/VSS' driven by pin 'pe_u/pe11/sub_79/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe12/add_85/VSS' driven by pin 'pe_u/pe12/add_85/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe12/sub_83/VSS' driven by pin 'pe_u/pe12/sub_83/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe12/sub_79/VSS' driven by pin 'pe_u/pe12/sub_79/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe13/add_85/VSS' driven by pin 'pe_u/pe13/add_85/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe13/sub_83/VSS' driven by pin 'pe_u/pe13/sub_83/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe13/sub_79/VSS' driven by pin 'pe_u/pe13/sub_79/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe14/add_85/VSS' driven by pin 'pe_u/pe14/add_85/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe14/sub_83/VSS' driven by pin 'pe_u/pe14/sub_83/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe14/sub_79/VSS' driven by pin 'pe_u/pe14/sub_79/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe15/add_114/VSS' driven by pin 'pe_u/pe15/add_114/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe15/sub_112/VSS' driven by pin 'pe_u/pe15/sub_112/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe15/sub_108/VSS' driven by pin 'pe_u/pe15/sub_108/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe0/add_85/VSS' driven by pin 'pe_u/pe0/add_85/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe0/sub_83/VSS' driven by pin 'pe_u/pe0/sub_83/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe0/sub_79/VSS' driven by pin 'pe_u/pe0/sub_79/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe1/add_85/VSS' driven by pin 'pe_u/pe1/add_85/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe1/sub_83/VSS' driven by pin 'pe_u/pe1/sub_83/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe1/sub_79/VSS' driven by pin 'pe_u/pe1/sub_79/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe2/add_85/VSS' driven by pin 'pe_u/pe2/add_85/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe2/sub_83/VSS' driven by pin 'pe_u/pe2/sub_83/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe2/sub_79/VSS' driven by pin 'pe_u/pe2/sub_79/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe3/add_85/VSS' driven by pin 'pe_u/pe3/add_85/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe3/sub_83/VSS' driven by pin 'pe_u/pe3/sub_83/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe3/sub_79/VSS' driven by pin 'pe_u/pe3/sub_79/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe4/add_85/VSS' driven by pin 'pe_u/pe4/add_85/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe4/sub_83/VSS' driven by pin 'pe_u/pe4/sub_83/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe4/sub_79/VSS' driven by pin 'pe_u/pe4/sub_79/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe5/add_85/VSS' driven by pin 'pe_u/pe5/add_85/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe5/sub_83/VSS' driven by pin 'pe_u/pe5/sub_83/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe5/sub_79/VSS' driven by pin 'pe_u/pe5/sub_79/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe6/add_85/VSS' driven by pin 'pe_u/pe6/add_85/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe6/sub_83/VSS' driven by pin 'pe_u/pe6/sub_83/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe6/sub_79/VSS' driven by pin 'pe_u/pe6/sub_79/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe7/add_85/VSS' driven by pin 'pe_u/pe7/add_85/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe7/sub_83/VSS' driven by pin 'pe_u/pe7/sub_83/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe7/sub_79/VSS' driven by pin 'pe_u/pe7/sub_79/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'ctl_u/add_146/VSS' driven by pin 'ctl_u/add_146/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'comp_u/VSS' driven by pin 'comp_u/VSS' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe8/add_85/VDD' driven by pin 'pe_u/pe8/add_85/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe8/sub_83/VDD' driven by pin 'pe_u/pe8/sub_83/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe8/sub_79/VDD' driven by pin 'pe_u/pe8/sub_79/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe9/add_85/VDD' driven by pin 'pe_u/pe9/add_85/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe9/sub_83/VDD' driven by pin 'pe_u/pe9/sub_83/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe9/sub_79/VDD' driven by pin 'pe_u/pe9/sub_79/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe10/add_85/VDD' driven by pin 'pe_u/pe10/add_85/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe10/sub_83/VDD' driven by pin 'pe_u/pe10/sub_83/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe10/sub_79/VDD' driven by pin 'pe_u/pe10/sub_79/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe11/add_85/VDD' driven by pin 'pe_u/pe11/add_85/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe11/sub_83/VDD' driven by pin 'pe_u/pe11/sub_83/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe11/sub_79/VDD' driven by pin 'pe_u/pe11/sub_79/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe12/add_85/VDD' driven by pin 'pe_u/pe12/add_85/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe12/sub_83/VDD' driven by pin 'pe_u/pe12/sub_83/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe12/sub_79/VDD' driven by pin 'pe_u/pe12/sub_79/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe13/add_85/VDD' driven by pin 'pe_u/pe13/add_85/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe13/sub_83/VDD' driven by pin 'pe_u/pe13/sub_83/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe13/sub_79/VDD' driven by pin 'pe_u/pe13/sub_79/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe14/add_85/VDD' driven by pin 'pe_u/pe14/add_85/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe14/sub_83/VDD' driven by pin 'pe_u/pe14/sub_83/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe14/sub_79/VDD' driven by pin 'pe_u/pe14/sub_79/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe15/add_114/VDD' driven by pin 'pe_u/pe15/add_114/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe15/sub_112/VDD' driven by pin 'pe_u/pe15/sub_112/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe15/sub_108/VDD' driven by pin 'pe_u/pe15/sub_108/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe0/add_85/VDD' driven by pin 'pe_u/pe0/add_85/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe0/sub_83/VDD' driven by pin 'pe_u/pe0/sub_83/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe0/sub_79/VDD' driven by pin 'pe_u/pe0/sub_79/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe1/add_85/VDD' driven by pin 'pe_u/pe1/add_85/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe1/sub_83/VDD' driven by pin 'pe_u/pe1/sub_83/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe1/sub_79/VDD' driven by pin 'pe_u/pe1/sub_79/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe2/add_85/VDD' driven by pin 'pe_u/pe2/add_85/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe2/sub_83/VDD' driven by pin 'pe_u/pe2/sub_83/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe2/sub_79/VDD' driven by pin 'pe_u/pe2/sub_79/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe3/add_85/VDD' driven by pin 'pe_u/pe3/add_85/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe3/sub_83/VDD' driven by pin 'pe_u/pe3/sub_83/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe3/sub_79/VDD' driven by pin 'pe_u/pe3/sub_79/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe4/add_85/VDD' driven by pin 'pe_u/pe4/add_85/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe4/sub_83/VDD' driven by pin 'pe_u/pe4/sub_83/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe4/sub_79/VDD' driven by pin 'pe_u/pe4/sub_79/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe5/add_85/VDD' driven by pin 'pe_u/pe5/add_85/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe5/sub_83/VDD' driven by pin 'pe_u/pe5/sub_83/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe5/sub_79/VDD' driven by pin 'pe_u/pe5/sub_79/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe6/add_85/VDD' driven by pin 'pe_u/pe6/add_85/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe6/sub_83/VDD' driven by pin 'pe_u/pe6/sub_83/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe6/sub_79/VDD' driven by pin 'pe_u/pe6/sub_79/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe7/add_85/VDD' driven by pin 'pe_u/pe7/add_85/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe7/sub_83/VDD' driven by pin 'pe_u/pe7/sub_83/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'pe_u/pe7/sub_79/VDD' driven by pin 'pe_u/pe7/sub_79/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'ctl_u/add_146/VDD' driven by pin 'ctl_u/add_146/VDD' has no loads. (LINT-2)
+Warning: In design 'MotionEstimator', net 'comp_u/VDD' driven by pin 'comp_u/VDD' has no loads. (LINT-2)
+Warning: In design 'Comparator', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'Comparator', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'control_DW01_inc_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'control_DW01_inc_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_7_DW01_sub_1', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_7_DW01_sub_1', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_7_DW01_sub_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_7_DW01_sub_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_7_DW01_add_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_7_DW01_add_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_8_DW01_sub_1', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_8_DW01_sub_1', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_8_DW01_sub_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_8_DW01_sub_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_8_DW01_add_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_8_DW01_add_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_9_DW01_sub_1', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_9_DW01_sub_1', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_9_DW01_sub_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_9_DW01_sub_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_9_DW01_add_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_9_DW01_add_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_10_DW01_sub_1', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_10_DW01_sub_1', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_10_DW01_sub_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_10_DW01_sub_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_10_DW01_add_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_10_DW01_add_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_11_DW01_sub_1', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_11_DW01_sub_1', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_11_DW01_sub_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_11_DW01_sub_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_11_DW01_add_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_11_DW01_add_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_12_DW01_sub_1', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_12_DW01_sub_1', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_12_DW01_sub_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_12_DW01_sub_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_12_DW01_add_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_12_DW01_add_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_13_DW01_sub_1', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_13_DW01_sub_1', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_13_DW01_sub_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_13_DW01_sub_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_13_DW01_add_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_13_DW01_add_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_14_DW01_sub_1', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_14_DW01_sub_1', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_14_DW01_sub_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_14_DW01_sub_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_14_DW01_add_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_14_DW01_add_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PEend_DW01_sub_1', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PEend_DW01_sub_1', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PEend_DW01_sub_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PEend_DW01_sub_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PEend_DW01_add_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PEend_DW01_add_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_0_DW01_sub_1', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_0_DW01_sub_1', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_0_DW01_sub_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_0_DW01_sub_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_0_DW01_add_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_0_DW01_add_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_1_DW01_sub_1', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_1_DW01_sub_1', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_1_DW01_sub_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_1_DW01_sub_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_1_DW01_add_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_1_DW01_add_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_2_DW01_sub_1', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_2_DW01_sub_1', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_2_DW01_sub_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_2_DW01_sub_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_2_DW01_add_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_2_DW01_add_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_3_DW01_sub_1', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_3_DW01_sub_1', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_3_DW01_sub_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_3_DW01_sub_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_3_DW01_add_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_3_DW01_add_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_4_DW01_sub_1', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_4_DW01_sub_1', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_4_DW01_sub_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_4_DW01_sub_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_4_DW01_add_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_4_DW01_add_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_5_DW01_sub_1', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_5_DW01_sub_1', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_5_DW01_sub_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_5_DW01_sub_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_5_DW01_add_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_5_DW01_add_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_6_DW01_sub_1', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_6_DW01_sub_1', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_6_DW01_sub_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_6_DW01_sub_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'PE_6_DW01_add_0', input port 'VDD' is unloaded. (LINT-8)
+Warning: In design 'PE_6_DW01_add_0', input port 'VSS' is unloaded. (LINT-8)
+Warning: In design 'control', port 'AddressS2[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'control', port 'AddressS2[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'control', port 'AddressS2[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'control', port 'AddressS2[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'control', port 'AddressS2[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'control', port 'AddressS1[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'control', port 'AddressS1[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'control', port 'AddressS1[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'control', port 'AddressS1[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'control', port 'AddressR[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'control', port 'AddressR[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'control', port 'AddressR[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'control', port 'VectorX[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'control', port 'S1S2mux[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'control', port 'S1S2mux[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'control_DW01_inc_0', port 'SUM[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_7_DW01_sub_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_7_DW01_sub_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_7_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_7_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_7_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_7_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_7_DW01_add_0', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_7_DW01_add_0', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_8_DW01_sub_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_8_DW01_sub_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_8_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_8_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_8_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_8_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_8_DW01_add_0', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_8_DW01_add_0', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_9_DW01_sub_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_9_DW01_sub_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_9_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_9_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_9_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_9_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_9_DW01_add_0', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_9_DW01_add_0', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_10_DW01_sub_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_10_DW01_sub_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_10_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_10_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_10_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_10_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_10_DW01_add_0', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_10_DW01_add_0', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_11_DW01_sub_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_11_DW01_sub_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_11_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_11_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_11_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_11_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_11_DW01_add_0', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_11_DW01_add_0', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_12_DW01_sub_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_12_DW01_sub_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_12_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_12_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_12_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_12_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_12_DW01_add_0', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_12_DW01_add_0', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_13_DW01_sub_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_13_DW01_sub_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_13_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_13_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_13_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_13_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_13_DW01_add_0', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_13_DW01_add_0', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_14_DW01_sub_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_14_DW01_sub_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_14_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_14_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_14_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_14_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_14_DW01_add_0', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_14_DW01_add_0', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PEend_DW01_sub_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PEend_DW01_sub_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PEend_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PEend_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PEend_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PEend_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PEend_DW01_add_0', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PEend_DW01_add_0', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_0_DW01_sub_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_0_DW01_sub_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_0_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_0_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_0_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_0_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_0_DW01_add_0', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_0_DW01_add_0', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_1_DW01_sub_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_1_DW01_sub_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_1_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_1_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_1_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_1_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_1_DW01_add_0', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_1_DW01_add_0', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_2_DW01_sub_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_2_DW01_sub_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_2_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_2_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_2_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_2_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_2_DW01_add_0', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_2_DW01_add_0', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_3_DW01_sub_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_3_DW01_sub_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_3_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_3_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_3_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_3_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_3_DW01_add_0', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_3_DW01_add_0', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_4_DW01_sub_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_4_DW01_sub_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_4_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_4_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_4_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_4_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_4_DW01_add_0', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_4_DW01_add_0', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_5_DW01_sub_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_5_DW01_sub_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_5_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_5_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_5_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_5_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_5_DW01_add_0', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_5_DW01_add_0', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_6_DW01_sub_1', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_6_DW01_sub_1', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_6_DW01_sub_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_6_DW01_sub_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_6_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_6_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_6_DW01_add_0', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'PE_6_DW01_add_0', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'MotionEstimator', output port 'AddressR[3]' is connected directly to output port 'AddressS2[3]'. (LINT-31)
+Warning: In design 'MotionEstimator', output port 'AddressR[3]' is connected directly to output port 'AddressS1[3]'. (LINT-31)
+Warning: In design 'MotionEstimator', output port 'AddressR[2]' is connected directly to output port 'AddressS2[2]'. (LINT-31)
+Warning: In design 'MotionEstimator', output port 'AddressR[2]' is connected directly to output port 'AddressS1[2]'. (LINT-31)
+Warning: In design 'MotionEstimator', output port 'AddressR[1]' is connected directly to output port 'AddressS2[1]'. (LINT-31)
+Warning: In design 'MotionEstimator', output port 'AddressR[1]' is connected directly to output port 'AddressS1[1]'. (LINT-31)
+Warning: In design 'MotionEstimator', output port 'AddressR[0]' is connected directly to output port 'AddressS2[0]'. (LINT-31)
+Warning: In design 'MotionEstimator', output port 'AddressR[0]' is connected directly to output port 'AddressS1[0]'. (LINT-31)
+Warning: In design 'MotionEstimator', a pin on submodule 'comp_u' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'VSS' is connected to logic 0. 
+Warning: In design 'MotionEstimator', a pin on submodule 'comp_u' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'VDD' is connected to logic 1. 
+Warning: In design 'MotionEstimator', a pin on submodule 'pe_u' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'VSS' is connected to logic 0. 
+Warning: In design 'MotionEstimator', a pin on submodule 'pe_u' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'VDD' is connected to logic 1. 
+Warning: In design 'MotionEstimator', a pin on submodule 'pe_u' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'S1S2mux[0]' is connected to logic 1. 
+Warning: In design 'MotionEstimator', a pin on submodule 'ctl_u' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'VDD' is connected to logic 1. 
+Warning: In design 'MotionEstimator', a pin on submodule 'ctl_u' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'VSS' is connected to logic 0. 
+Warning: In design 'PE_7', a pin on submodule 'sub_79' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_7', a pin on submodule 'sub_83' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_7', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_7', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'PE_7', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'PE_8', a pin on submodule 'sub_79' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_8', a pin on submodule 'sub_83' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_8', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_8', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'PE_8', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'PE_9', a pin on submodule 'sub_79' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_9', a pin on submodule 'sub_83' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_9', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_9', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'PE_9', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'PE_10', a pin on submodule 'sub_79' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_10', a pin on submodule 'sub_83' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_10', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_10', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'PE_10', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'PE_11', a pin on submodule 'sub_79' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_11', a pin on submodule 'sub_83' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_11', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_11', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'PE_11', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'PE_12', a pin on submodule 'sub_79' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_12', a pin on submodule 'sub_83' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_12', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_12', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'PE_12', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'PE_13', a pin on submodule 'sub_79' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_13', a pin on submodule 'sub_83' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_13', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_13', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'PE_13', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'PE_14', a pin on submodule 'sub_79' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_14', a pin on submodule 'sub_83' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_14', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_14', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'PE_14', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'PEend', a pin on submodule 'sub_108' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PEend', a pin on submodule 'sub_112' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PEend', a pin on submodule 'add_114' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PEend', a pin on submodule 'add_114' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'PEend', a pin on submodule 'add_114' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'PE_0', a pin on submodule 'sub_79' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_0', a pin on submodule 'sub_83' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_0', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_0', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'PE_0', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'PE_1', a pin on submodule 'sub_79' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_1', a pin on submodule 'sub_83' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_1', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_1', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'PE_1', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'PE_2', a pin on submodule 'sub_79' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_2', a pin on submodule 'sub_83' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_2', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_2', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'PE_2', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'PE_3', a pin on submodule 'sub_79' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_3', a pin on submodule 'sub_83' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_3', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_3', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'PE_3', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'PE_4', a pin on submodule 'sub_79' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_4', a pin on submodule 'sub_83' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_4', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_4', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'PE_4', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'PE_5', a pin on submodule 'sub_79' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_5', a pin on submodule 'sub_83' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_5', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_5', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'PE_5', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'PE_6', a pin on submodule 'sub_79' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_6', a pin on submodule 'sub_83' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_6', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'PE_6', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'PE_6', a pin on submodule 'add_85' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'MotionEstimator', the same net is connected to more than one pin on submodule 'pe_u'. (LINT-33)
+   Net 'VDD' is connected to pins 'VDD', 'S1S2mux[0]''.
+Warning: In design 'MotionEstimator', output port 'AddressS1[4]' is connected directly to 'logic 0'. (LINT-52)
+Warning: In design 'MotionEstimator', output port 'AddressS2[4]' is connected directly to 'logic 1'. (LINT-52)
+1

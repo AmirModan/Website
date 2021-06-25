@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>IC</title> 
+    <link rel = "stylesheet" href = "../Resources/css/StyleSheet.css">
+  </head>
+
+  <header>
+    <div class="content">
+      <a href = "../LogIn.html" class="desktop logo">Log Out</a>
+      <nav class="desktop">
+          <a href="../index.html">Back</a>
+      </nav>
+      <nav class="mobile">
+        <a href="../index.html">Back</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="main-content">
+  
+      <!-- Projects Section -->
+    <div id="projects-section">
+      <div class="content center">
+        <h1>IC Projects</h1>
+      </div>
+      <div id="Motion Estimator">
+        <h2>Motion Estimator</h2>
+        <div class="images-container">
+          <div class="image-container">
+            <p>While an FPGA offers reprogrammability, hardware dedicated for a specific application will generally boast better performance.
+              Such a performance boost will be desired for an application such as Motion Estimation which aims to reduce video size through compression.
+              We will port our already verified FPGA implementation of the Motion Estimator so that we can assemble an ASIC with the same purpose.
+              Designing the Layout of an IC will require us to implement the Motion Estimator at the Transistor Level.
+              Because we have implemented the Motion Estimator at the Register Transfer Level (RTL), we will use Synopsys software to synthesize the code into its Transistor Representation.
+              This will be significantly easier than trying to implement the Motion Estimator at the Transistor level directly.</p>
+              <embed src="./src/IC/Motion_Estimator/MotionEstimator_Report.pdf" width="100%" height="1100px"/>
+          </div>
+        </div>
+        <p>Click <a href = "../Projects/FPGA.html">here</a> to go to FPGA Implementation of Motion Estimator</p>
+        <div class="images-container">
+            <div class="image-container">
+                <h3>Motion Estimator ASIC Design Files</h3>
+                <p><a href = "./src/IC/Motion_Estimator/RTL Code/rtl.v">rtl.v</a></p>
+                <p><a href = "./src/IC/Motion_Estimator/Synthesis/output/gc_HDL.v">Netlist</a></p>
+                <p><a href = "./src/IC/Motion_Estimator/PhysicalDesign/output/Project_extracted.v">Netlist with Parasitics</a></p>
+            </div>
+            <div class="image-container">
+              <h3>Motion Estimator ASIC Scripts</h3>
+              <p><a href = "./src/IC/Motion_Estimator/Synthesis/dc_synth.tcl">Synthesis</a></p>
+              <p><a href = "./src/IC/Motion_Estimator/Pre-LayoutTimingAnalysis/pre_layout_pt.tcl">Pre-Layout</a></p>
+              <p><a href = "./src/IC/Motion_Estimator/PhysicalDesign/physical_design_icc.tcl">Layout</a></p>
+              <p><a href = "./src/IC/Motion_Estimator/Post-LayoutTimingAnalysis/post_layout_pt.tcl">Post-Layout</a></p>
+            </div>
+            <div class="image-container">
+              <h3>Motion Estimator ASIC Reports</h3>
+              <p><a href = "./src/IC/Motion_Estimator/Post-LayoutTimingAnalysis/reports/timing.rpt">Timing</a></p>
+              <p><a href = "./src/IC/Motion_Estimator/PhysicalDesign/reports/Project_power.rpt">Power</a></p>
+              <p><a href = "./src/IC/Motion_Estimator/PhysicalDesign/reports/Project_route_util.rpt">Area</a></p>
+            </div>
+        </div>
+      </div>
+      
+    <div id="SRAM">
+      <h2>SRAM</h2>
+      <div class="images-container">
+        <div class="image-container">
+          <p>Using 90nm VLSI Technology, we have designed this 32x16 SRAM using Synopsys Custom Compiler.
+            Due to its static nature, achieved through inverter feedback within the SRAM Cell, the SRAM will perform at a higher rate than DRAM, though it will take more space.
+            All components, including the: SRAM Array, Decoder, Sense Amplifier, Write Driver, and Pre-Charge Circuits have been designed at the transistor level.</p>
+          <embed src="./src/IC/SRAM/ENGR848_SRAM_Modan_Apte.pdf" width="100%" height="1100px"/>
+        </div>
+      </div>
+      <div class="images-container">
+          <div class="image-container">
+              <h3>Motion Estimator ASIC Design Files</h3>
+              <p><a href = "./src/IC/Motion_Estimator/RTL Code/rtl.v">rtl.v</a></p>
+              <p><a href = "./src/IC/Motion_Estimator/Synthesis/output/gc_HDL.v">Netlist</a></p>
+              <p><a href = "./src/IC/Motion_Estimator/PhysicalDesign/output/Project_extracted.v">Netlist with Parasitics</a></p>
+          </div>
+          <div class="image-container">
+            <h3>Motion Estimator ASIC Scripts</h3>
+            <p><a href = "./src/IC/Motion_Estimator/Synthesis/dc_synth.tcl">Synthesis</a></p>
+            <p><a href = "./src/IC/Motion_Estimator/Pre-LayoutTimingAnalysis/pre_layout_pt.tcl">Pre-Layout</a></p>
+            <p><a href = "./src/IC/Motion_Estimator/PhysicalDesign/physical_design_icc.tcl">Layout</a></p>
+            <p><a href = "./src/IC/Motion_Estimator/Post-LayoutTimingAnalysis/post_layout_pt.tcl">Post-Layout</a></p>
+          </div>
+          <div class="image-container">
+            <h3>Motion Estimator ASIC Reports</h3>
+            <p><a href = "./src/IC/Motion_Estimator/Post-LayoutTimingAnalysis/reports/timing.rpt">Timing</a></p>
+            <p><a href = "./src/IC/Motion_Estimator/PhysicalDesign/reports/Project_power.rpt">Power</a></p>
+            <p><a href = "./src/IC/Motion_Estimator/PhysicalDesign/reports/Project_route_util.rpt">Area</a></p>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+</html>
