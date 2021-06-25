@@ -5,8 +5,16 @@ html {
     background-color: black;
   }
 
+  h2 {
+    text-align: center;
+  }
+
   h3 {
       text-align: center;
+  }
+
+  p {
+    padding:0 1rem;
   }
   
   .main-content {

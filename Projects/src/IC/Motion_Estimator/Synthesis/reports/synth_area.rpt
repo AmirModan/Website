@@ -1,0 +1,32 @@
+ 
+****************************************
+Report : area
+Design : MotionEstimator
+Version: O-2018.06-SP4
+Date   : Sun Dec 20 16:13:39 2020
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    saed32lvt_ss0p75v125c (File: /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_lvt/db_ccs/saed32lvt_ss0p75v125c.db)
+    saed32hvt_ss0p75v125c (File: /packages/process_kit/generic/generic_32nm/SAED32_EDK/lib/stdcell_hvt/db_ccs/saed32hvt_ss0p75v125c.db)
+
+Number of ports:                         2514
+Number of nets:                          5796
+Number of cells:                         3188
+Number of combinational cells:           2746
+Number of sequential cells:               277
+Number of macros/black boxes:               0
+Number of buf/inv:                       1140
+Number of references:                       3
+
+Combinational area:               7067.744675
+Buf/Inv area:                     2037.726624
+Noncombinational area:            1866.941870
+Macro/Black Box area:                0.000000
+Net Interconnect area:            1242.649075
+
+Total cell area:                  8934.686545
+Total area:                      10177.335620
+1

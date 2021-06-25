@@ -1,0 +1,83 @@
+ 
+****************************************
+Report : qor
+Design : MotionEstimator
+Version: O-2018.06-SP4
+Date   : Sun Dec 20 16:13:40 2020
+****************************************
+
+
+  Timing Path Group 'ideal_clock1'
+  -----------------------------------
+  Levels of Logic:              29.00
+  Critical Path Length:          4.10
+  Critical Path Slack:          -0.33
+  Critical Path Clk Period:      3.85
+  Total Negative Slack:        -38.99
+  No. of Violating Paths:      144.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:         68
+  Hierarchical Port Count:       2444
+  Leaf Cell Count:               3023
+  Buf/Inv Cell Count:            1140
+  Buf Cell Count:                 266
+  Inv Cell Count:                 874
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      2746
+  Sequential Cell Count:          277
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:     7067.744675
+  Noncombinational Area:  1866.941870
+  Buf/Inv Area:           2037.726624
+  Total Buffer Area:           841.22
+  Total Inverter Area:        1196.51
+  Macro/Black Box Area:      0.000000
+  Net Area:               1242.649075
+  -----------------------------------
+  Cell Area:              8934.686545
+  Design Area:           10177.335620
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          3483
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: hafez.sfsu.edu
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    1.81
+  Logic Optimization:                  8.75
+  Mapping Optimization:               74.77
+  -----------------------------------------
+  Overall Compile Time:               90.60
+  Overall Compile Wall Clock Time:    90.78
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.33  TNS: 38.99  Number of Violating Paths: 144
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1
