@@ -9,7 +9,9 @@
     <div class="content">
       <a href = "../LogIn.html" class="desktop logo">Log Out</a>
       <nav class="desktop">
-          <a href="../index.html">Back</a>
+        <a href="#Motion Estimator">Motion Estimator</a>
+        <a href="#SRAM">SRAM</a>
+        <a href="../index.html">Back</a>
       </nav>
       <nav class="mobile">
         <a href="../index.html">Back</a>
@@ -25,7 +27,7 @@
       <div class="content center">
         <h1>IC Projects</h1>
       </div>
-      <div id="Motion Estimator">
+      <div id="Motion Estimator" class="project">
         <h2>Motion Estimator</h2>
         <div class="images-container">
           <div class="image-container">
@@ -36,9 +38,9 @@
               Because we have implemented the Motion Estimator at the Register Transfer Level (RTL), we will use Synopsys software to synthesize the code into its Transistor Representation.
               This will be significantly easier than trying to implement the Motion Estimator at the Transistor level directly.</p>
               <embed src="./src/IC/Motion_Estimator/MotionEstimator_Report.pdf" width="100%" height="1100px"/>
+              <p>Click <a href = "../Projects/FPGA.html">here</a> to go to FPGA Implementation of Motion Estimator</p>
           </div>
         </div>
-        <p>Click <a href = "../Projects/FPGA.html">here</a> to go to FPGA Implementation of Motion Estimator</p>
         <div class="images-container">
             <div class="image-container">
                 <h3>Motion Estimator ASIC Design Files</h3>
@@ -59,20 +61,21 @@
               <p><a href = "./src/IC/Motion_Estimator/PhysicalDesign/reports/Project_power.rpt">Power</a></p>
               <p><a href = "./src/IC/Motion_Estimator/PhysicalDesign/reports/Project_route_util.rpt">Area</a></p>
             </div>
+          </div>
+        </div>
+        <div id="SRAM" class="project">
+          <h2>SRAM</h2>
+          <div class="images-container">
+            <div class="image-container">
+              <p>Using 90nm VLSI Technology, we have designed this 32x16 SRAM using Synopsys Custom Compiler.
+                Due to its static nature, achieved through inverter feedback within the SRAM Cell, the SRAM will perform at a higher rate than DRAM, though it will take more space.
+                All components, including the: SRAM Array, Decoder, Sense Amplifier, Write Driver, and Pre-Charge Circuits have been designed at the transistor level.</p>
+              <embed src="./src/IC/SRAM/ENGR848_SRAM_Modan_Apte.pdf" width="100%" height="1100px"/>
+              <iframe src="https://drive.google.com/embeddedfolderview?id=1Yhromjic5CvSZ7814xI9j9t51DLUtyr7#grid" style="width:100%; height:500px; border:0;"></iframe>
+            </div>
+          </div>
         </div>
       </div>
-      
-    <div id="SRAM">
-      <h2>SRAM</h2>
-      <div class="images-container">
-        <div class="image-container">
-          <p>Using 90nm VLSI Technology, we have designed this 32x16 SRAM using Synopsys Custom Compiler.
-            Due to its static nature, achieved through inverter feedback within the SRAM Cell, the SRAM will perform at a higher rate than DRAM, though it will take more space.
-            All components, including the: SRAM Array, Decoder, Sense Amplifier, Write Driver, and Pre-Charge Circuits have been designed at the transistor level.</p>
-          <embed src="./src/IC/SRAM/ENGR848_SRAM_Modan_Apte.pdf" width="100%" height="1100px"/>
-        </div>
-      </div>
-    </div>
   </div>
   </div>
 
