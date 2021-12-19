@@ -1,0 +1,11 @@
+.\objects\button.o: Button.c
+.\objects\button.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\button.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\button.o: inc/hw_types.h
+.\objects\button.o: inc/hw_memmap.h
+.\objects\button.o: inc/hw_gpio.h
+.\objects\button.o: driverlib/sysctl.h
+.\objects\button.o: driverlib/pin_map.h
+.\objects\button.o: driverlib/gpio.h
+.\objects\button.o: inc/tm4c123gh6pm.h
+.\objects\button.o: driverlib/interrupt.h
