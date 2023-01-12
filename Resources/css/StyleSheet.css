@@ -187,7 +187,7 @@ header {
     align-items: top;
     display: flex;
     max-width: 100%;
-    padding: 0 1%;
+    padding-right: 10%;
   }
 
   #aboutMe-section .image-container {
@@ -260,7 +260,7 @@ header {
   }
 
   #research-section .image-container {
-    margin: 3rem 1rem;
+    margin: 1rem 1rem;
   }
   
   @media only screen and (max-width: 600px) {
@@ -319,16 +319,17 @@ header {
       align-items: top;
       display: flex;
       max-width: 100%;
-      padding: 0 1%;
+      padding-right: 10%;
     }
 
     #projects-section .image-container {
       margin: 3rem 1rem;
+      min-width: 30%;
     }
     
     #projects-section .text-container {
       margin: 3rem 1rem;
-      width: 75%;
+      min-width: 70%;
     }
     
     @media only screen and (max-width: 600px) {
@@ -362,7 +363,7 @@ header {
 
       #projects-section .text-container {
         margin: 3rem 1rem;
-        width: 75%;
+        width: 100%;
       }
     
       #projects-section .extra {
