@@ -184,10 +184,19 @@ header {
   }
   
   #aboutMe-section .images-container {
-    align-items: center;
+    align-items: top;
     display: flex;
     max-width: 100%;
     padding: 0 1%;
+  }
+
+  #aboutMe-section .image-container {
+    margin: 3rem 1rem;
+    min-width: 25%;
+  }
+  #aboutMe-section .text-container {
+    margin: 3rem 1rem;
+    min-width: 75%;
   }
   
   @media only screen and (max-width: 600px) {
@@ -214,6 +223,7 @@ header {
   
     #aboutMe-section .images-container {
       padding: 0;
+      display: block;
     }
   
     #aboutMe-section .extra {
@@ -316,6 +326,11 @@ header {
       margin: 3rem 1rem;
     }
     
+    #projects-section .text-container {
+      margin: 3rem 1rem;
+      width: 75%;
+    }
+    
     @media only screen and (max-width: 600px) {
       #projects-section {
         padding: 1.5rem 0 0 0;
@@ -343,6 +358,11 @@ header {
       }
       #projects-section .image-container {
         margin: 3rem 1rem;
+      }
+
+      #projects-section .text-container {
+        margin: 3rem 1rem;
+        width: 75%;
       }
     
       #projects-section .extra {
