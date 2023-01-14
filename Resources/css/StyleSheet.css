@@ -188,6 +188,7 @@ header {
     display: flex;
     max-width: 100%;
     padding-right: 10%;
+    border-top: 2px solid #FFFFFF;
   }
 
   #aboutMe-section .image-container {
@@ -222,7 +223,7 @@ header {
     }
   
     #aboutMe-section .images-container {
-      padding: 0;
+      padding: 1rem;
       display: block;
     }
   
@@ -257,6 +258,7 @@ header {
     display: flex;
     max-width: 100%;
     padding-right: 10%;
+    border-top: 2px solid #FFFFFF;
   }
 
   #research-section .image-container {
@@ -291,7 +293,7 @@ header {
     }
   
     #research-section .images-container {
-      padding: 0;
+      padding: 1rem;
       display:block;
     }
     #research-section .image-container {
@@ -334,6 +336,7 @@ header {
     display: flex;
     max-width: 100%;
     padding-right: 10%;
+    border-top: 2px solid #FFFFFF;
   }
 
   #projects-section .image-container {
@@ -368,7 +371,7 @@ header {
     }
   
     #projects-section .images-container {
-      padding: 0;
+      padding: 1rem;
       display:block;
     }
     #projects-section .image-container {
