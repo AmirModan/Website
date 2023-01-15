@@ -188,6 +188,7 @@ header {
     display: flex;
     max-width: 100%;
     padding-right: 10%;
+    padding-left: 10%;
     border-top: 2px solid #FFFFFF;
   }
 
@@ -258,6 +259,7 @@ header {
     display: flex;
     max-width: 100%;
     padding-right: 10%;
+    padding-left: 10%;
     border-top: 2px solid #FFFFFF;
   }
 
