@@ -28,7 +28,7 @@ html {
 
   .project {
     padding: 4rem 0;
-    background-color: #08ffff;
+    background-color: #69d1fd;
     margin: 2rem;
   }
 
@@ -336,6 +336,7 @@ header {
     display: flex;
     max-width: 100%;
     padding-right: 10%;
+    padding-left: 10%;
     border-top: 2px solid #FFFFFF;
   }
 
