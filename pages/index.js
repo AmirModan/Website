@@ -17,12 +17,12 @@ function Home() {
 async function handleClick (e) {
     e.preventDefault()
     await fetch(
-        `.netlify/functions/subscribe`,
+        `.netlify/functions/sendEmail`,
         {
           method: "POST",
           body: JSON.stringify({
-            subscriberName: "amir5modan@gmail.com",
-            subscriberEmail: "amir5modan@gmail.com",
+            subscriberName: "Amir Modan",
+            subscriberEmail: "amirmodan@yahoo.com",
             inviteeEmail: "amir5modan@gmail.com",
           }),
         }
