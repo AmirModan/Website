@@ -17,7 +17,7 @@ const handler: Handler = async function (event) {
 
   //automatically generated snippet from the email preview
   //sends a request to an email handler for a subscribed email
-  await fetch(`${process.env.URL}/.netlify/functions/emails/subscribed`, {
+  await fetch(`${process.env.URL}/.netlify/functions/emails/general`, {
     headers: {
       "netlify-emails-secret": process.env.NETLIFY_EMAILS_SECRET as string,
     },
