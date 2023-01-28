@@ -20,6 +20,21 @@
       "static/chunks/main.js",
       "static/chunks/pages/index.js"
     ],
+    "/Projects/ARM": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Projects/ARM.js"
+    ],
+    "/Projects/Game": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Projects/Game.js"
+    ],
+    "/Projects/RaspberryPi": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Projects/RaspberryPi.js"
+    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
