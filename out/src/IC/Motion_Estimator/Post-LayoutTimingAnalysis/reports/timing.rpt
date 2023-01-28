@@ -1,0 +1,116 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 1
+	-sort_by slack
+Design : MotionEstimator
+Version: L-2016.06-SP2
+Date   : Sun Dec 20 17:28:06 2020
+****************************************
+
+Warning: There are 69 invalid end points for constrained paths. (UITE-416)
+
+  Startpoint: ctl_u/count_reg[3]
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comp_u/BestDist_reg[5]
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Last common pin: clock
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.03 *     0.03
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)                      0.00       0.03 r
+  ctl_u/count_reg[3]/Q (DFFX1_LVT)                        0.26 *     0.29 r
+  U3/Y (INVX0_HVT)                                        0.27 *     0.56 f
+  ctl_u/U71/Y (AND2X1_LVT)                                0.20 *     0.76 f
+  ctl_u/U3/Y (NBUFFX2_HVT)                                0.16 *     0.92 f
+  ctl_u/U100/Y (AND3X1_LVT)                               0.25 *     1.17 f
+  ctl_u/U202/Y (AND2X1_LVT)                               0.15 *     1.32 f
+  comp_u/U100/Y (INVX0_LVT)                               0.07 *     1.39 r
+  comp_u/U67/Y (AND2X1_LVT)                               0.08 *     1.47 r
+  comp_u/U99/Y (NAND3X0_LVT)                              0.08 *     1.55 f
+  comp_u/U163/Y (INVX0_LVT)                               0.17 *     1.72 r
+  comp_u/U40/Y (NAND2X0_LVT)                              0.08 *     1.80 f
+  comp_u/U42/Y (NAND3X0_LVT)                              0.09 *     1.88 r
+  comp_u/U189/Y (OR3X1_LVT)                               0.12 *     2.01 r
+  comp_u/U128/Y (NAND2X0_LVT)                             0.06 *     2.07 f
+  comp_u/U70/Y (NAND2X0_LVT)                              0.06 *     2.13 r
+  comp_u/U190/Y (AOI221X1_LVT)                            0.12 *     2.25 f
+  comp_u/U106/Y (NAND3X2_LVT)                             0.15 *     2.40 r
+  comp_u/U114/Y (NAND2X0_LVT)                             0.05 *     2.45 f
+  comp_u/U115/Y (AND3X1_LVT)                              0.11 *     2.57 f
+  comp_u/U235/Y (NAND3X0_LVT)                             0.07 *     2.63 r
+  comp_u/U236/Y (AO22X1_LVT)                              0.09 *     2.72 r
+  comp_u/U237/Y (OA221X1_LVT)                             0.10 *     2.82 r
+  comp_u/U125/Y (OR2X1_LVT)                               0.08 *     2.90 r
+  comp_u/U238/Y (OA221X1_LVT)                             0.10 *     3.00 r
+  comp_u/U3/Y (OR2X1_LVT)                                 0.08 *     3.08 r
+  comp_u/U239/Y (AO22X1_LVT)                              0.10 *     3.18 r
+  comp_u/U150/Y (AOI21X1_LVT)                             0.19 *     3.37 f
+  comp_u/U248/Y (MUX21X1_LVT)                             0.19 *     3.57 f
+  comp_u/U249/Y (NAND2X0_LVT)                             0.06 *     3.62 r
+  comp_u/BestDist_reg[5]/D (DFFX1_LVT)                    0.00 *     3.62 r
+  data arrival time                                                  3.62
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.02 *     3.86
+  clock reconvergence pessimism                           0.00       3.86
+  comp_u/BestDist_reg[5]/CLK (DFFX1_LVT)                             3.86 r
+  library setup time                                     -0.11 *     3.75
+  data required time                                                 3.75
+  ------------------------------------------------------------------------------
+  data required time                                                 3.75
+  data arrival time                                                 -3.62
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        0.13
+
+
+1
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-max_paths 1
+	-sort_by slack
+Design : MotionEstimator
+Version: L-2016.06-SP2
+Date   : Sun Dec 20 17:28:06 2020
+****************************************
+
+Warning: There are 69 invalid end points for constrained paths. (UITE-416)
+
+  Startpoint: pe_u/pe3/Rpipe_reg[0]
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe_u/pe4/Rpipe_reg[0]
+               (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Last common pin: clock
+  Path Group: ideal_clock1
+  Path Type: min
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.01 *     0.01
+  pe_u/pe3/Rpipe_reg[0]/CLK (DFFX1_LVT)                   0.00       0.01 r
+  pe_u/pe3/Rpipe_reg[0]/Q (DFFX1_LVT)                     0.25 *     0.26 f
+  pe_u/pe4/Rpipe_reg[0]/D (DFFX1_LVT)                     0.00 *     0.26 f
+  data arrival time                                                  0.26
+
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.03 *     0.03
+  clock reconvergence pessimism                           0.00       0.03
+  pe_u/pe4/Rpipe_reg[0]/CLK (DFFX1_LVT)                              0.03 r
+  library hold time                                      -0.05 *    -0.02
+  data required time                                                -0.02
+  ------------------------------------------------------------------------------
+  data required time                                                -0.02
+  data arrival time                                                 -0.26
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+1

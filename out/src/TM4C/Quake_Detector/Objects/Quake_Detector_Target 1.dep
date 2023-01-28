@@ -1,0 +1,135 @@
+Dependencies for Project 'Quake_Detector', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 5060750::V5.06 update 6 (build 750)::.\ARMCC
+F (.\startup_rvmdk.S)(0x61B69CF4)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1" -g --apcs=interwork -IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\TI\TM4C123--pd "__UVISION_VERSION SETA 531"--list .\listings\startup_rvmdk.lst --xref -o .\objects\startup_rvmdk.o --depend .\objects\startup_rvmdk.d)
+F (.\Encoder.h)(0x61A994AA)()
+F (.\Encoder.c)(0x5FDD6386)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\..\..\.. --c99-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\TI\TM4C123-D__UVISION_VERSION="531" -Drvmdk -DPART_TM4C123GH6PM -DTM4C123GH6PM-o .\objects\encoder.o --omf_browse .\objects\encoder.crf --depend .\objects\encoder.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC848EC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5EC848E6)
+I (inc/hw_types.h)(0x5F518E17)
+I (inc/hw_memmap.h)(0x5F518E17)
+I (inc/hw_gpio.h)(0x5F518E17)
+I (driverlib/sysctl.h)(0x5F518E14)
+I (driverlib/pin_map.h)(0x5F518E14)
+I (driverlib/gpio.h)(0x5F518E14)
+I (inc/tm4c123gh6pm.h)(0x5F518E17)
+I (driverlib/interrupt.h)(0x5F518E14)
+I (driverlib/qei.h)(0x5F518E14)
+F (.\Button.h)(0x61B68769)()
+F (.\Button.c)(0x61BEE7DE)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\..\..\.. --c99-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\TI\TM4C123-D__UVISION_VERSION="531" -Drvmdk -DPART_TM4C123GH6PM -DTM4C123GH6PM-o .\objects\button.o --omf_browse .\objects\button.crf --depend .\objects\button.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC848EC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5EC848E6)
+I (inc/hw_types.h)(0x5F518E17)
+I (inc/hw_memmap.h)(0x5F518E17)
+I (inc/hw_gpio.h)(0x5F518E17)
+I (driverlib/sysctl.h)(0x5F518E14)
+I (driverlib/pin_map.h)(0x5F518E14)
+I (driverlib/gpio.h)(0x5F518E14)
+I (inc/tm4c123gh6pm.h)(0x5F518E17)
+I (driverlib/interrupt.h)(0x5F518E14)
+F (.\Accelerometer.c)(0x6168F14D)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\..\..\.. --c99-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\TI\TM4C123-D__UVISION_VERSION="531" -Drvmdk -DPART_TM4C123GH6PM -DTM4C123GH6PM-o .\objects\accelerometer.o --omf_browse .\objects\accelerometer.crf --depend .\objects\accelerometer.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC848EC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5EC848E6)
+I (C:\Keil_v5\ARM\ARMCC\include\inttypes.h)(0x5EC848EC)
+I (inc/hw_types.h)(0x5F518E17)
+I (inc/hw_memmap.h)(0x5F518E17)
+I (inc/hw_sysctl.h)(0x5F518E17)
+I (inc/hw_i2c.h)(0x5F518E17)
+I (inc/tm4c123gh6pm.h)(0x5F518E17)
+I (driverlib/rom.h)(0x5F518E14)
+I (driverlib/gpio.h)(0x5F518E14)
+I (driverlib/pin_map.h)(0x5F518E14)
+I (driverlib/sysctl.h)(0x5F518E14)
+I (driverlib/uart.h)(0x5F518E14)
+I (driverlib/i2c.h)(0x5F518E14)
+I (driverlib/timer.h)(0x5F518E14)
+I (driverlib/interrupt.h)(0x5F518E14)
+I (uartstdio.h)(0x53A25C92)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5EC848EC)
+F (.\Accelerometer.h)(0x5FDD59AB)()
+F (.\uartstdio.h)(0x53A25C92)()
+F (.\uartstdio.c)(0x6168DD3D)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\..\..\.. --c99-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\TI\TM4C123-D__UVISION_VERSION="531" -Drvmdk -DPART_TM4C123GH6PM -DTM4C123GH6PM-o .\objects\uartstdio.o --omf_browse .\objects\uartstdio.crf --depend .\objects\uartstdio.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5EC848E6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC848EC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5EC848EC)
+I (inc/hw_ints.h)(0x5F518E17)
+I (inc/hw_memmap.h)(0x5F518E17)
+I (inc/hw_types.h)(0x5F518E17)
+I (inc/hw_uart.h)(0x5F518E17)
+I (driverlib/debug.h)(0x5F518E14)
+I (driverlib/interrupt.h)(0x5F518E14)
+I (driverlib/rom.h)(0x5F518E14)
+I (driverlib/rom_map.h)(0x5F518E14)
+I (driverlib/sysctl.h)(0x5F518E14)
+I (driverlib/uart.h)(0x5F518E14)
+I (uartstdio.h)(0x53A25C92)
+F (.\LCD.c)(0x61BEE40B)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\..\..\.. --c99-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\TI\TM4C123-D__UVISION_VERSION="531" -Drvmdk -DPART_TM4C123GH6PM -DTM4C123GH6PM-o .\objects\lcd.o --omf_browse .\objects\lcd.crf --depend .\objects\lcd.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC848EC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5EC848E6)
+I (driverlib/sysctl.h)(0x5F518E14)
+I (C:\Keil_v5\ARM\INC\TI\TM4C123\TM4C123GH6PM.h)(0x559DB4B0)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cm4.h)(0x559DBE8A)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmInstr.h)(0x559DBE8A)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cmFunc.h)(0x559DBE8A)
+I (C:\Keil_v5\ARM\CMSIS\Include\core_cm4_simd.h)(0x559DBE8A)
+I (C:\Keil_v5\ARM\INC\TI\TM4C123\system_TM4C123.h)(0x559DB4B0)
+I (inc/tm4c123gh6pm.h)(0x5F518E17)
+I (delay.h)(0x5F95D517)
+I (LCD.H)(0x61B02B83)
+F (.\LCD.h)(0x61B02B83)()
+F (C:\ti\TivaWare_C_Series-2.1.4.178\driverlib\rvmdk\driverlib.lib)(0x5F518E14)()
+F (.\Quake_Detector.c)(0x61BEE7FA)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\..\..\.. --c99-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\TI\TM4C123-D__UVISION_VERSION="531" -Drvmdk -DPART_TM4C123GH6PM -DTM4C123GH6PM-o .\objects\quake_detector.o --omf_browse .\objects\quake_detector.crf --depend .\objects\quake_detector.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC848EC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5EC848E6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x5EC848EC)
+I (inc/hw_types.h)(0x5F518E17)
+I (inc/hw_memmap.h)(0x5F518E17)
+I (inc/hw_gpio.h)(0x5F518E17)
+I (inc/tm4c123gh6pm.h)(0x5F518E17)
+I (driverlib/sysctl.h)(0x5F518E14)
+I (driverlib/pin_map.h)(0x5F518E14)
+I (driverlib/gpio.h)(0x5F518E14)
+I (driverlib/interrupt.h)(0x5F518E14)
+I (driverlib/qei.h)(0x5F518E14)
+I (driverlib/timer.h)(0x5F518E14)
+I (driverlib/adc.h)(0x5F518E14)
+I (driverlib/hibernate.h)(0x5F518E14)
+I (uartstdio.h)(0x53A25C92)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x5EC848EC)
+I (Button.h)(0x61B68769)
+I (Encoder.h)(0x61A994AA)
+I (Accelerometer.h)(0x5FDD59AB)
+I (LCD.h)(0x61B02B83)
+I (PWM.h)(0x61B17011)
+I (Temperature.h)(0x61B2C617)
+F (.\inc\hw_types.h)(0x5F518E17)()
+F (.\inc\hw_memmap.h)(0x5F518E17)()
+F (.\inc\hw_gpio.h)(0x5F518E17)()
+F (.\inc\tm4c123gh6pm.h)(0x5F518E17)()
+F (.\inc\hw_ints.h)(0x5F518E17)()
+F (.\Temperature.c)(0x61B44E7F)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\..\..\.. --c99-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\TI\TM4C123-D__UVISION_VERSION="531" -Drvmdk -DPART_TM4C123GH6PM -DTM4C123GH6PM-o .\objects\temperature.o --omf_browse .\objects\temperature.crf --depend .\objects\temperature.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC848EC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5EC848E6)
+I (inc/hw_memmap.h)(0x5F518E17)
+I (inc/hw_types.h)(0x5F518E17)
+I (driverlib/debug.h)(0x5F518E14)
+I (driverlib/sysctl.h)(0x5F518E14)
+I (driverlib/adc.h)(0x5F518E14)
+I (driverlib/interrupt.h)(0x5F518E14)
+I (driverlib/gpio.h)(0x5F518E14)
+I (inc/tm4c123gh6pm.h)(0x5F518E17)
+I (Temperature.h)(0x61B2C617)
+F (.\Temperature.h)(0x61B2C617)()
+F (.\PWM.c)(0x61BEE397)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\..\..\.. --c99-IC:\Keil_v5\ARM\RV31\INC-IC:\Keil_v5\ARM\CMSIS\Include-IC:\Keil_v5\ARM\INC\TI\TM4C123-D__UVISION_VERSION="531" -Drvmdk -DPART_TM4C123GH6PM -DTM4C123GH6PM-o .\objects\pwm.o --omf_browse .\objects\pwm.crf --depend .\objects\pwm.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5EC848EC)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5EC848E6)
+I (PWM.h)(0x61B17011)
+I (inc/hw_types.h)(0x5F518E17)
+I (inc/hw_memmap.h)(0x5F518E17)
+I (inc/hw_gpio.h)(0x5F518E17)
+I (driverlib/sysctl.h)(0x5F518E14)
+I (driverlib/pin_map.h)(0x5F518E14)
+I (driverlib/rom_map.h)(0x5F518E14)
+I (driverlib/gpio.h)(0x5F518E14)
+I (driverlib/pwm.h)(0x5F518E14)
+I (inc/tm4c123gh6pm.h)(0x5F518E17)
+F (.\PWM.h)(0x61B17011)()
