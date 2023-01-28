@@ -1,0 +1,1211 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 20
+Design : MotionEstimator
+Version: O-2018.06-SP4
+Date   : Sun Dec 20 17:26:56 2020
+****************************************
+
+ * Some/all delay information is back-annotated.
+
+Operating Conditions: ss0p75v125c   Library: saed32hvt_ss0p75v125c
+	Parasitic source    : LPE
+	Parasitic mode      : RealRVirtualC
+	Extraction mode     : MIN_MAX
+	Extraction derating : 125/125/125
+
+Information: Percent of Arnoldi-based delays =  3.15%
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe_u/pe3/Accumulate_reg[6]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.03       0.03
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)                      0.00       0.03 r
+  ctl_u/count_reg[3]/Q (DFFX1_LVT)                        0.26       0.28 r
+  ctl_u/S1S2mux[8] (control)                              0.00       0.28 r
+  U3/Y (INVX0_HVT)                                        0.26 *     0.54 f
+  ctl_u/IN2 (control)                                     0.00       0.54 f
+  ctl_u/U71/Y (AND2X1_LVT)                                0.20 *     0.74 f
+  ctl_u/U111/Y (NAND2X0_LVT)                              0.06 *     0.80 r
+  ctl_u/S1S2mux[3] (control)                              0.00       0.80 r
+  pe_u/S1S2mux[3] (PEtotal)                               0.00       0.80 r
+  pe_u/pe3/S1S2mux (PE_11)                                0.00       0.80 r
+  pe_u/pe3/U28/Y (NBUFFX2_LVT)                            0.09 *     0.89 r
+  pe_u/pe3/U25/Y (NBUFFX2_LVT)                            0.07 *     0.96 r
+  pe_u/pe3/U24/Y (MUX21X1_LVT)                            0.17 *     1.13 f
+  pe_u/pe3/U76/Y (INVX0_LVT)                              0.07 *     1.20 r
+  pe_u/pe3/U80/Y (OA21X1_LVT)                             0.10 *     1.30 r
+  pe_u/pe3/U81/Y (AO22X1_LVT)                             0.09 *     1.38 r
+  pe_u/pe3/U82/Y (AO222X1_LVT)                            0.14 *     1.52 r
+  pe_u/pe3/U51/Y (AND3X1_LVT)                             0.10 *     1.62 r
+  pe_u/pe3/U83/Y (AO221X1_LVT)                            0.11 *     1.73 r
+  pe_u/pe3/U84/Y (OA221X1_LVT)                            0.10 *     1.83 r
+  pe_u/pe3/U85/Y (AO21X1_LVT)                             0.08 *     1.91 r
+  pe_u/pe3/U2/Y (AOI22X1_LVT)                             0.15 *     2.06 f
+  pe_u/pe3/U75/Y (MUX21X1_HVT)                            0.35 *     2.41 r
+  pe_u/pe3/add_85/B[2] (PE_11_DW01_add_0)                 0.00       2.41 r
+  pe_u/pe3/add_85/U1_2/CO (FADDX1_LVT)                    0.16 *     2.57 r
+  pe_u/pe3/add_85/U1_3/CO (FADDX1_LVT)                    0.14 *     2.71 r
+  pe_u/pe3/add_85/U1_4/CO (FADDX1_LVT)                    0.14 *     2.84 r
+  pe_u/pe3/add_85/U1_5/CO (FADDX1_LVT)                    0.14 *     2.98 r
+  pe_u/pe3/add_85/U1_6/S (FADDX1_LVT)                     0.19 *     3.17 f
+  pe_u/pe3/add_85/SUM[6] (PE_11_DW01_add_0)               0.00       3.17 f
+  pe_u/pe3/U34/Y (MUX21X1_HVT)                            0.29 *     3.46 f
+  pe_u/pe3/U61/Y (INVX0_LVT)                              0.08 *     3.54 r
+  pe_u/pe3/U17/Y (NAND2X0_LVT)                            0.06 *     3.60 f
+  pe_u/pe3/Accumulate_reg[6]/D (DFFX1_LVT)                0.00 *     3.60 f
+  data arrival time                                                  3.60
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.01       3.86
+  pe_u/pe3/Accumulate_reg[6]/CLK (DFFX1_LVT)              0.00       3.86 r
+  library setup time                                     -0.09       3.77
+  data required time                                                 3.77
+  --------------------------------------------------------------------------
+  data required time                                                 3.77
+  data arrival time                                                 -3.60
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.18
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comp_u/BestDist_reg[5]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.03       0.03
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)                      0.00       0.03 r
+  ctl_u/count_reg[3]/Q (DFFX1_LVT)                        0.26       0.28 r
+  ctl_u/S1S2mux[8] (control)                              0.00       0.28 r
+  U3/Y (INVX0_HVT)                                        0.26 *     0.54 f
+  ctl_u/IN2 (control)                                     0.00       0.54 f
+  ctl_u/U71/Y (AND2X1_LVT)                                0.20 *     0.74 f
+  ctl_u/U3/Y (NBUFFX2_HVT)                                0.16 *     0.90 f
+  ctl_u/U16/Y (AND3X1_LVT)                                0.26 *     1.16 f
+  ctl_u/U201/Y (AND2X1_LVT)                               0.15 *     1.32 f
+  ctl_u/PEready[2] (control)                              0.00       1.32 f
+  comp_u/PEready[2] (Comparator)                          0.00       1.32 f
+  comp_u/U101/Y (INVX0_LVT)                               0.06 *     1.38 r
+  comp_u/U67/Y (AND2X1_LVT)                               0.07 *     1.45 r
+  comp_u/U99/Y (NAND3X0_LVT)                              0.07 *     1.52 f
+  comp_u/U163/Y (INVX0_LVT)                               0.15 *     1.67 r
+  comp_u/U40/Y (NAND2X0_LVT)                              0.07 *     1.74 f
+  comp_u/U42/Y (NAND3X0_LVT)                              0.08 *     1.82 r
+  comp_u/U189/Y (OR3X1_LVT)                               0.11 *     1.94 r
+  comp_u/U128/Y (NAND2X0_LVT)                             0.06 *     2.00 f
+  comp_u/U70/Y (NAND2X0_LVT)                              0.06 *     2.05 r
+  comp_u/U190/Y (AOI221X1_LVT)                            0.12 *     2.18 f
+  comp_u/U106/Y (NAND3X2_LVT)                             0.15 *     2.33 r
+  comp_u/U114/Y (NAND2X0_LVT)                             0.05 *     2.38 f
+  comp_u/U115/Y (AND3X1_LVT)                              0.11 *     2.49 f
+  comp_u/U235/Y (NAND3X0_LVT)                             0.06 *     2.55 r
+  comp_u/U236/Y (AO22X1_LVT)                              0.09 *     2.64 r
+  comp_u/U237/Y (OA221X1_LVT)                             0.10 *     2.74 r
+  comp_u/U125/Y (OR2X1_LVT)                               0.07 *     2.82 r
+  comp_u/U238/Y (OA221X1_LVT)                             0.10 *     2.92 r
+  comp_u/U3/Y (OR2X1_LVT)                                 0.08 *     3.00 r
+  comp_u/U239/Y (AO22X1_LVT)                              0.10 *     3.10 r
+  comp_u/U150/Y (AOI21X1_LVT)                             0.19 *     3.29 f
+  comp_u/U248/Y (MUX21X1_LVT)                             0.19 *     3.48 f
+  comp_u/U249/Y (NAND2X0_LVT)                             0.06 *     3.54 r
+  comp_u/BestDist_reg[5]/D (DFFX1_LVT)                    0.00 *     3.54 r
+  data arrival time                                                  3.54
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.02       3.86
+  comp_u/BestDist_reg[5]/CLK (DFFX1_LVT)                  0.00       3.86 r
+  library setup time                                     -0.11       3.75
+  data required time                                                 3.75
+  --------------------------------------------------------------------------
+  data required time                                                 3.75
+  data arrival time                                                 -3.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.21
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comp_u/BestDist_reg[3]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.03       0.03
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)                      0.00       0.03 r
+  ctl_u/count_reg[3]/Q (DFFX1_LVT)                        0.26       0.28 r
+  ctl_u/S1S2mux[8] (control)                              0.00       0.28 r
+  U3/Y (INVX0_HVT)                                        0.26 *     0.54 f
+  ctl_u/IN2 (control)                                     0.00       0.54 f
+  ctl_u/U71/Y (AND2X1_LVT)                                0.20 *     0.74 f
+  ctl_u/U3/Y (NBUFFX2_HVT)                                0.16 *     0.90 f
+  ctl_u/U16/Y (AND3X1_LVT)                                0.26 *     1.16 f
+  ctl_u/U201/Y (AND2X1_LVT)                               0.15 *     1.32 f
+  ctl_u/PEready[2] (control)                              0.00       1.32 f
+  comp_u/PEready[2] (Comparator)                          0.00       1.32 f
+  comp_u/U101/Y (INVX0_LVT)                               0.06 *     1.38 r
+  comp_u/U67/Y (AND2X1_LVT)                               0.07 *     1.45 r
+  comp_u/U99/Y (NAND3X0_LVT)                              0.07 *     1.52 f
+  comp_u/U163/Y (INVX0_LVT)                               0.15 *     1.67 r
+  comp_u/U40/Y (NAND2X0_LVT)                              0.07 *     1.74 f
+  comp_u/U42/Y (NAND3X0_LVT)                              0.08 *     1.82 r
+  comp_u/U189/Y (OR3X1_LVT)                               0.11 *     1.94 r
+  comp_u/U128/Y (NAND2X0_LVT)                             0.06 *     2.00 f
+  comp_u/U70/Y (NAND2X0_LVT)                              0.06 *     2.05 r
+  comp_u/U190/Y (AOI221X1_LVT)                            0.12 *     2.18 f
+  comp_u/U106/Y (NAND3X2_LVT)                             0.15 *     2.33 r
+  comp_u/U114/Y (NAND2X0_LVT)                             0.05 *     2.38 f
+  comp_u/U115/Y (AND3X1_LVT)                              0.11 *     2.49 f
+  comp_u/U235/Y (NAND3X0_LVT)                             0.06 *     2.55 r
+  comp_u/U236/Y (AO22X1_LVT)                              0.09 *     2.64 r
+  comp_u/U237/Y (OA221X1_LVT)                             0.10 *     2.74 r
+  comp_u/U125/Y (OR2X1_LVT)                               0.07 *     2.82 r
+  comp_u/U238/Y (OA221X1_LVT)                             0.10 *     2.92 r
+  comp_u/U3/Y (OR2X1_LVT)                                 0.08 *     3.00 r
+  comp_u/U78/Y (AO22X1_LVT)                               0.11 *     3.11 r
+  comp_u/U66/Y (AOI21X1_LVT)                              0.20 *     3.31 f
+  comp_u/U64/Y (MUX21X1_LVT)                              0.19 *     3.50 f
+  comp_u/U245/Y (NAND2X0_LVT)                             0.05 *     3.55 r
+  comp_u/BestDist_reg[3]/D (DFFX1_LVT)                    0.00 *     3.55 r
+  data arrival time                                                  3.55
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.03       3.87
+  comp_u/BestDist_reg[3]/CLK (DFFX1_LVT)                  0.00       3.87 r
+  library setup time                                     -0.11       3.77
+  data required time                                                 3.77
+  --------------------------------------------------------------------------
+  data required time                                                 3.77
+  data arrival time                                                 -3.55
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.22
+
+
+  Startpoint: ctl_u/count_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe_u/pe7/Accumulate_reg[7]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.02       0.02
+  ctl_u/count_reg[0]/CLK (DFFX1_LVT)                      0.00       0.02 r
+  ctl_u/count_reg[0]/Q (DFFX1_LVT)                        0.36       0.39 f
+  ctl_u/U91/Y (NAND2X0_LVT)                               0.11 *     0.50 r
+  ctl_u/U63/Y (NBUFFX2_LVT)                               0.09 *     0.59 r
+  ctl_u/U24/Y (OR2X1_LVT)                                 0.08 *     0.68 r
+  ctl_u/U137/Y (NAND2X0_LVT)                              0.22 *     0.90 f
+  ctl_u/S1S2mux[7] (control)                              0.00       0.90 f
+  pe_u/S1S2mux[7] (PEtotal)                               0.00       0.90 f
+  pe_u/pe7/S1S2mux (PE_7)                                 0.00       0.90 f
+  pe_u/pe7/U93/Y (MUX21X1_LVT)                            0.33 *     1.23 f
+  pe_u/pe7/U57/Y (INVX0_LVT)                              0.08 *     1.31 r
+  pe_u/pe7/U69/Y (NAND2X0_HVT)                            0.13 *     1.44 f
+  pe_u/pe7/U70/Y (NAND3X0_LVT)                            0.10 *     1.53 r
+  pe_u/pe7/U96/Y (OA221X1_LVT)                            0.10 *     1.63 r
+  pe_u/pe7/U65/Y (OR2X1_LVT)                              0.08 *     1.71 r
+  pe_u/pe7/U74/Y (AND3X1_LVT)                             0.08 *     1.80 r
+  pe_u/pe7/U97/Y (AO21X1_LVT)                             0.08 *     1.87 r
+  pe_u/pe7/U22/Y (AO22X1_LVT)                             0.10 *     1.97 r
+  pe_u/pe7/U9/Y (MUX21X1_LVT)                             0.17 *     2.14 f
+  pe_u/pe7/add_85/B[0] (PE_7_DW01_add_0)                  0.00       2.14 f
+  pe_u/pe7/add_85/U3/Y (AND2X1_LVT)                       0.11 *     2.25 f
+  pe_u/pe7/add_85/U1_1/CO (FADDX1_LVT)                    0.13 *     2.38 f
+  pe_u/pe7/add_85/U1_2/CO (FADDX1_LVT)                    0.13 *     2.51 f
+  pe_u/pe7/add_85/U1_3/CO (FADDX1_LVT)                    0.13 *     2.65 f
+  pe_u/pe7/add_85/U1_4/CO (FADDX1_LVT)                    0.13 *     2.78 f
+  pe_u/pe7/add_85/U1_5/CO (FADDX1_LVT)                    0.13 *     2.91 f
+  pe_u/pe7/add_85/U1_6/CO (FADDX1_LVT)                    0.13 *     3.04 f
+  pe_u/pe7/add_85/U1_7/S (FADDX1_LVT)                     0.22 *     3.26 r
+  pe_u/pe7/add_85/SUM[7] (PE_7_DW01_add_0)                0.00       3.26 r
+  pe_u/pe7/U99/Y (MUX21X1_LVT)                            0.12 *     3.38 r
+  pe_u/pe7/U46/Y (OR2X1_LVT)                              0.09 *     3.47 r
+  pe_u/pe7/Accumulate_reg[7]/RSTB (DFFSSRX1_LVT)          0.00 *     3.47 r
+  data arrival time                                                  3.47
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.02       3.86
+  pe_u/pe7/Accumulate_reg[7]/CLK (DFFSSRX1_LVT)           0.00       3.86 r
+  library setup time                                     -0.16       3.70
+  data required time                                                 3.70
+  --------------------------------------------------------------------------
+  data required time                                                 3.70
+  data arrival time                                                 -3.47
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.23
+
+
+  Startpoint: ctl_u/count_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe_u/pe11/Accumulate_reg[7]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.02       0.02
+  ctl_u/count_reg[0]/CLK (DFFX1_LVT)                      0.00       0.02 r
+  ctl_u/count_reg[0]/Q (DFFX1_LVT)                        0.39       0.42 r
+  ctl_u/U91/Y (NAND2X0_LVT)                               0.11 *     0.52 f
+  ctl_u/U101/Y (INVX0_LVT)                                0.11 *     0.63 r
+  ctl_u/U73/Y (AO21X1_LVT)                                0.14 *     0.77 r
+  ctl_u/S1S2mux[11] (control)                             0.00       0.77 r
+  pe_u/S1S2mux[11] (PEtotal)                              0.00       0.77 r
+  pe_u/pe11/S1S2mux (PE_3)                                0.00       0.77 r
+  pe_u/pe11/U29/Y (NBUFFX2_HVT)                           0.17 *     0.94 r
+  pe_u/pe11/U31/Y (MUX21X1_LVT)                           0.22 *     1.16 f
+  pe_u/pe11/U86/Y (AOI21X1_LVT)                           0.19 *     1.35 r
+  pe_u/pe11/U91/Y (AO22X1_LVT)                            0.09 *     1.44 r
+  pe_u/pe11/U65/Y (NAND2X0_LVT)                           0.05 *     1.50 f
+  pe_u/pe11/U67/Y (NAND3X0_LVT)                           0.06 *     1.56 r
+  pe_u/pe11/U92/Y (OA221X1_LVT)                           0.11 *     1.66 r
+  pe_u/pe11/U60/Y (OR3X1_LVT)                             0.09 *     1.76 r
+  pe_u/pe11/U34/Y (AND2X1_LVT)                            0.08 *     1.84 r
+  pe_u/pe11/U21/Y (AO21X1_LVT)                            0.07 *     1.91 r
+  pe_u/pe11/U30/Y (AOI22X1_LVT)                           0.14 *     2.05 f
+  pe_u/pe11/U101/Y (MUX21X1_LVT)                          0.17 *     2.22 f
+  pe_u/pe11/add_85/B[0] (PE_3_DW01_add_0)                 0.00       2.22 f
+  pe_u/pe11/add_85/U4/Y (AND2X1_LVT)                      0.11 *     2.33 f
+  pe_u/pe11/add_85/U1_1/CO (FADDX1_LVT)                   0.12 *     2.46 f
+  pe_u/pe11/add_85/U1_2/CO (FADDX1_LVT)                   0.13 *     2.59 f
+  pe_u/pe11/add_85/U1_3/CO (FADDX1_LVT)                   0.13 *     2.72 f
+  pe_u/pe11/add_85/U1_4/CO (FADDX1_LVT)                   0.14 *     2.86 f
+  pe_u/pe11/add_85/U1_5/CO (FADDX1_LVT)                   0.14 *     2.99 f
+  pe_u/pe11/add_85/U1_6/CO (FADDX1_LVT)                   0.13 *     3.12 f
+  pe_u/pe11/add_85/U1_7/S (FADDX1_LVT)                    0.22 *     3.34 r
+  pe_u/pe11/add_85/SUM[7] (PE_3_DW01_add_0)               0.00       3.34 r
+  pe_u/pe11/U95/Y (MUX21X1_LVT)                           0.12 *     3.46 r
+  pe_u/pe11/U70/Y (OR2X1_LVT)                             0.08 *     3.54 r
+  pe_u/pe11/Accumulate_reg[7]/D (DFFX1_LVT)               0.00 *     3.54 r
+  data arrival time                                                  3.54
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.00       3.85
+  pe_u/pe11/Accumulate_reg[7]/CLK (DFFX1_LVT)             0.00       3.85 r
+  library setup time                                     -0.07       3.77
+  data required time                                                 3.77
+  --------------------------------------------------------------------------
+  data required time                                                 3.77
+  data arrival time                                                 -3.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.23
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe_u/pe3/Accumulate_reg[7]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.03       0.03
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)                      0.00       0.03 r
+  ctl_u/count_reg[3]/Q (DFFX1_LVT)                        0.26       0.28 r
+  ctl_u/S1S2mux[8] (control)                              0.00       0.28 r
+  U3/Y (INVX0_HVT)                                        0.26 *     0.54 f
+  ctl_u/IN2 (control)                                     0.00       0.54 f
+  ctl_u/U71/Y (AND2X1_LVT)                                0.20 *     0.74 f
+  ctl_u/U111/Y (NAND2X0_LVT)                              0.06 *     0.80 r
+  ctl_u/S1S2mux[3] (control)                              0.00       0.80 r
+  pe_u/S1S2mux[3] (PEtotal)                               0.00       0.80 r
+  pe_u/pe3/S1S2mux (PE_11)                                0.00       0.80 r
+  pe_u/pe3/U28/Y (NBUFFX2_LVT)                            0.09 *     0.89 r
+  pe_u/pe3/U25/Y (NBUFFX2_LVT)                            0.07 *     0.96 r
+  pe_u/pe3/U24/Y (MUX21X1_LVT)                            0.17 *     1.13 f
+  pe_u/pe3/U76/Y (INVX0_LVT)                              0.07 *     1.20 r
+  pe_u/pe3/U80/Y (OA21X1_LVT)                             0.10 *     1.30 r
+  pe_u/pe3/U81/Y (AO22X1_LVT)                             0.09 *     1.38 r
+  pe_u/pe3/U82/Y (AO222X1_LVT)                            0.14 *     1.52 r
+  pe_u/pe3/U51/Y (AND3X1_LVT)                             0.10 *     1.62 r
+  pe_u/pe3/U83/Y (AO221X1_LVT)                            0.11 *     1.73 r
+  pe_u/pe3/U84/Y (OA221X1_LVT)                            0.10 *     1.83 r
+  pe_u/pe3/U85/Y (AO21X1_LVT)                             0.08 *     1.91 r
+  pe_u/pe3/U2/Y (AOI22X1_LVT)                             0.15 *     2.06 f
+  pe_u/pe3/U75/Y (MUX21X1_HVT)                            0.35 *     2.41 r
+  pe_u/pe3/add_85/B[2] (PE_11_DW01_add_0)                 0.00       2.41 r
+  pe_u/pe3/add_85/U1_2/CO (FADDX1_LVT)                    0.16 *     2.57 r
+  pe_u/pe3/add_85/U1_3/CO (FADDX1_LVT)                    0.14 *     2.71 r
+  pe_u/pe3/add_85/U1_4/CO (FADDX1_LVT)                    0.14 *     2.84 r
+  pe_u/pe3/add_85/U1_5/CO (FADDX1_LVT)                    0.14 *     2.98 r
+  pe_u/pe3/add_85/U1_6/CO (FADDX1_LVT)                    0.14 *     3.11 r
+  pe_u/pe3/add_85/U1_7/S (FADDX1_LVT)                     0.19 *     3.31 f
+  pe_u/pe3/add_85/SUM[7] (PE_11_DW01_add_0)               0.00       3.31 f
+  pe_u/pe3/U14/Y (MUX21X1_LVT)                            0.13 *     3.44 f
+  pe_u/pe3/U60/Y (INVX0_LVT)                              0.06 *     3.50 r
+  pe_u/pe3/U18/Y (NAND2X0_LVT)                            0.05 *     3.54 f
+  pe_u/pe3/Accumulate_reg[7]/D (DFFX1_LVT)                0.00 *     3.54 f
+  data arrival time                                                  3.54
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.01       3.86
+  pe_u/pe3/Accumulate_reg[7]/CLK (DFFX1_LVT)              0.00       3.86 r
+  library setup time                                     -0.08       3.78
+  data required time                                                 3.78
+  --------------------------------------------------------------------------
+  data required time                                                 3.78
+  data arrival time                                                 -3.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.23
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comp_u/BestDist_reg[6]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.03       0.03
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)                      0.00       0.03 r
+  ctl_u/count_reg[3]/Q (DFFX1_LVT)                        0.26       0.28 r
+  ctl_u/S1S2mux[8] (control)                              0.00       0.28 r
+  U3/Y (INVX0_HVT)                                        0.26 *     0.54 f
+  ctl_u/IN2 (control)                                     0.00       0.54 f
+  ctl_u/U71/Y (AND2X1_LVT)                                0.20 *     0.74 f
+  ctl_u/U3/Y (NBUFFX2_HVT)                                0.16 *     0.90 f
+  ctl_u/U16/Y (AND3X1_LVT)                                0.26 *     1.16 f
+  ctl_u/U201/Y (AND2X1_LVT)                               0.15 *     1.32 f
+  ctl_u/PEready[2] (control)                              0.00       1.32 f
+  comp_u/PEready[2] (Comparator)                          0.00       1.32 f
+  comp_u/U101/Y (INVX0_LVT)                               0.06 *     1.38 r
+  comp_u/U67/Y (AND2X1_LVT)                               0.07 *     1.45 r
+  comp_u/U99/Y (NAND3X0_LVT)                              0.07 *     1.52 f
+  comp_u/U163/Y (INVX0_LVT)                               0.15 *     1.67 r
+  comp_u/U40/Y (NAND2X0_LVT)                              0.07 *     1.74 f
+  comp_u/U42/Y (NAND3X0_LVT)                              0.08 *     1.82 r
+  comp_u/U189/Y (OR3X1_LVT)                               0.11 *     1.94 r
+  comp_u/U128/Y (NAND2X0_LVT)                             0.06 *     2.00 f
+  comp_u/U70/Y (NAND2X0_LVT)                              0.06 *     2.05 r
+  comp_u/U190/Y (AOI221X1_LVT)                            0.12 *     2.18 f
+  comp_u/U106/Y (NAND3X2_LVT)                             0.15 *     2.33 r
+  comp_u/U114/Y (NAND2X0_LVT)                             0.05 *     2.38 f
+  comp_u/U115/Y (AND3X1_LVT)                              0.11 *     2.49 f
+  comp_u/U235/Y (NAND3X0_LVT)                             0.06 *     2.55 r
+  comp_u/U236/Y (AO22X1_LVT)                              0.09 *     2.64 r
+  comp_u/U237/Y (OA221X1_LVT)                             0.10 *     2.74 r
+  comp_u/U125/Y (OR2X1_LVT)                               0.07 *     2.82 r
+  comp_u/U238/Y (OA221X1_LVT)                             0.10 *     2.92 r
+  comp_u/U3/Y (OR2X1_LVT)                                 0.08 *     3.00 r
+  comp_u/U239/Y (AO22X1_LVT)                              0.10 *     3.10 r
+  comp_u/U150/Y (AOI21X1_LVT)                             0.19 *     3.29 f
+  comp_u/U250/Y (MUX21X1_LVT)                             0.19 *     3.48 f
+  comp_u/U251/Y (NAND2X0_LVT)                             0.05 *     3.53 r
+  comp_u/BestDist_reg[6]/D (DFFX1_LVT)                    0.00 *     3.53 r
+  data arrival time                                                  3.53
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.03       3.87
+  comp_u/BestDist_reg[6]/CLK (DFFX1_LVT)                  0.00       3.87 r
+  library setup time                                     -0.11       3.77
+  data required time                                                 3.77
+  --------------------------------------------------------------------------
+  data required time                                                 3.77
+  data arrival time                                                 -3.53
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.24
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe_u/pe9/Accumulate_reg[7]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.03       0.03
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)                      0.00       0.03 r
+  ctl_u/count_reg[3]/QN (DFFX1_LVT)                       0.25       0.27 r
+  ctl_u/AddressS1[3] (control)                            0.00       0.27 r
+  U5/Y (INVX1_LVT)                                        0.23 *     0.50 f
+  ctl_u/IN3 (control)                                     0.00       0.50 f
+  ctl_u/U94/Y (AO21X1_LVT)                                0.22 *     0.72 f
+  ctl_u/U99/Y (AO21X1_LVT)                                0.11 *     0.83 f
+  ctl_u/S1S2mux[9] (control)                              0.00       0.83 f
+  pe_u/S1S2mux[9] (PEtotal)                               0.00       0.83 f
+  pe_u/pe9/S1S2mux (PE_5)                                 0.00       0.83 f
+  pe_u/pe9/U91/Y (INVX0_LVT)                              0.07 *     0.90 r
+  pe_u/pe9/U87/Y (INVX0_LVT)                              0.04 *     0.94 f
+  pe_u/pe9/U29/Y (MUX21X1_LVT)                            0.19 *     1.14 f
+  pe_u/pe9/U96/Y (INVX0_LVT)                              0.08 *     1.22 r
+  pe_u/pe9/U102/Y (OA21X1_LVT)                            0.10 *     1.31 r
+  pe_u/pe9/U103/Y (AO22X1_LVT)                            0.09 *     1.40 r
+  pe_u/pe9/U82/Y (NAND2X0_LVT)                            0.06 *     1.46 f
+  pe_u/pe9/U84/Y (NAND3X0_LVT)                            0.07 *     1.53 r
+  pe_u/pe9/U34/Y (NAND3X0_LVT)                            0.08 *     1.61 f
+  pe_u/pe9/U58/Y (NAND3X0_LVT)                            0.07 *     1.68 r
+  pe_u/pe9/U10/Y (AND2X1_LVT)                             0.10 *     1.78 r
+  pe_u/pe9/U12/Y (AO21X1_LVT)                             0.07 *     1.85 r
+  pe_u/pe9/U45/Y (AO22X1_LVT)                             0.10 *     1.95 r
+  pe_u/pe9/U44/Y (MUX21X1_LVT)                            0.17 *     2.12 f
+  pe_u/pe9/add_85/B[0] (PE_5_DW01_add_0)                  0.00       2.12 f
+  pe_u/pe9/add_85/U3/Y (AND2X1_LVT)                       0.11 *     2.23 f
+  pe_u/pe9/add_85/U1_1/CO (FADDX1_LVT)                    0.13 *     2.36 f
+  pe_u/pe9/add_85/U1_2/CO (FADDX1_LVT)                    0.13 *     2.49 f
+  pe_u/pe9/add_85/U1_3/CO (FADDX1_LVT)                    0.14 *     2.63 f
+  pe_u/pe9/add_85/U1_4/CO (FADDX1_LVT)                    0.13 *     2.76 f
+  pe_u/pe9/add_85/U1_5/CO (FADDX1_LVT)                    0.13 *     2.89 f
+  pe_u/pe9/add_85/U1_6/CO (FADDX1_LVT)                    0.13 *     3.03 f
+  pe_u/pe9/add_85/U1_7/S (FADDX1_LVT)                     0.22 *     3.24 r
+  pe_u/pe9/add_85/SUM[7] (PE_5_DW01_add_0)                0.00       3.24 r
+  pe_u/pe9/U104/Y (MUX21X1_LVT)                           0.12 *     3.36 r
+  pe_u/pe9/U93/Y (OR2X1_HVT)                              0.16 *     3.52 r
+  pe_u/pe9/Accumulate_reg[7]/D (DFFX1_LVT)                0.00 *     3.52 r
+  data arrival time                                                  3.52
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.01       3.86
+  pe_u/pe9/Accumulate_reg[7]/CLK (DFFX1_LVT)              0.00       3.86 r
+  library setup time                                     -0.08       3.78
+  data required time                                                 3.78
+  --------------------------------------------------------------------------
+  data required time                                                 3.78
+  data arrival time                                                 -3.52
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.26
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comp_u/BestDist_reg[4]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.03       0.03
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)                      0.00       0.03 r
+  ctl_u/count_reg[3]/Q (DFFX1_LVT)                        0.26       0.28 r
+  ctl_u/S1S2mux[8] (control)                              0.00       0.28 r
+  U3/Y (INVX0_HVT)                                        0.26 *     0.54 f
+  ctl_u/IN2 (control)                                     0.00       0.54 f
+  ctl_u/U71/Y (AND2X1_LVT)                                0.20 *     0.74 f
+  ctl_u/U3/Y (NBUFFX2_HVT)                                0.16 *     0.90 f
+  ctl_u/U16/Y (AND3X1_LVT)                                0.26 *     1.16 f
+  ctl_u/U201/Y (AND2X1_LVT)                               0.15 *     1.32 f
+  ctl_u/PEready[2] (control)                              0.00       1.32 f
+  comp_u/PEready[2] (Comparator)                          0.00       1.32 f
+  comp_u/U101/Y (INVX0_LVT)                               0.06 *     1.38 r
+  comp_u/U67/Y (AND2X1_LVT)                               0.07 *     1.45 r
+  comp_u/U99/Y (NAND3X0_LVT)                              0.07 *     1.52 f
+  comp_u/U163/Y (INVX0_LVT)                               0.15 *     1.67 r
+  comp_u/U40/Y (NAND2X0_LVT)                              0.07 *     1.74 f
+  comp_u/U42/Y (NAND3X0_LVT)                              0.08 *     1.82 r
+  comp_u/U189/Y (OR3X1_LVT)                               0.11 *     1.94 r
+  comp_u/U128/Y (NAND2X0_LVT)                             0.06 *     2.00 f
+  comp_u/U70/Y (NAND2X0_LVT)                              0.06 *     2.05 r
+  comp_u/U190/Y (AOI221X1_LVT)                            0.12 *     2.18 f
+  comp_u/U106/Y (NAND3X2_LVT)                             0.15 *     2.33 r
+  comp_u/U114/Y (NAND2X0_LVT)                             0.05 *     2.38 f
+  comp_u/U115/Y (AND3X1_LVT)                              0.11 *     2.49 f
+  comp_u/U235/Y (NAND3X0_LVT)                             0.06 *     2.55 r
+  comp_u/U236/Y (AO22X1_LVT)                              0.09 *     2.64 r
+  comp_u/U237/Y (OA221X1_LVT)                             0.10 *     2.74 r
+  comp_u/U125/Y (OR2X1_LVT)                               0.07 *     2.82 r
+  comp_u/U238/Y (OA221X1_LVT)                             0.10 *     2.92 r
+  comp_u/U3/Y (OR2X1_LVT)                                 0.08 *     3.00 r
+  comp_u/U78/Y (AO22X1_LVT)                               0.11 *     3.11 r
+  comp_u/U33/Y (AOI21X1_LVT)                              0.16 *     3.27 f
+  comp_u/U176/Y (MUX21X1_LVT)                             0.16 *     3.43 f
+  comp_u/U246/Y (NAND2X0_LVT)                             0.05 *     3.48 r
+  comp_u/BestDist_reg[4]/D (DFFX1_LVT)                    0.00 *     3.48 r
+  data arrival time                                                  3.48
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.02       3.86
+  comp_u/BestDist_reg[4]/CLK (DFFX1_LVT)                  0.00       3.86 r
+  library setup time                                     -0.11       3.75
+  data required time                                                 3.75
+  --------------------------------------------------------------------------
+  data required time                                                 3.75
+  data arrival time                                                 -3.48
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.27
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe_u/pe15/Accumulate_reg[7]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.03       0.03
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)                      0.00       0.03 r
+  ctl_u/count_reg[3]/QN (DFFX1_LVT)                       0.23       0.25 f
+  ctl_u/U8/Y (OR2X1_LVT)                                  0.16 *     0.41 f
+  ctl_u/S1S2mux[12] (control)                             0.00       0.41 f
+  U4/Y (INVX1_LVT)                                        0.07 *     0.48 r
+  ctl_u/IN1 (control)                                     0.00       0.48 r
+  ctl_u/U92/Y (NAND2X0_LVT)                               0.09 *     0.57 f
+  ctl_u/S1S2mux[14] (control)                             0.00       0.57 f
+  U2/Y (INVX1_LVT)                                        0.18 *     0.75 r
+  ctl_u/IN0 (control)                                     0.00       0.75 r
+  ctl_u/U81/Y (AND2X1_LVT)                                0.18 *     0.93 r
+  ctl_u/S1S2mux[15] (control)                             0.00       0.93 r
+  pe_u/S1S2mux[15] (PEtotal)                              0.00       0.93 r
+  pe_u/pe15/S1S2mux (PEend)                               0.00       0.93 r
+  pe_u/pe15/U17/Y (INVX0_HVT)                             0.17 *     1.10 f
+  pe_u/pe15/U14/Y (MUX21X1_HVT)                           0.49 *     1.59 f
+  pe_u/pe15/U90/Y (OR2X1_LVT)                             0.14 *     1.73 f
+  pe_u/pe15/U86/Y (AND3X1_LVT)                            0.12 *     1.85 f
+  pe_u/pe15/U106/Y (AO21X1_LVT)                           0.08 *     1.93 f
+  pe_u/pe15/U79/Y (AO22X1_LVT)                            0.09 *     2.02 f
+  pe_u/pe15/U34/Y (MUX21X1_LVT)                           0.18 *     2.20 f
+  pe_u/pe15/add_114/B[0] (PEend_DW01_add_0)               0.00       2.20 f
+  pe_u/pe15/add_114/U1/Y (AND2X1_LVT)                     0.11 *     2.31 f
+  pe_u/pe15/add_114/U1_1/CO (FADDX1_LVT)                  0.13 *     2.44 f
+  pe_u/pe15/add_114/U1_2/CO (FADDX1_LVT)                  0.13 *     2.57 f
+  pe_u/pe15/add_114/U1_3/CO (FADDX1_LVT)                  0.13 *     2.70 f
+  pe_u/pe15/add_114/U1_4/CO (FADDX1_LVT)                  0.13 *     2.83 f
+  pe_u/pe15/add_114/U1_5/CO (FADDX1_LVT)                  0.14 *     2.97 f
+  pe_u/pe15/add_114/U1_6/CO (FADDX1_LVT)                  0.13 *     3.11 f
+  pe_u/pe15/add_114/U1_7/S (FADDX1_LVT)                   0.22 *     3.33 r
+  pe_u/pe15/add_114/SUM[7] (PEend_DW01_add_0)             0.00       3.33 r
+  pe_u/pe15/U41/Y (MUX21X1_LVT)                           0.12 *     3.44 r
+  pe_u/pe15/U38/Y (OR2X1_LVT)                             0.09 *     3.53 r
+  pe_u/pe15/Accumulate_reg[7]/D (DFFX1_LVT)               0.00 *     3.53 r
+  data arrival time                                                  3.53
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.03       3.88
+  pe_u/pe15/Accumulate_reg[7]/CLK (DFFX1_LVT)             0.00       3.88 r
+  library setup time                                     -0.07       3.81
+  data required time                                                 3.81
+  --------------------------------------------------------------------------
+  data required time                                                 3.81
+  data arrival time                                                 -3.53
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.27
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comp_u/BestDist_reg[2]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.03       0.03
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)                      0.00       0.03 r
+  ctl_u/count_reg[3]/Q (DFFX1_LVT)                        0.26       0.28 r
+  ctl_u/S1S2mux[8] (control)                              0.00       0.28 r
+  U3/Y (INVX0_HVT)                                        0.26 *     0.54 f
+  ctl_u/IN2 (control)                                     0.00       0.54 f
+  ctl_u/U71/Y (AND2X1_LVT)                                0.20 *     0.74 f
+  ctl_u/U3/Y (NBUFFX2_HVT)                                0.16 *     0.90 f
+  ctl_u/U16/Y (AND3X1_LVT)                                0.26 *     1.16 f
+  ctl_u/U201/Y (AND2X1_LVT)                               0.15 *     1.32 f
+  ctl_u/PEready[2] (control)                              0.00       1.32 f
+  comp_u/PEready[2] (Comparator)                          0.00       1.32 f
+  comp_u/U101/Y (INVX0_LVT)                               0.06 *     1.38 r
+  comp_u/U67/Y (AND2X1_LVT)                               0.07 *     1.45 r
+  comp_u/U99/Y (NAND3X0_LVT)                              0.07 *     1.52 f
+  comp_u/U163/Y (INVX0_LVT)                               0.15 *     1.67 r
+  comp_u/U40/Y (NAND2X0_LVT)                              0.07 *     1.74 f
+  comp_u/U42/Y (NAND3X0_LVT)                              0.08 *     1.82 r
+  comp_u/U189/Y (OR3X1_LVT)                               0.11 *     1.94 r
+  comp_u/U128/Y (NAND2X0_LVT)                             0.06 *     2.00 f
+  comp_u/U70/Y (NAND2X0_LVT)                              0.06 *     2.05 r
+  comp_u/U190/Y (AOI221X1_LVT)                            0.12 *     2.18 f
+  comp_u/U106/Y (NAND3X2_LVT)                             0.15 *     2.33 r
+  comp_u/U114/Y (NAND2X0_LVT)                             0.05 *     2.38 f
+  comp_u/U115/Y (AND3X1_LVT)                              0.11 *     2.49 f
+  comp_u/U235/Y (NAND3X0_LVT)                             0.06 *     2.55 r
+  comp_u/U236/Y (AO22X1_LVT)                              0.09 *     2.64 r
+  comp_u/U237/Y (OA221X1_LVT)                             0.10 *     2.74 r
+  comp_u/U125/Y (OR2X1_LVT)                               0.07 *     2.82 r
+  comp_u/U238/Y (OA221X1_LVT)                             0.10 *     2.92 r
+  comp_u/U3/Y (OR2X1_LVT)                                 0.08 *     3.00 r
+  comp_u/U78/Y (AO22X1_LVT)                               0.11 *     3.11 r
+  comp_u/U33/Y (AOI21X1_LVT)                              0.16 *     3.27 f
+  comp_u/U243/Y (MUX21X1_LVT)                             0.16 *     3.42 f
+  comp_u/U244/Y (NAND2X0_LVT)                             0.05 *     3.48 r
+  comp_u/BestDist_reg[2]/D (DFFX1_LVT)                    0.00 *     3.48 r
+  data arrival time                                                  3.48
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.02       3.86
+  comp_u/BestDist_reg[2]/CLK (DFFX1_LVT)                  0.00       3.86 r
+  library setup time                                     -0.11       3.75
+  data required time                                                 3.75
+  --------------------------------------------------------------------------
+  data required time                                                 3.75
+  data arrival time                                                 -3.48
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comp_u/BestDist_reg[0]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.03       0.03
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)                      0.00       0.03 r
+  ctl_u/count_reg[3]/Q (DFFX1_LVT)                        0.26       0.28 r
+  ctl_u/S1S2mux[8] (control)                              0.00       0.28 r
+  U3/Y (INVX0_HVT)                                        0.26 *     0.54 f
+  ctl_u/IN2 (control)                                     0.00       0.54 f
+  ctl_u/U71/Y (AND2X1_LVT)                                0.20 *     0.74 f
+  ctl_u/U3/Y (NBUFFX2_HVT)                                0.16 *     0.90 f
+  ctl_u/U16/Y (AND3X1_LVT)                                0.26 *     1.16 f
+  ctl_u/U201/Y (AND2X1_LVT)                               0.15 *     1.32 f
+  ctl_u/PEready[2] (control)                              0.00       1.32 f
+  comp_u/PEready[2] (Comparator)                          0.00       1.32 f
+  comp_u/U101/Y (INVX0_LVT)                               0.06 *     1.38 r
+  comp_u/U67/Y (AND2X1_LVT)                               0.07 *     1.45 r
+  comp_u/U99/Y (NAND3X0_LVT)                              0.07 *     1.52 f
+  comp_u/U163/Y (INVX0_LVT)                               0.15 *     1.67 r
+  comp_u/U40/Y (NAND2X0_LVT)                              0.07 *     1.74 f
+  comp_u/U42/Y (NAND3X0_LVT)                              0.08 *     1.82 r
+  comp_u/U189/Y (OR3X1_LVT)                               0.11 *     1.94 r
+  comp_u/U128/Y (NAND2X0_LVT)                             0.06 *     2.00 f
+  comp_u/U70/Y (NAND2X0_LVT)                              0.06 *     2.05 r
+  comp_u/U190/Y (AOI221X1_LVT)                            0.12 *     2.18 f
+  comp_u/U106/Y (NAND3X2_LVT)                             0.15 *     2.33 r
+  comp_u/U114/Y (NAND2X0_LVT)                             0.05 *     2.38 f
+  comp_u/U115/Y (AND3X1_LVT)                              0.11 *     2.49 f
+  comp_u/U235/Y (NAND3X0_LVT)                             0.06 *     2.55 r
+  comp_u/U236/Y (AO22X1_LVT)                              0.09 *     2.64 r
+  comp_u/U237/Y (OA221X1_LVT)                             0.10 *     2.74 r
+  comp_u/U125/Y (OR2X1_LVT)                               0.07 *     2.82 r
+  comp_u/U238/Y (OA221X1_LVT)                             0.10 *     2.92 r
+  comp_u/U3/Y (OR2X1_LVT)                                 0.08 *     3.00 r
+  comp_u/U78/Y (AO22X1_LVT)                               0.11 *     3.11 r
+  comp_u/U33/Y (AOI21X1_LVT)                              0.16 *     3.27 f
+  comp_u/U240/Y (MUX21X1_LVT)                             0.15 *     3.42 f
+  comp_u/U241/Y (NAND2X0_LVT)                             0.05 *     3.48 r
+  comp_u/BestDist_reg[0]/D (DFFX1_LVT)                    0.00 *     3.48 r
+  data arrival time                                                  3.48
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.02       3.86
+  comp_u/BestDist_reg[0]/CLK (DFFX1_LVT)                  0.00       3.86 r
+  library setup time                                     -0.11       3.75
+  data required time                                                 3.75
+  --------------------------------------------------------------------------
+  data required time                                                 3.75
+  data arrival time                                                 -3.48
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: ctl_u/count_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe_u/pe7/Accumulate_reg[4]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.02       0.02
+  ctl_u/count_reg[0]/CLK (DFFX1_LVT)                      0.00       0.02 r
+  ctl_u/count_reg[0]/Q (DFFX1_LVT)                        0.36       0.39 f
+  ctl_u/U91/Y (NAND2X0_LVT)                               0.11 *     0.50 r
+  ctl_u/U63/Y (NBUFFX2_LVT)                               0.09 *     0.59 r
+  ctl_u/U24/Y (OR2X1_LVT)                                 0.08 *     0.68 r
+  ctl_u/U137/Y (NAND2X0_LVT)                              0.22 *     0.90 f
+  ctl_u/S1S2mux[7] (control)                              0.00       0.90 f
+  pe_u/S1S2mux[7] (PEtotal)                               0.00       0.90 f
+  pe_u/pe7/S1S2mux (PE_7)                                 0.00       0.90 f
+  pe_u/pe7/U93/Y (MUX21X1_LVT)                            0.33 *     1.23 f
+  pe_u/pe7/U57/Y (INVX0_LVT)                              0.08 *     1.31 r
+  pe_u/pe7/U69/Y (NAND2X0_HVT)                            0.13 *     1.44 f
+  pe_u/pe7/U70/Y (NAND3X0_LVT)                            0.10 *     1.53 r
+  pe_u/pe7/U96/Y (OA221X1_LVT)                            0.10 *     1.63 r
+  pe_u/pe7/U65/Y (OR2X1_LVT)                              0.08 *     1.71 r
+  pe_u/pe7/U74/Y (AND3X1_LVT)                             0.08 *     1.80 r
+  pe_u/pe7/U97/Y (AO21X1_LVT)                             0.08 *     1.87 r
+  pe_u/pe7/U22/Y (AO22X1_LVT)                             0.10 *     1.97 r
+  pe_u/pe7/U9/Y (MUX21X1_LVT)                             0.14 *     2.11 r
+  pe_u/pe7/add_85/B[0] (PE_7_DW01_add_0)                  0.00       2.11 r
+  pe_u/pe7/add_85/U3/Y (AND2X1_LVT)                       0.09 *     2.20 r
+  pe_u/pe7/add_85/U1_1/CO (FADDX1_LVT)                    0.14 *     2.34 r
+  pe_u/pe7/add_85/U1_2/CO (FADDX1_LVT)                    0.14 *     2.47 r
+  pe_u/pe7/add_85/U1_3/CO (FADDX1_LVT)                    0.14 *     2.61 r
+  pe_u/pe7/add_85/U1_4/CO (FADDX1_LVT)                    0.13 *     2.74 r
+  pe_u/pe7/add_85/U1_5/CO (FADDX1_LVT)                    0.14 *     2.88 r
+  pe_u/pe7/add_85/U1_6/CO (FADDX1_LVT)                    0.14 *     3.02 r
+  pe_u/pe7/add_85/U1_7/CO (FADDX1_LVT)                    0.14 *     3.16 r
+  pe_u/pe7/add_85/SUM[8] (PE_7_DW01_add_0)                0.00       3.16 r
+  pe_u/pe7/U39/Y (NAND2X0_LVT)                            0.07 *     3.23 f
+  pe_u/pe7/U50/Y (INVX0_LVT)                              0.10 *     3.33 r
+  pe_u/pe7/U40/Y (OR2X1_LVT)                              0.09 *     3.42 r
+  pe_u/pe7/Accumulate_reg[4]/RSTB (DFFSSRX1_LVT)          0.00 *     3.42 r
+  data arrival time                                                  3.42
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.02       3.86
+  pe_u/pe7/Accumulate_reg[4]/CLK (DFFSSRX1_LVT)           0.00       3.86 r
+  library setup time                                     -0.16       3.70
+  data required time                                                 3.70
+  --------------------------------------------------------------------------
+  data required time                                                 3.70
+  data arrival time                                                 -3.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: ctl_u/count_reg[2]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe_u/pe2/Accumulate_reg[6]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.02       0.02
+  ctl_u/count_reg[2]/CLK (DFFX1_LVT)                      0.00       0.02 r
+  ctl_u/count_reg[2]/QN (DFFX1_LVT)                       0.17       0.20 f
+  ctl_u/U79/Y (INVX0_LVT)                                 0.08 *     0.28 r
+  ctl_u/U140/Y (INVX0_LVT)                                0.04 *     0.31 f
+  ctl_u/U97/Y (AND2X1_LVT)                                0.09 *     0.40 f
+  ctl_u/U12/Y (NAND2X1_LVT)                               0.21 *     0.61 r
+  ctl_u/S1S2mux[2] (control)                              0.00       0.61 r
+  pe_u/S1S2mux[2] (PEtotal)                               0.00       0.61 r
+  pe_u/pe2/S1S2mux (PE_12)                                0.00       0.61 r
+  pe_u/pe2/U44/Y (NBUFFX2_LVT)                            0.12 *     0.73 r
+  pe_u/pe2/U27/Y (MUX21X1_LVT)                            0.20 *     0.94 f
+  pe_u/pe2/U66/Y (INVX0_LVT)                              0.08 *     1.02 r
+  pe_u/pe2/U86/Y (OA21X1_LVT)                             0.10 *     1.12 r
+  pe_u/pe2/U87/Y (AO22X1_LVT)                             0.09 *     1.21 r
+  pe_u/pe2/U88/Y (AO222X1_LVT)                            0.15 *     1.35 r
+  pe_u/pe2/U34/Y (OAI221X1_LVT)                           0.13 *     1.48 f
+  pe_u/pe2/U33/Y (NAND3X0_LVT)                            0.05 *     1.54 r
+  pe_u/pe2/U65/Y (AND2X1_LVT)                             0.09 *     1.63 r
+  pe_u/pe2/U18/Y (AO21X1_LVT)                             0.07 *     1.70 r
+  pe_u/pe2/U22/Y (AOI22X1_LVT)                            0.14 *     1.84 f
+  pe_u/pe2/U83/Y (MUX21X1_HVT)                            0.34 *     2.18 r
+  pe_u/pe2/add_85/B[2] (PE_12_DW01_add_0)                 0.00       2.18 r
+  pe_u/pe2/add_85/U1_2/CO (FADDX1_LVT)                    0.16 *     2.34 r
+  pe_u/pe2/add_85/U1_3/CO (FADDX1_LVT)                    0.14 *     2.48 r
+  pe_u/pe2/add_85/U1_4/CO (FADDX1_LVT)                    0.13 *     2.61 r
+  pe_u/pe2/add_85/U1_5/CO (FADDX1_LVT)                    0.14 *     2.75 r
+  pe_u/pe2/add_85/U1_6/S (FADDX1_LVT)                     0.19 *     2.94 f
+  pe_u/pe2/add_85/SUM[6] (PE_12_DW01_add_0)               0.00       2.94 f
+  pe_u/pe2/U50/Y (MUX21X1_HVT)                            0.30 *     3.24 f
+  pe_u/pe2/U71/Y (INVX1_LVT)                              0.06 *     3.31 r
+  pe_u/pe2/U81/Y (NAND2X0_HVT)                            0.14 *     3.45 f
+  pe_u/pe2/Accumulate_reg[6]/D (DFFX1_LVT)                0.00 *     3.45 f
+  data arrival time                                                  3.45
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.01       3.86
+  pe_u/pe2/Accumulate_reg[6]/CLK (DFFX1_LVT)              0.00       3.86 r
+  library setup time                                     -0.13       3.73
+  data required time                                                 3.73
+  --------------------------------------------------------------------------
+  data required time                                                 3.73
+  data arrival time                                                 -3.45
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: ctl_u/count_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe_u/pe7/Accumulate_reg[6]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.02       0.02
+  ctl_u/count_reg[0]/CLK (DFFX1_LVT)                      0.00       0.02 r
+  ctl_u/count_reg[0]/Q (DFFX1_LVT)                        0.36       0.39 f
+  ctl_u/U91/Y (NAND2X0_LVT)                               0.11 *     0.50 r
+  ctl_u/U63/Y (NBUFFX2_LVT)                               0.09 *     0.59 r
+  ctl_u/U24/Y (OR2X1_LVT)                                 0.08 *     0.68 r
+  ctl_u/U137/Y (NAND2X0_LVT)                              0.22 *     0.90 f
+  ctl_u/S1S2mux[7] (control)                              0.00       0.90 f
+  pe_u/S1S2mux[7] (PEtotal)                               0.00       0.90 f
+  pe_u/pe7/S1S2mux (PE_7)                                 0.00       0.90 f
+  pe_u/pe7/U93/Y (MUX21X1_LVT)                            0.33 *     1.23 f
+  pe_u/pe7/U57/Y (INVX0_LVT)                              0.08 *     1.31 r
+  pe_u/pe7/U69/Y (NAND2X0_HVT)                            0.13 *     1.44 f
+  pe_u/pe7/U70/Y (NAND3X0_LVT)                            0.10 *     1.53 r
+  pe_u/pe7/U96/Y (OA221X1_LVT)                            0.10 *     1.63 r
+  pe_u/pe7/U65/Y (OR2X1_LVT)                              0.08 *     1.71 r
+  pe_u/pe7/U74/Y (AND3X1_LVT)                             0.08 *     1.80 r
+  pe_u/pe7/U97/Y (AO21X1_LVT)                             0.08 *     1.87 r
+  pe_u/pe7/U22/Y (AO22X1_LVT)                             0.10 *     1.97 r
+  pe_u/pe7/U9/Y (MUX21X1_LVT)                             0.14 *     2.11 r
+  pe_u/pe7/add_85/B[0] (PE_7_DW01_add_0)                  0.00       2.11 r
+  pe_u/pe7/add_85/U3/Y (AND2X1_LVT)                       0.09 *     2.20 r
+  pe_u/pe7/add_85/U1_1/CO (FADDX1_LVT)                    0.14 *     2.34 r
+  pe_u/pe7/add_85/U1_2/CO (FADDX1_LVT)                    0.14 *     2.47 r
+  pe_u/pe7/add_85/U1_3/CO (FADDX1_LVT)                    0.14 *     2.61 r
+  pe_u/pe7/add_85/U1_4/CO (FADDX1_LVT)                    0.13 *     2.74 r
+  pe_u/pe7/add_85/U1_5/CO (FADDX1_LVT)                    0.14 *     2.88 r
+  pe_u/pe7/add_85/U1_6/CO (FADDX1_LVT)                    0.14 *     3.02 r
+  pe_u/pe7/add_85/U1_7/CO (FADDX1_LVT)                    0.14 *     3.16 r
+  pe_u/pe7/add_85/SUM[8] (PE_7_DW01_add_0)                0.00       3.16 r
+  pe_u/pe7/U39/Y (NAND2X0_LVT)                            0.07 *     3.23 f
+  pe_u/pe7/U50/Y (INVX0_LVT)                              0.10 *     3.33 r
+  pe_u/pe7/U41/Y (OR2X1_LVT)                              0.09 *     3.42 r
+  pe_u/pe7/Accumulate_reg[6]/RSTB (DFFSSRX1_LVT)          0.00 *     3.42 r
+  data arrival time                                                  3.42
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.02       3.86
+  pe_u/pe7/Accumulate_reg[6]/CLK (DFFSSRX1_LVT)           0.00       3.86 r
+  library setup time                                     -0.16       3.70
+  data required time                                                 3.70
+  --------------------------------------------------------------------------
+  data required time                                                 3.70
+  data arrival time                                                 -3.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe_u/pe4/Accumulate_reg[7]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.03       0.03
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)                      0.00       0.03 r
+  ctl_u/count_reg[3]/Q (DFFX1_LVT)                        0.26       0.28 r
+  ctl_u/S1S2mux[8] (control)                              0.00       0.28 r
+  U3/Y (INVX0_HVT)                                        0.26 *     0.54 f
+  ctl_u/IN2 (control)                                     0.00       0.54 f
+  ctl_u/U48/Y (NAND2X0_LVT)                               0.10 *     0.64 r
+  ctl_u/S1S2mux[4] (control)                              0.00       0.64 r
+  pe_u/S1S2mux[4] (PEtotal)                               0.00       0.64 r
+  pe_u/pe4/S1S2mux (PE_10)                                0.00       0.64 r
+  pe_u/pe4/U27/Y (INVX0_LVT)                              0.09 *     0.74 f
+  pe_u/pe4/U43/Y (INVX0_LVT)                              0.09 *     0.83 r
+  pe_u/pe4/U32/Y (INVX0_LVT)                              0.05 *     0.88 f
+  pe_u/pe4/U42/Y (INVX0_LVT)                              0.06 *     0.94 r
+  pe_u/pe4/U16/Y (MUX21X1_LVT)                            0.19 *     1.13 f
+  pe_u/pe4/U78/Y (INVX0_LVT)                              0.08 *     1.21 r
+  pe_u/pe4/U41/Y (OR2X1_LVT)                              0.09 *     1.30 r
+  pe_u/pe4/U76/Y (NAND2X0_LVT)                            0.05 *     1.35 f
+  pe_u/pe4/U77/Y (NAND3X0_LVT)                            0.06 *     1.41 r
+  pe_u/pe4/U80/Y (AND3X1_LVT)                             0.09 *     1.50 r
+  pe_u/pe4/U84/Y (AO221X1_LVT)                            0.11 *     1.61 r
+  pe_u/pe4/U45/Y (AND2X1_LVT)                             0.08 *     1.69 r
+  pe_u/pe4/U85/Y (AO21X1_LVT)                             0.08 *     1.77 r
+  pe_u/pe4/U66/Y (AOI22X1_LVT)                            0.13 *     1.91 f
+  pe_u/pe4/U103/Y (MUX21X1_LVT)                           0.18 *     2.09 f
+  pe_u/pe4/add_85/B[0] (PE_10_DW01_add_0)                 0.00       2.09 f
+  pe_u/pe4/add_85/U3/Y (AND2X1_LVT)                       0.12 *     2.21 f
+  pe_u/pe4/add_85/U1_1/CO (FADDX1_LVT)                    0.12 *     2.34 f
+  pe_u/pe4/add_85/U1_2/CO (FADDX1_LVT)                    0.13 *     2.47 f
+  pe_u/pe4/add_85/U1_3/CO (FADDX1_LVT)                    0.13 *     2.60 f
+  pe_u/pe4/add_85/U1_4/CO (FADDX1_LVT)                    0.13 *     2.73 f
+  pe_u/pe4/add_85/U1_5/CO (FADDX1_LVT)                    0.13 *     2.86 f
+  pe_u/pe4/add_85/U1_6/CO (FADDX1_LVT)                    0.13 *     2.99 f
+  pe_u/pe4/add_85/U1_7/S (FADDX1_LVT)                     0.21 *     3.21 r
+  pe_u/pe4/add_85/SUM[7] (PE_10_DW01_add_0)               0.00       3.21 r
+  pe_u/pe4/U88/Y (MUX21X1_LVT)                            0.12 *     3.33 r
+  pe_u/pe4/U20/Y (OR2X1_LVT)                              0.09 *     3.42 r
+  pe_u/pe4/Accumulate_reg[7]/RSTB (DFFSSRX1_LVT)          0.00 *     3.42 r
+  data arrival time                                                  3.42
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.02       3.86
+  pe_u/pe4/Accumulate_reg[7]/CLK (DFFSSRX1_LVT)           0.00       3.86 r
+  library setup time                                     -0.16       3.70
+  data required time                                                 3.70
+  --------------------------------------------------------------------------
+  data required time                                                 3.70
+  data arrival time                                                 -3.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: ctl_u/count_reg[0]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe_u/pe7/Accumulate_reg[5]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.02       0.02
+  ctl_u/count_reg[0]/CLK (DFFX1_LVT)                      0.00       0.02 r
+  ctl_u/count_reg[0]/Q (DFFX1_LVT)                        0.36       0.39 f
+  ctl_u/U91/Y (NAND2X0_LVT)                               0.11 *     0.50 r
+  ctl_u/U63/Y (NBUFFX2_LVT)                               0.09 *     0.59 r
+  ctl_u/U24/Y (OR2X1_LVT)                                 0.08 *     0.68 r
+  ctl_u/U137/Y (NAND2X0_LVT)                              0.22 *     0.90 f
+  ctl_u/S1S2mux[7] (control)                              0.00       0.90 f
+  pe_u/S1S2mux[7] (PEtotal)                               0.00       0.90 f
+  pe_u/pe7/S1S2mux (PE_7)                                 0.00       0.90 f
+  pe_u/pe7/U93/Y (MUX21X1_LVT)                            0.33 *     1.23 f
+  pe_u/pe7/U57/Y (INVX0_LVT)                              0.08 *     1.31 r
+  pe_u/pe7/U69/Y (NAND2X0_HVT)                            0.13 *     1.44 f
+  pe_u/pe7/U70/Y (NAND3X0_LVT)                            0.10 *     1.53 r
+  pe_u/pe7/U96/Y (OA221X1_LVT)                            0.10 *     1.63 r
+  pe_u/pe7/U65/Y (OR2X1_LVT)                              0.08 *     1.71 r
+  pe_u/pe7/U74/Y (AND3X1_LVT)                             0.08 *     1.80 r
+  pe_u/pe7/U97/Y (AO21X1_LVT)                             0.08 *     1.87 r
+  pe_u/pe7/U22/Y (AO22X1_LVT)                             0.10 *     1.97 r
+  pe_u/pe7/U9/Y (MUX21X1_LVT)                             0.14 *     2.11 r
+  pe_u/pe7/add_85/B[0] (PE_7_DW01_add_0)                  0.00       2.11 r
+  pe_u/pe7/add_85/U3/Y (AND2X1_LVT)                       0.09 *     2.20 r
+  pe_u/pe7/add_85/U1_1/CO (FADDX1_LVT)                    0.14 *     2.34 r
+  pe_u/pe7/add_85/U1_2/CO (FADDX1_LVT)                    0.14 *     2.47 r
+  pe_u/pe7/add_85/U1_3/CO (FADDX1_LVT)                    0.14 *     2.61 r
+  pe_u/pe7/add_85/U1_4/CO (FADDX1_LVT)                    0.13 *     2.74 r
+  pe_u/pe7/add_85/U1_5/CO (FADDX1_LVT)                    0.14 *     2.88 r
+  pe_u/pe7/add_85/U1_6/CO (FADDX1_LVT)                    0.14 *     3.02 r
+  pe_u/pe7/add_85/U1_7/CO (FADDX1_LVT)                    0.14 *     3.16 r
+  pe_u/pe7/add_85/SUM[8] (PE_7_DW01_add_0)                0.00       3.16 r
+  pe_u/pe7/U39/Y (NAND2X0_LVT)                            0.07 *     3.23 f
+  pe_u/pe7/U50/Y (INVX0_LVT)                              0.10 *     3.33 r
+  pe_u/pe7/U42/Y (OR2X1_LVT)                              0.09 *     3.42 r
+  pe_u/pe7/Accumulate_reg[5]/RSTB (DFFSSRX1_LVT)          0.00 *     3.42 r
+  data arrival time                                                  3.42
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.02       3.86
+  pe_u/pe7/Accumulate_reg[5]/CLK (DFFSSRX1_LVT)           0.00       3.86 r
+  library setup time                                     -0.16       3.70
+  data required time                                                 3.70
+  --------------------------------------------------------------------------
+  data required time                                                 3.70
+  data arrival time                                                 -3.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comp_u/motionX_reg[0]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (propagated)         0.03       0.03
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)       0.00       0.03 r
+  ctl_u/count_reg[3]/Q (DFFX1_LVT)         0.26       0.28 r
+  ctl_u/S1S2mux[8] (control)               0.00       0.28 r
+  U3/Y (INVX0_HVT)                         0.26 *     0.54 f
+  ctl_u/IN2 (control)                      0.00       0.54 f
+  ctl_u/U71/Y (AND2X1_LVT)                 0.20 *     0.74 f
+  ctl_u/U3/Y (NBUFFX2_HVT)                 0.16 *     0.90 f
+  ctl_u/U16/Y (AND3X1_LVT)                 0.26 *     1.16 f
+  ctl_u/U201/Y (AND2X1_LVT)                0.15 *     1.32 f
+  ctl_u/PEready[2] (control)               0.00       1.32 f
+  comp_u/PEready[2] (Comparator)           0.00       1.32 f
+  comp_u/U101/Y (INVX0_LVT)                0.06 *     1.38 r
+  comp_u/U67/Y (AND2X1_LVT)                0.07 *     1.45 r
+  comp_u/U99/Y (NAND3X0_LVT)               0.07 *     1.52 f
+  comp_u/U163/Y (INVX0_LVT)                0.15 *     1.67 r
+  comp_u/U40/Y (NAND2X0_LVT)               0.07 *     1.74 f
+  comp_u/U42/Y (NAND3X0_LVT)               0.08 *     1.82 r
+  comp_u/U189/Y (OR3X1_LVT)                0.11 *     1.94 r
+  comp_u/U128/Y (NAND2X0_LVT)              0.06 *     2.00 f
+  comp_u/U70/Y (NAND2X0_LVT)               0.06 *     2.05 r
+  comp_u/U190/Y (AOI221X1_LVT)             0.12 *     2.18 f
+  comp_u/U106/Y (NAND3X2_LVT)              0.15 *     2.33 r
+  comp_u/U114/Y (NAND2X0_LVT)              0.05 *     2.38 f
+  comp_u/U115/Y (AND3X1_LVT)               0.11 *     2.49 f
+  comp_u/U235/Y (NAND3X0_LVT)              0.06 *     2.55 r
+  comp_u/U236/Y (AO22X1_LVT)               0.09 *     2.64 r
+  comp_u/U237/Y (OA221X1_LVT)              0.10 *     2.74 r
+  comp_u/U125/Y (OR2X1_LVT)                0.07 *     2.82 r
+  comp_u/U238/Y (OA221X1_LVT)              0.10 *     2.92 r
+  comp_u/U3/Y (OR2X1_LVT)                  0.08 *     3.00 r
+  comp_u/U78/Y (AO22X1_LVT)                0.11 *     3.11 r
+  comp_u/U66/Y (AOI21X1_LVT)               0.20 *     3.31 f
+  comp_u/U256/Y (MUX21X1_LVT)              0.19 *     3.50 f
+  comp_u/motionX_reg[0]/D (DFFX1_LVT)      0.00 *     3.50 f
+  data arrival time                                   3.50
+
+  clock ideal_clock1 (rise edge)           3.85       3.85
+  clock network delay (propagated)         0.03       3.87
+  comp_u/motionX_reg[0]/CLK (DFFX1_LVT)
+                                           0.00       3.87 r
+  library setup time                      -0.09       3.78
+  data required time                                  3.78
+  -----------------------------------------------------------
+  data required time                                  3.78
+  data arrival time                                  -3.50
+  -----------------------------------------------------------
+  slack (MET)                                         0.28
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: pe_u/pe9/Accumulate_reg[6]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock ideal_clock1 (rise edge)                          0.00       0.00
+  clock network delay (propagated)                        0.03       0.03
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)                      0.00       0.03 r
+  ctl_u/count_reg[3]/QN (DFFX1_LVT)                       0.25       0.27 r
+  ctl_u/AddressS1[3] (control)                            0.00       0.27 r
+  U5/Y (INVX1_LVT)                                        0.23 *     0.50 f
+  ctl_u/IN3 (control)                                     0.00       0.50 f
+  ctl_u/U94/Y (AO21X1_LVT)                                0.22 *     0.72 f
+  ctl_u/U99/Y (AO21X1_LVT)                                0.11 *     0.83 f
+  ctl_u/S1S2mux[9] (control)                              0.00       0.83 f
+  pe_u/S1S2mux[9] (PEtotal)                               0.00       0.83 f
+  pe_u/pe9/S1S2mux (PE_5)                                 0.00       0.83 f
+  pe_u/pe9/U91/Y (INVX0_LVT)                              0.07 *     0.90 r
+  pe_u/pe9/U87/Y (INVX0_LVT)                              0.04 *     0.94 f
+  pe_u/pe9/U29/Y (MUX21X1_LVT)                            0.19 *     1.14 f
+  pe_u/pe9/U96/Y (INVX0_LVT)                              0.08 *     1.22 r
+  pe_u/pe9/U102/Y (OA21X1_LVT)                            0.10 *     1.31 r
+  pe_u/pe9/U103/Y (AO22X1_LVT)                            0.09 *     1.40 r
+  pe_u/pe9/U82/Y (NAND2X0_LVT)                            0.06 *     1.46 f
+  pe_u/pe9/U84/Y (NAND3X0_LVT)                            0.07 *     1.53 r
+  pe_u/pe9/U34/Y (NAND3X0_LVT)                            0.08 *     1.61 f
+  pe_u/pe9/U58/Y (NAND3X0_LVT)                            0.07 *     1.68 r
+  pe_u/pe9/U10/Y (AND2X1_LVT)                             0.10 *     1.78 r
+  pe_u/pe9/U12/Y (AO21X1_LVT)                             0.07 *     1.85 r
+  pe_u/pe9/U45/Y (AO22X1_LVT)                             0.10 *     1.95 r
+  pe_u/pe9/U44/Y (MUX21X1_LVT)                            0.17 *     2.12 f
+  pe_u/pe9/add_85/B[0] (PE_5_DW01_add_0)                  0.00       2.12 f
+  pe_u/pe9/add_85/U3/Y (AND2X1_LVT)                       0.11 *     2.23 f
+  pe_u/pe9/add_85/U1_1/CO (FADDX1_LVT)                    0.13 *     2.36 f
+  pe_u/pe9/add_85/U1_2/CO (FADDX1_LVT)                    0.13 *     2.49 f
+  pe_u/pe9/add_85/U1_3/CO (FADDX1_LVT)                    0.14 *     2.63 f
+  pe_u/pe9/add_85/U1_4/CO (FADDX1_LVT)                    0.13 *     2.76 f
+  pe_u/pe9/add_85/U1_5/CO (FADDX1_LVT)                    0.13 *     2.89 f
+  pe_u/pe9/add_85/U1_6/S (FADDX1_LVT)                     0.22 *     3.11 r
+  pe_u/pe9/add_85/SUM[6] (PE_5_DW01_add_0)                0.00       3.11 r
+  pe_u/pe9/U50/Y (MUX21X1_HVT)                            0.29 *     3.40 r
+  pe_u/pe9/U55/Y (OR2X1_LVT)                              0.10 *     3.51 r
+  pe_u/pe9/Accumulate_reg[6]/D (DFFX1_LVT)                0.00 *     3.51 r
+  data arrival time                                                  3.51
+
+  clock ideal_clock1 (rise edge)                          3.85       3.85
+  clock network delay (propagated)                        0.01       3.86
+  pe_u/pe9/Accumulate_reg[6]/CLK (DFFX1_LVT)              0.00       3.86 r
+  library setup time                                     -0.07       3.79
+  data required time                                                 3.79
+  --------------------------------------------------------------------------
+  data required time                                                 3.79
+  data arrival time                                                 -3.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.28
+
+
+  Startpoint: ctl_u/count_reg[3]
+              (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Endpoint: comp_u/motionX_reg[2]
+            (rising edge-triggered flip-flop clocked by ideal_clock1)
+  Path Group: ideal_clock1
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock ideal_clock1 (rise edge)           0.00       0.00
+  clock network delay (propagated)         0.03       0.03
+  ctl_u/count_reg[3]/CLK (DFFX1_LVT)       0.00       0.03 r
+  ctl_u/count_reg[3]/Q (DFFX1_LVT)         0.26       0.28 r
+  ctl_u/S1S2mux[8] (control)               0.00       0.28 r
+  U3/Y (INVX0_HVT)                         0.26 *     0.54 f
+  ctl_u/IN2 (control)                      0.00       0.54 f
+  ctl_u/U71/Y (AND2X1_LVT)                 0.20 *     0.74 f
+  ctl_u/U3/Y (NBUFFX2_HVT)                 0.16 *     0.90 f
+  ctl_u/U16/Y (AND3X1_LVT)                 0.26 *     1.16 f
+  ctl_u/U201/Y (AND2X1_LVT)                0.15 *     1.32 f
+  ctl_u/PEready[2] (control)               0.00       1.32 f
+  comp_u/PEready[2] (Comparator)           0.00       1.32 f
+  comp_u/U101/Y (INVX0_LVT)                0.06 *     1.38 r
+  comp_u/U67/Y (AND2X1_LVT)                0.07 *     1.45 r
+  comp_u/U99/Y (NAND3X0_LVT)               0.07 *     1.52 f
+  comp_u/U163/Y (INVX0_LVT)                0.15 *     1.67 r
+  comp_u/U40/Y (NAND2X0_LVT)               0.07 *     1.74 f
+  comp_u/U42/Y (NAND3X0_LVT)               0.08 *     1.82 r
+  comp_u/U189/Y (OR3X1_LVT)                0.11 *     1.94 r
+  comp_u/U128/Y (NAND2X0_LVT)              0.06 *     2.00 f
+  comp_u/U70/Y (NAND2X0_LVT)               0.06 *     2.05 r
+  comp_u/U190/Y (AOI221X1_LVT)             0.12 *     2.18 f
+  comp_u/U106/Y (NAND3X2_LVT)              0.15 *     2.33 r
+  comp_u/U114/Y (NAND2X0_LVT)              0.05 *     2.38 f
+  comp_u/U115/Y (AND3X1_LVT)               0.11 *     2.49 f
+  comp_u/U235/Y (NAND3X0_LVT)              0.06 *     2.55 r
+  comp_u/U236/Y (AO22X1_LVT)               0.09 *     2.64 r
+  comp_u/U237/Y (OA221X1_LVT)              0.10 *     2.74 r
+  comp_u/U125/Y (OR2X1_LVT)                0.07 *     2.82 r
+  comp_u/U238/Y (OA221X1_LVT)              0.10 *     2.92 r
+  comp_u/U3/Y (OR2X1_LVT)                  0.08 *     3.00 r
+  comp_u/U78/Y (AO22X1_LVT)                0.11 *     3.11 r
+  comp_u/U66/Y (AOI21X1_LVT)               0.20 *     3.31 f
+  comp_u/U258/Y (MUX21X1_LVT)              0.19 *     3.50 f
+  comp_u/motionX_reg[2]/D (DFFX1_LVT)      0.00 *     3.50 f
+  data arrival time                                   3.50
+
+  clock ideal_clock1 (rise edge)           3.85       3.85
+  clock network delay (propagated)         0.03       3.87
+  comp_u/motionX_reg[2]/CLK (DFFX1_LVT)
+                                           0.00       3.87 r
+  library setup time                      -0.08       3.79
+  data required time                                  3.79
+  -----------------------------------------------------------
+  data required time                                  3.79
+  data arrival time                                  -3.50
+  -----------------------------------------------------------
+  slack (MET)                                         0.29
+
+
+1

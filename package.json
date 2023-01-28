@@ -1,8 +1,8 @@
 {
-  "name": "next-tutorial",
+  "name": "Website",
   "version": "1.0.0",
   "description": "",
-  "main": "Home.js",
+  "main": "index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
