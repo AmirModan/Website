@@ -1,0 +1,15 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/Projects/FPGA": "pages/Projects/FPGA.html",
+  "/Projects/RaspberryPi": "pages/Projects/RaspberryPi.html",
+  "/Projects/Game": "pages/Projects/Game.html",
+  "/Projects/IC": "pages/Projects/IC.html",
+  "/Research/TenaSensor": "pages/Research/TenaSensor.html",
+  "/": "pages/index.html",
+  "/Projects/ARM": "pages/Projects/ARM.html",
+  "/Research/MyoHMI": "pages/Research/MyoHMI.html",
+  "/Projects/CNNGestureRecognition": "pages/Projects/CNNGestureRecognition.html",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}

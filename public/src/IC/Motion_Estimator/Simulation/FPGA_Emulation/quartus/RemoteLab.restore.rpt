@@ -1,0 +1,142 @@
+Restore Archived Project report for RemoteLab
+Mon Oct 12 16:52:18 2020
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Mon Oct 12 16:52:18 2020 ;
+; Revision Name                   ; RemoteLab                             ;
+; Top-level Entity Name           ; top                                   ;
+; Family                          ; Cyclone V                             ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/Users/amir5/OneDrive/Documents/ENGR 378/RemoteLearningTools/BlankDE0CVRemoteProject.qar' into the 'C:/Users/amir5/OneDrive/Documents/ENGR 378/RemoteLearningTools/Lab4/' directory
+Info: Generated report 'RemoteLab.restore.rpt'
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/18.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4828 megabytes
+    Info: Processing ended: Mon Oct 12 16:52:18 2020
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:08
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Files Restored                                                                                                  ;
++-----------------------------------------------------------------------------------------------------------------+
+; File Name                                                                                                       ;
++-----------------------------------------------------------------------------------------------------------------+
+; qar_info.json                                                                                                   ;
+; hdl/UserDesign.v                                                                                                ;
+; hdl/internal_pin_if.qsys                                                                                        ;
+; hdl/internal_pin_if.sopcinfo                                                                                    ;
+; hdl/internal_pin_if/internal_pin_if.bsf                                                                         ;
+; hdl/internal_pin_if/internal_pin_if.cmp                                                                         ;
+; hdl/internal_pin_if/internal_pin_if.html                                                                        ;
+; hdl/internal_pin_if/internal_pin_if.xml                                                                         ;
+; hdl/internal_pin_if/internal_pin_if_bb.v                                                                        ;
+; hdl/internal_pin_if/internal_pin_if_generation.rpt                                                              ;
+; hdl/internal_pin_if/internal_pin_if_generation_previous.rpt                                                     ;
+; hdl/internal_pin_if/internal_pin_if_inst.v                                                                      ;
+; hdl/internal_pin_if/internal_pin_if_inst.vhd                                                                    ;
+; hdl/internal_pin_if/synthesis/internal_pin_if.debuginfo                                                         ;
+; hdl/internal_pin_if/synthesis/internal_pin_if.qip                                                               ;
+; hdl/internal_pin_if/synthesis/internal_pin_if.regmap                                                            ;
+; hdl/internal_pin_if/synthesis/internal_pin_if.v                                                                 ;
+; hdl/internal_pin_if/synthesis/internal_pin_if.vhd                                                               ;
+; hdl/internal_pin_if/synthesis/internal_pin_if_rst_controller.vhd                                                ;
+; hdl/internal_pin_if/synthesis/internal_pin_if_rst_controller_001.vhd                                            ;
+; hdl/internal_pin_if/synthesis/submodules/altera_avalon_packets_to_master.v                                      ;
+; hdl/internal_pin_if/synthesis/submodules/altera_avalon_sc_fifo.v                                                ;
+; hdl/internal_pin_if/synthesis/submodules/altera_avalon_st_bytes_to_packets.v                                    ;
+; hdl/internal_pin_if/synthesis/submodules/altera_avalon_st_clock_crosser.v                                       ;
+; hdl/internal_pin_if/synthesis/submodules/altera_avalon_st_idle_inserter.v                                       ;
+; hdl/internal_pin_if/synthesis/submodules/altera_avalon_st_idle_remover.v                                        ;
+; hdl/internal_pin_if/synthesis/submodules/altera_avalon_st_jtag_interface.sdc                                    ;
+; hdl/internal_pin_if/synthesis/submodules/altera_avalon_st_jtag_interface.v                                      ;
+; hdl/internal_pin_if/synthesis/submodules/altera_avalon_st_packets_to_bytes.v                                    ;
+; hdl/internal_pin_if/synthesis/submodules/altera_avalon_st_pipeline_base.v                                       ;
+; hdl/internal_pin_if/synthesis/submodules/altera_avalon_st_pipeline_stage.sv                                     ;
+; hdl/internal_pin_if/synthesis/submodules/altera_jtag_dc_streaming.v                                             ;
+; hdl/internal_pin_if/synthesis/submodules/altera_jtag_sld_node.v                                                 ;
+; hdl/internal_pin_if/synthesis/submodules/altera_jtag_streaming.v                                                ;
+; hdl/internal_pin_if/synthesis/submodules/altera_merlin_arbitrator.sv                                            ;
+; hdl/internal_pin_if/synthesis/submodules/altera_merlin_burst_uncompressor.sv                                    ;
+; hdl/internal_pin_if/synthesis/submodules/altera_merlin_master_agent.sv                                          ;
+; hdl/internal_pin_if/synthesis/submodules/altera_merlin_master_translator.sv                                     ;
+; hdl/internal_pin_if/synthesis/submodules/altera_merlin_reorder_memory.sv                                        ;
+; hdl/internal_pin_if/synthesis/submodules/altera_merlin_slave_agent.sv                                           ;
+; hdl/internal_pin_if/synthesis/submodules/altera_merlin_slave_translator.sv                                      ;
+; hdl/internal_pin_if/synthesis/submodules/altera_merlin_traffic_limiter.sv                                       ;
+; hdl/internal_pin_if/synthesis/submodules/altera_reset_controller.sdc                                            ;
+; hdl/internal_pin_if/synthesis/submodules/altera_reset_controller.v                                              ;
+; hdl/internal_pin_if/synthesis/submodules/altera_reset_synchronizer.v                                            ;
+; hdl/internal_pin_if/synthesis/submodules/altera_std_synchronizer_nocut.v                                        ;
+; hdl/internal_pin_if/synthesis/submodules/internal_pin_if_JTAG_2_Avalon_IP.v                                     ;
+; hdl/internal_pin_if/synthesis/submodules/internal_pin_if_JTAG_2_Avalon_IP_b2p_adapter.sv                        ;
+; hdl/internal_pin_if/synthesis/submodules/internal_pin_if_JTAG_2_Avalon_IP_p2b_adapter.sv                        ;
+; hdl/internal_pin_if/synthesis/submodules/internal_pin_if_JTAG_2_Avalon_IP_timing_adt.sv                         ;
+; hdl/internal_pin_if/synthesis/submodules/internal_pin_if_LED_IP.v                                               ;
+; hdl/internal_pin_if/synthesis/submodules/internal_pin_if_LED_IP_0.v                                             ;
+; hdl/internal_pin_if/synthesis/submodules/internal_pin_if_SW_IP.v                                                ;
+; hdl/internal_pin_if/synthesis/submodules/internal_pin_if_mm_interconnect_0.v                                    ;
+; hdl/internal_pin_if/synthesis/submodules/internal_pin_if_mm_interconnect_0_avalon_st_adapter.v                  ;
+; hdl/internal_pin_if/synthesis/submodules/internal_pin_if_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv ;
+; hdl/internal_pin_if/synthesis/submodules/internal_pin_if_mm_interconnect_0_cmd_demux.sv                         ;
+; hdl/internal_pin_if/synthesis/submodules/internal_pin_if_mm_interconnect_0_cmd_mux.sv                           ;
+; hdl/internal_pin_if/synthesis/submodules/internal_pin_if_mm_interconnect_0_router.sv                            ;
+; hdl/internal_pin_if/synthesis/submodules/internal_pin_if_mm_interconnect_0_router_001.sv                        ;
+; hdl/internal_pin_if/synthesis/submodules/internal_pin_if_mm_interconnect_0_rsp_demux.sv                         ;
+; hdl/internal_pin_if/synthesis/submodules/internal_pin_if_mm_interconnect_0_rsp_mux.sv                           ;
+; hdl/internal_pin_if/synthesis/submodules/internal_pin_if_param1.v                                               ;
+; hdl/pin_ip.v                                                                                                    ;
+; hdl/top.v                                                                                                       ;
+; quartus/RemoteLab.qpf                                                                                           ;
+; quartus/RemoteLab.qsf                                                                                           ;
+; quartus/RemoteLab_assignment_defaults.qdf                                                                       ;
+; quartus/assignment_defaults.qdf                                                                                 ;
++-----------------------------------------------------------------------------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+

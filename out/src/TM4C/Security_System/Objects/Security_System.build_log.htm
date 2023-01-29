@@ -1,0 +1,48 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Amir Modan, San Francisco State University, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.31.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+C:\ti\TivaWare_C_Series-2.1.4.178\examples\boards\my_projects\Security_System\Security_System.uvproj
+Project File Date:  11/21/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling Encoder.c...
+Encoder.c(65): warning:  #223-D: function "IntGlobalDisable" declared implicitly
+      IntGlobalDisable();   	//Disable interrupts
+Encoder.c: 1 warning, 0 errors
+compiling Button.c...
+compiling Security_System.c...
+compiling LCD.c...
+LCD.c(13): warning:  #1267-D: Implicit physical register R2 should be defined as a variable
+  				__ASM volatile ("MOV R2 ,#0xFF");		//Check this instruction delay, This should be about 1us
+LCD.c(106): warning:  #1293-D: assignment in condition
+      while ( (c = *s++) ) {
+LCD.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=6708 RO-data=944 RW-data=88 ZI-data=352  
+".\Objects\Security_System.axf" - 0 Error(s), 3 Warning(s).
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
