@@ -1,0 +1,20 @@
+{
+	"geolocation": {
+		"data": {
+			"city": "San Rafael",
+			"country": {
+				"code": "US",
+				"name": "United States"
+			},
+			"subdivision": {
+				"code": "CA",
+				"name": "California"
+			},
+			"timezone": "America/Los_Angeles",
+			"latitude": 38.0389,
+			"longitude": -122.5871
+		},
+		"timestamp": 1674877189332
+	},
+	"siteId": "686ad19c-5969-4c41-9d19-f99d72137d9c"
+}
