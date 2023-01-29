@@ -25,16 +25,23 @@ function Contact() {
                         <h1>Contact Me</h1>
                     </div>
                     <div id="Contact-Me" class="section">
-                        <div className="images-container">
+                        <div className="center">
                             <div className="subscribe-form-container">
                                 <form onSubmit={handleSubmit}>
                                     <label htmlFor="name">Name</label>
-                                    <input type="text" id="name" name="name" required />
-                                    <label htmlFor="email">Email</label>
-                                    <input type="text" id="email" name="email" required />
-                                    <button type="submit">Subscribe</button>
+                                    <br></br>
+                                    <textarea id="name" name="name" rows="1" cols="50"/>
+                                    <br></br>
+                                    <br></br>
+                                    <label htmlFor="message">Message *</label>
+                                    <br></br>
+                                    <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+                                    <br></br>
+                                    <br></br>
+                                    <button type="submit">Send Message</button>
                                 </form>
                             </div>
+
                         </div>
                     </div>
 
@@ -51,8 +58,9 @@ async function handleSubmit(event) {
     await fetch(".netlify/functions/sendEmail", {
         method: "POST",
         body: JSON.stringify({
+            message: document.getElementById("message").value,
             subscriberName: document.getElementById("name").value,
-            subscriberEmail: document.getElementById("email").value,
+            subscriberEmail: "amir5modan@gmail.com",//document.getElementById("email").value,
             inviteeEmail: "amir5modan@gmail.com",
         }),
     });

@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 function Home() {
@@ -19,7 +18,7 @@ function Home() {
       </Head>
       <header>
         <div className="content">
-        <a href="#aboutMe-section" class="logo"><img src="/Images/Home-Icon.png" height="20" /></a>
+          <a href="#aboutMe-section" class="logo"><img src="/Images/Home-Icon.png" height="20" /></a>
           <a href="#aboutMe-section" className="logo"></a>
           <nav className="desktop">
             <a href="#aboutMe-section">About Me</a>
@@ -51,9 +50,11 @@ function Home() {
                 I also like to tinker with my Raspberry Pi, exercise at the gym, play pool, and "cube" with my Rubik's Cube.
               </p>
               <a href="https://github.com/AmirModan"><img src="/Images/GitHub-logo.png" height="50" /></a>
-              <br></br>
+              <br></br><br></br>
               <a href="https://www.linkedin.com/in/amir-modan-8320b0194"><img src="/Images/LinkedIn-Logo.jpg"
                 height="50" /></a>
+              <br></br><br></br>
+              <button onClick={(e) => {goToPage(e, '/contact')}}>Contact Me</button>
             </div>
           </div>
           <div class="images-container">
@@ -169,18 +170,4 @@ function Home() {
   )
 }
 
-async function handleClick(e) {
-  e.preventDefault()
-  await fetch(
-    `.netlify/functions/sendEmail`,
-    {
-      method: "POST",
-      body: JSON.stringify({
-        subscriberName: "Amir Modan",
-        subscriberEmail: "amirmodan@yahoo.com",
-        inviteeEmail: "amir5modan@gmail.com",
-      }),
-    }
-  );
-}
 export default Home
