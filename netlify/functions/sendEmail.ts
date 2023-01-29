@@ -10,6 +10,7 @@ const handler: Handler = async function (event) {
   }
 
   const requestBody = JSON.parse(event.body) as {
+    message: string;
     subscriberName: string;
     subscriberEmail: string;
     inviteeEmail: string;
@@ -27,6 +28,7 @@ const handler: Handler = async function (event) {
       to: requestBody.subscriberEmail,
       subject: "You got mail",
       parameters: {
+        message: requestBody.message,
         name: requestBody.subscriberName,
         email: requestBody.subscriberEmail,
       },
