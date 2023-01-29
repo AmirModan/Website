@@ -16,10 +16,17 @@ function Contact() {
             }),
         });
         if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
+            const messageStatus = document.getElementById("message-status");
+            messageStatus.innerText = "Message could not be sent. Please try again later";
+            messageStatus.style.color = "red"
+            //messageStatus.style.background = "white"
+            //throw new Error(`HTTP error! status: ${response.status}`);
         } else {
             const form = document.getElementById("contact-form");
             form.reset();
+            const messageStatus = document.getElementById("message-status");
+            messageStatus.innerText = "Message was sent successfully!";
+            messageStatus.style.color = "green"
         }
     }
 
@@ -52,11 +59,12 @@ function Contact() {
                                     <label htmlFor="name">Name</label>
                                     <br></br>
                                     <textarea id="name" name="name" rows="1" cols="50" />
-                                    <br></br><br></br>
+                                    <br></br><br></br><br></br>
                                     <label htmlFor="message">Message *</label>
                                     <br></br>
                                     <textarea id="message" name="message" rows="4" cols="50" required></textarea>
                                     <br></br>
+                                    <p id="message-status" name="message-status">&nbsp;</p>
                                     <br></br>
                                     <button type="submit">Send Message</button>
                                 </form>
