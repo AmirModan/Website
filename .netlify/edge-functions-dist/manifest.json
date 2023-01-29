@@ -1,1 +1,0 @@
-{"bundles":[{"asset":"245e047a287880a2e5896dba7347a9250c18b6aa1a3725e0d3798ef758dd7a01.eszip","format":"eszip2"}],"routes":[{"function":"next-dev","name":"netlify dev handler","pattern":"^/.*/?$"}],"post_cache_routes":[],"bundler_version":"8.2.1","layers":[],"import_map":"netlify:import-map","function_config":{}}
