@@ -2,6 +2,27 @@ import Head from 'next/head'
 
 function Contact() {
 
+
+    async function handleSubmit(event) {
+        event.preventDefault();
+        //call to the Netlify Function you created
+        const response = await fetch(".netlify/functions/sendEmail", {
+            method: "POST",
+            body: JSON.stringify({
+                message: document.getElementById("message").value,
+                subscriberName: document.getElementById("name").value,
+                subscriberEmail: "amir5modan@gmail.com",//document.getElementById("email").value,
+                inviteeEmail: "amir5modan@gmail.com",
+            }),
+        });
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        } else {
+            const form = document.getElementById("contact-form");
+            form.reset();
+        }
+    }
+
     return (
         <>
             <Head>
@@ -27,12 +48,11 @@ function Contact() {
                     <div id="Contact-Me" class="section">
                         <div className="center">
                             <div className="subscribe-form-container">
-                                <form onSubmit={handleSubmit}>
+                                <form id="contact-form" name="contact-form" onSubmit={handleSubmit}>
                                     <label htmlFor="name">Name</label>
                                     <br></br>
-                                    <textarea id="name" name="name" rows="1" cols="50"/>
-                                    <br></br>
-                                    <br></br>
+                                    <textarea id="name" name="name" rows="1" cols="50" />
+                                    <br></br><br></br>
                                     <label htmlFor="message">Message *</label>
                                     <br></br>
                                     <textarea id="message" name="message" rows="4" cols="50" required></textarea>
@@ -50,20 +70,6 @@ function Contact() {
 
         </>
     );
-}
-
-async function handleSubmit(event) {
-    event.preventDefault();
-    //call to the Netlify Function you created
-    await fetch(".netlify/functions/sendEmail", {
-        method: "POST",
-        body: JSON.stringify({
-            message: document.getElementById("message").value,
-            subscriberName: document.getElementById("name").value,
-            subscriberEmail: "amir5modan@gmail.com",//document.getElementById("email").value,
-            inviteeEmail: "amir5modan@gmail.com",
-        }),
-    });
 }
 
 export default Contact
