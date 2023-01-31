@@ -54,7 +54,7 @@ function Home() {
               <a href="https://www.linkedin.com/in/amir-modan-8320b0194"><img src="/Images/LinkedIn-Logo.jpg"
                 height="50" /></a>
               <br></br><br></br>
-              <button onClick={(e) => {goToPage(e, '/contact')}}>Contact Me</button>
+              <button onClick={(e) => { goToPage(e, '/contact') }}>Contact Me</button>
             </div>
           </div>
           <div class="images-container">
@@ -129,6 +129,15 @@ function Home() {
             <div class="text-container">
               <p>A humble attempt at developing a 2D Platformer, I built this game as a fun way to further my knowledge and
                 confidence in JavaScript using the game development framework known as Phaser.js.</p>
+            </div>
+          </div>
+          <div class="images-container">
+            <div class="image-container">
+              <a href="./Projects/Tic-Tac-Toe_React"><img src="/Images/Tic-Tac-Toe.png" /></a>
+              <h3>Tic-Tac-Toe</h3>
+            </div>
+            <div class="text-container">
+              <p>A game of Tic-Tac-Toe built while I was learning to use React. Each piece of the game, such as the board and individual squares, are represented by their own component with their own attributes. Furthermore, the components are also capable of tracking their own state, allowing us to "time travel" to any move made previously.</p>
             </div>
           </div>
           <div class="images-container">
