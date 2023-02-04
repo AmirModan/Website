@@ -2,5 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/Projects/Tic-Tac-Toe_React": "pages/Projects/Tic-Tac-Toe_React.js"
+  "/Research/TenaSensor": "pages/Research/TenaSensor.js"
 }

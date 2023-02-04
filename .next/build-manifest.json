@@ -15,10 +15,10 @@
   ],
   "rootMainFiles": [],
   "pages": {
-    "/Projects/Tic-Tac-Toe_React": [
+    "/Research/TenaSensor": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/Projects/Tic-Tac-Toe_React.js"
+      "static/chunks/pages/Research/TenaSensor.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",
