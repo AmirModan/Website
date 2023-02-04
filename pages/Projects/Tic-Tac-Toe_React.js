@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head'
+import Header from '../../public/components/Header'
 import styles from '../../public/css/Projects/Tic-Tac-Toe_React.module.css'
 
 /*
@@ -153,6 +154,7 @@ class Game extends React.Component {
                     <title>Tic-Tac-Toe</title>
                     <meta name="viewport" />
                 </Head>
+                <Header header1="Tic-Tac-Toe"/>
                 <header>
                     <div class="content">
                         <a href="/" class="logo"><img src="/Images/Home-Icon.png" height="20" /></a>

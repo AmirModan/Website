@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Header from '../../public/components/Header'
 
 function FPGA() {
 
@@ -8,6 +9,8 @@ function FPGA() {
                 <title>FPGA</title>
                 <meta name="viewport" />
             </Head>
+
+            <Header header1="Motion Estimator"/>
             <header>
                 <div class="content">
                     <a href="/" class="logo"><img src="/Images/Home-Icon.png" height="20" /></a>

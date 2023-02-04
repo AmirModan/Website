@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Header from '../../public/components/Header'
 
 function CNNGestureRecognition() {
 
@@ -8,21 +9,12 @@ function CNNGestureRecognition() {
                 <title>CNN Gesture Recognition</title>
                 <meta name="viewport" />
             </Head>
-            <header>
-                <div class="content">
-                    <a href="/" class="logo"><img src="/Images/Home-Icon.png" height="20" /></a>
-                    <nav class="desktop">
-                        <a href="#GestureRecognition">Gesture Recognition with CNN</a>
-                    </nav>
-                    <nav class="mobile">
-                        <a href="#GestureRecognition">Gesture Recognition with CNN</a>
-                    </nav>
-                </div>
-            </header>
+            
+            <Header header1="Gesture Recognition with CNN"/>
 
             <div class="main-content">
                 <div id="projects-section">
-                    <div id="GestureRecognition" class="project">
+                    <div id="Gesture Recognition with CNN" class="project">
                         <h2>Gesture Recognition with CNN</h2>
                         <div class="images-container">
                             <div class="image-container">

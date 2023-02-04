@@ -1,6 +1,10 @@
 import Head from 'next/head'
+import { useRouter } from 'next/router'
+import Header from '../../public/components/Header'
 
 function Game() {
+
+    const router = useRouter()
 
     return (
         <>
@@ -8,11 +12,8 @@ function Game() {
                 <title>Game</title>
                 <meta name="viewport" />
             </Head>
-            <header>
-                <div class="content">
-                    <a href="/" class="logo"><img src="/Images/Home-Icon.png" height="20" /></a>
-                </div>
-            </header>
+
+            <Header/>
 
             <div class="main-content">
                 <div id="projects-section">
