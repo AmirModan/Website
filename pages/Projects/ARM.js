@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Header from '../../public/components/Header'
 
 function ARM() {
 
@@ -8,26 +9,16 @@ function ARM() {
                 <title>ARM</title>
                 <meta name="viewport" />
             </Head>
-            <header>
-                <div class="content">
-                    <a href="/" class="logo"><img src="/Images/Home-Icon.png" height="20" /></a>
-                    <nav class="desktop">
-                        <a href="#SmartHomeSecuritySystem">Smart Home Security System</a>
-                        <a href="#QuakeDetector">Quake Detector</a>
-                    </nav>
-                    <nav class="mobile">
-                        <a href="#SmartHomeSecuritySystem">Smart Home Security System</a>
-                        <a href="#QuakeDetector">Quake Detector</a>
-                    </nav>
-                </div>
-            </header>
+
+            <Header header1="Smart Home Security System" header2="Quake Detector"/>
+            
 
             <div class="main-content">
                 <div id="projects-section">
                     <div class="content center">
                         <h1>ARM Microcontroller Projects</h1>
                     </div>
-                    <div id="SmartHomeSecuritySystem" class="project">
+                    <div id="Smart Home Security System" class="project">
                         <h2>Smart Home Security System</h2>
                         <div class="images-container">
                             <div class="image-container">
@@ -83,7 +74,7 @@ function ARM() {
                             </div>
                         </div>
                     </div>
-                    <div id="QuakeDetector" class="project">
+                    <div id="Quake Detector" class="project">
                         <h2>Quake Detector</h2>
                         <div class="images-container">
                             <div class="image-container">

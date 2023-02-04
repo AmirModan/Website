@@ -2,6 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/Projects/Tic-Tac-Toe_React": "pages/Projects/Tic-Tac-Toe_React.js"
+  "/": "pages/index.js"
 }

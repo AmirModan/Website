@@ -1,7 +1,7 @@
 import Head from 'next/head'
+import Header from '../public/components/Header'
 
 function Contact() {
-
 
     async function handleSubmit(event) {
         event.preventDefault();
@@ -36,17 +36,8 @@ function Contact() {
                 <title>Contact Me</title>
                 <meta name="viewport" />
             </Head>
-            <header>
-                <div className="content">
-                    <a href="/" className="logo"><img src="/Images/Home-Icon.png" height="20" /></a>
-                    <nav className="desktop">
-                        <a href="Contact-Me">Contact Me</a>
-                    </nav>
-                    <nav className="mobile">
-                        <a href="Contact-Me">Contact Me</a>
-                    </nav>
-                </div>
-            </header>
+            <Header header1="Contact Me" />
+            
             <div class="main-content">
                 <div id="projects-section">
                     <div className="content center">

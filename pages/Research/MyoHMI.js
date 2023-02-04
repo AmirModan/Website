@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Header from '../../public/components/Header'
 
 function MyoHMI() {
 
@@ -8,19 +9,7 @@ function MyoHMI() {
                 <title>MyoHMI</title>
                 <meta name="viewport" />
             </Head>
-            <header>
-                <div class="content">
-                    <a href="/" class="logo"><img src="/Images/Home-Icon.png" height="20" /></a>
-                    <nav class="desktop">
-                        <a href="#Defense">Defense</a>
-                        <a href="#Thesis">Thesis</a>
-                    </nav>
-                    <nav class="mobile">
-                        <a href="#Defense">Defense</a>
-                        <a href="#Thesis">Thesis</a>
-                    </nav>
-                </div>
-            </header>
+            <Header header1="Defense" header2="Thesis"/>
 
             <div class="main-content">
                 <div id="projects-section">

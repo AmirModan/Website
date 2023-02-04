@@ -1,4 +1,6 @@
 import React from "react";
+import Head from 'next/head'
+import Header from '../../public/components/Header'
 
 function TenaSensor() {
 
@@ -21,19 +23,12 @@ function TenaSensor() {
 
     return (
         <>
-            <header>
-                <div className="content">
-                    <a href="/" className="logo"><img src="/Images/Home-Icon.png" height="20" /></a>
-                    <nav className="desktop">
-                        <a href="#Validation">Validation</a>
-                        <a href="#Design">Design</a>
-                    </nav>
-                    <nav className="mobile">
-                        <a href="#Validation">Validation</a>
-                        <a href="#Design">Design</a>
-                    </nav>
-                </div>
-            </header>
+            <Head>
+                <title>T'ena Sensor</title>
+                <meta name="viewport" />
+            </Head>
+
+            <Header header1="Validation" header2="Design" />
 
             <div className="main-content">
                 <div id="projects-section">
