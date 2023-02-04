@@ -152,7 +152,7 @@ class Game extends React.Component {
             <>
                 <Head>
                     <title>Tic-Tac-Toe</title>
-                    <meta name="viewport" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1" />
                 </Head>
                 <Header header1="Tic-Tac-Toe" />
                 <header>
