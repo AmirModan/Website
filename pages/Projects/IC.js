@@ -1,6 +1,8 @@
 import Head from 'next/head'
+import Header from '../../public/components/Header'
 
 function IC() {
+
 
     return (
         <>
@@ -8,19 +10,8 @@ function IC() {
                 <title>IC</title>
                 <meta name="viewport" />
             </Head>
-            <header>
-                <div class="content">
-                    <a href="/" class="logo"><img src="/Images/Home-Icon.png" height="20" /></a>
-                    <nav class="desktop">
-                        <a href="#Motion Estimator">Motion Estimator</a>
-                        <a href="#SRAM">SRAM</a>
-                    </nav>
-                    <nav class="mobile">
-                        <a href="#Motion Estimator">Motion Estimator</a>
-                        <a href="#SRAM">SRAM</a>
-                    </nav>
-                </div>
-            </header>
+
+            <Header header1="Motion Estimator" header2="SRAM"/>
 
             <div class="main-content">
 
