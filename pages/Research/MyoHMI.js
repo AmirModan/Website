@@ -7,7 +7,7 @@ function MyoHMI() {
         <>
             <Head>
                 <title>MyoHMI</title>
-                <meta name="viewport" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
             <Header header1="Defense" header2="Thesis"/>
 

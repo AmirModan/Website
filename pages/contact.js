@@ -34,7 +34,7 @@ function Contact() {
         <>
             <Head>
                 <title>Contact Me</title>
-                <meta name="viewport" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
             <Header header1="Contact Me" />
             

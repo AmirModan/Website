@@ -16,7 +16,7 @@ function Home() {
     <>
       <Head>
         <title>Amir Modan</title>
-        <meta name="viewport" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <header>
         <div className="content">
