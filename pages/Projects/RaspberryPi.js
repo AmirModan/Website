@@ -8,7 +8,7 @@ function RaspberryPi() {
         <>
             <Head>
                 <title>Raspberry Pi</title>
-                <meta name="viewport" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
             <Header/>
 

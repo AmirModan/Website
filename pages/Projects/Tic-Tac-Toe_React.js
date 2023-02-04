@@ -154,7 +154,7 @@ class Game extends React.Component {
                     <title>Tic-Tac-Toe</title>
                     <meta name="viewport" />
                 </Head>
-                <Header header1="Tic-Tac-Toe"/>
+                <Header header1="Tic-Tac-Toe" />
                 <header>
                     <div class="content">
                         <a href="/" class="logo"><img src="/Images/Home-Icon.png" height="20" /></a>
@@ -174,7 +174,7 @@ class Game extends React.Component {
                         </div>
                         <div id="Tic-Tac-Toe" class="project">
                             <div class="images-container">
-                            <div class="image-container"></div>
+                                <div class="image-container"></div>
                                 <div class="image-container">
                                     <div className={styles.game}>
                                         <div className="game-board">

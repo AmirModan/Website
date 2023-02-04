@@ -7,7 +7,7 @@ function ARM() {
         <>
             <Head>
                 <title>ARM</title>
-                <meta name="viewport" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
 
             <Header header1="Smart Home Security System" header2="Quake Detector"/>
