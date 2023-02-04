@@ -29,16 +29,16 @@ export default class Slideshow extends React.Component {
             <>
                 <div class="images-container">
                     <div class="image-container">
-                        <img src={curPath + picPaths[this.state.slideIndex]} alt="" width="170" />
+                        <img src={curPath + picPaths[this.state.slideIndex]} alt="" width="200" />
                     </div>
                     <div class="text-container">
+                        <h3 id="title">{title[this.state.slideIndex]}</h3>
+                        <div class="center">
+                            <button class={styles.slide_button} onClick={() => { this.setState({ slideIndex: this.state.slideIndex === 0 ? picPaths.length - 1 : this.state.slideIndex - 1 }) }}>&lt;</button>
+                            <button class={styles.slide_button} onClick={() => { this.setState({ slideIndex: this.state.slideIndex + 1 === picPaths.length ? 0 : this.state.slideIndex + 1 }) }}>&gt;</button>
+                        </div>
                         <p id="description">{desc[this.state.slideIndex]}</p>
                     </div>
-                </div>
-                <h2 id="title">{title[this.state.slideIndex]}</h2>
-                <div class="center">
-                    <button class={styles.slide_button} onClick={() => { this.setState({ slideIndex: this.state.slideIndex === 0 ? picPaths.length - 1 : this.state.slideIndex - 1 }) }}>&lt;</button>
-                    <button class={styles.slide_button} onClick={() => { this.setState({ slideIndex: this.state.slideIndex + 1 === picPaths.length ? 0 : this.state.slideIndex + 1 }) }}>&gt;</button>
                 </div>
             </>
 

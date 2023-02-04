@@ -152,20 +152,9 @@ class Game extends React.Component {
             <>
                 <Head>
                     <title>Tic-Tac-Toe</title>
-                    <meta name="viewport" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1" />
                 </Head>
                 <Header header1="Tic-Tac-Toe" />
-                <header>
-                    <div class="content">
-                        <a href="/" class="logo"><img src="/Images/Home-Icon.png" height="20" /></a>
-                        <nav class="desktop">
-                            <a href="#Tic-Tac-Toe">Tic-Tac-Toe</a>
-                        </nav>
-                        <nav class="mobile">
-                            <a href="#Tic-Tac-Toe">Tic-Tac-Toe</a>
-                        </nav>
-                    </div>
-                </header>
 
                 <div class="main-content">
                     <div id="projects-section">
@@ -174,18 +163,19 @@ class Game extends React.Component {
                         </div>
                         <div id="Tic-Tac-Toe" class="project">
                             <div class="images-container">
-                                <div class="image-container"></div>
                                 <div class="image-container">
+                                    <div className={styles.gameinfo}>
+                                        <div>{status}</div>
+                                        <ol>{moves}</ol>
+                                    </div>
+                                </div>
+                                <div class="text-container">
                                     <div className={styles.game}>
                                         <div className="game-board">
                                             <Board
                                                 squares={current.squares}
                                                 onClick={i => this.handleClick(i)}
                                             />
-                                        </div>
-                                        <div className={styles.gameinfo}>
-                                            <div>{status}</div>
-                                            <ol>{moves}</ol>
                                         </div>
                                     </div>
                                 </div>
