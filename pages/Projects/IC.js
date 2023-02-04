@@ -8,7 +8,7 @@ function IC() {
         <>
             <Head>
                 <title>IC</title>
-                <meta name="viewport" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
 
             <Header header1="Motion Estimator" header2="SRAM"/>

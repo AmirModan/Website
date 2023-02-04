@@ -25,7 +25,7 @@ function TenaSensor() {
         <>
             <Head>
                 <title>T'ena Sensor</title>
-                <meta name="viewport" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
 
             <Header header1="Validation" header2="Design" />

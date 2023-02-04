@@ -7,7 +7,7 @@ function CNNGestureRecognition() {
         <>
             <Head>
                 <title>CNN Gesture Recognition</title>
-                <meta name="viewport" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
             
             <Header header1="Gesture Recognition with CNN"/>
