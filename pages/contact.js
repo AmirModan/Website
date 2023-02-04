@@ -45,7 +45,7 @@ function Contact() {
                     </div>
                     <div id="Contact-Me" class="section">
                         <div className="center">
-                            <div className="subscribe-form-container">
+                            <div className="image-container">
                                 <form id="contact-form" name="contact-form" onSubmit={handleSubmit}>
                                     <label htmlFor="name">Name</label>
                                     <br></br>
