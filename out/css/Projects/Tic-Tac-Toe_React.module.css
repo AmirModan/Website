@@ -12,16 +12,16 @@
     background: #430000;
     border: 1px solid #FFFFFF;
     float: left;
-    font-size: 40px;
+    font-size: 80px;
     font-weight: bold;
-    line-height: 50px;
-    height: 50px;
+    line-height: 90px;
+    height: 90px;
     margin-right: -1px;
     margin-top: -1px;
     padding: 0;
     text-align: center;
     color:rgb(255, 255, 255);
-    width: 50px;
+    width: 90px;
 }
 
 .square:focus {
@@ -38,5 +38,14 @@
 }
 
 .gameinfo {
-    margin-left: 20px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .game {
+        align-content: center;
+        align-items: center;
+        align-self: center;
+        display: block;
+    }
 }

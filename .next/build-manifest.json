@@ -1,34 +1,96 @@
 {
   "polyfillFiles": [
-    "static/chunks/polyfills.js"
+    "static/chunks/polyfills-c67a75d1b6f99dc8.js"
   ],
-  "devFiles": [
-    "static/chunks/react-refresh.js"
-  ],
-  "ampDevFiles": [
-    "static/chunks/webpack.js",
-    "static/chunks/amp.js"
-  ],
+  "devFiles": [],
+  "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/development/_buildManifest.js",
-    "static/development/_ssgManifest.js"
+    "static/AQRWMX7w-LbaP2qkLUmCk/_buildManifest.js",
+    "static/AQRWMX7w-LbaP2qkLUmCk/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
+    "/": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-abd9b5772566dc74.js",
+      "static/css/36cd6f548e7c5175.css",
+      "static/chunks/pages/index-b53a71bb1c5393b5.js"
+    ],
+    "/Projects/ARM": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-abd9b5772566dc74.js",
+      "static/chunks/pages/Projects/ARM-dbdd2ffa600fe8a7.js"
+    ],
+    "/Projects/CNNGestureRecognition": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-abd9b5772566dc74.js",
+      "static/chunks/pages/Projects/CNNGestureRecognition-7b7ced52c69bdd56.js"
+    ],
+    "/Projects/FPGA": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-abd9b5772566dc74.js",
+      "static/chunks/pages/Projects/FPGA-e744078e7fad62d5.js"
+    ],
+    "/Projects/Game": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-abd9b5772566dc74.js",
+      "static/chunks/pages/Projects/Game-f50ce726857cb54f.js"
+    ],
+    "/Projects/IC": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-abd9b5772566dc74.js",
+      "static/chunks/pages/Projects/IC-727edafd5c9dbfe9.js"
+    ],
+    "/Projects/RaspberryPi": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-abd9b5772566dc74.js",
+      "static/chunks/pages/Projects/RaspberryPi-2355ec56c6acb742.js"
+    ],
+    "/Projects/Tic-Tac-Toe_React": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-abd9b5772566dc74.js",
+      "static/css/c28e02d8d54def58.css",
+      "static/chunks/pages/Projects/Tic-Tac-Toe_React-f7f4efe2e97d7a6c.js"
+    ],
+    "/Research/MyoHMI": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-abd9b5772566dc74.js",
+      "static/chunks/pages/Research/MyoHMI-21359dd39988bbbf.js"
+    ],
     "/Research/TenaSensor": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/Research/TenaSensor.js"
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-abd9b5772566dc74.js",
+      "static/css/b4eab34ad7c376a7.css",
+      "static/chunks/pages/Research/TenaSensor-83a6f98955219057.js"
     ],
     "/_app": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_app.js"
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-abd9b5772566dc74.js",
+      "static/css/db154eaace43522f.css",
+      "static/chunks/pages/_app-861c4fa926130760.js"
     ],
     "/_error": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/_error.js"
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-abd9b5772566dc74.js",
+      "static/chunks/pages/_error-8353112a01355ec2.js"
+    ],
+    "/contact": [
+      "static/chunks/webpack-8fa1640cc84ba8fe.js",
+      "static/chunks/framework-2c79e2a64abdb08b.js",
+      "static/chunks/main-abd9b5772566dc74.js",
+      "static/chunks/pages/contact-9ef3cb168f98c636.js"
     ]
   },
   "ampFirstPages": []

@@ -1,6 +1,17 @@
 {
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
+  "/Projects/ARM": "pages/Projects/ARM.html",
+  "/Projects/CNNGestureRecognition": "pages/Projects/CNNGestureRecognition.html",
+  "/Projects/Game": "pages/Projects/Game.html",
+  "/Projects/IC": "pages/Projects/IC.html",
+  "/Projects/FPGA": "pages/Projects/FPGA.html",
+  "/Projects/RaspberryPi": "pages/Projects/RaspberryPi.html",
+  "/contact": "pages/contact.html",
+  "/Projects/Tic-Tac-Toe_React": "pages/Projects/Tic-Tac-Toe_React.html",
+  "/": "pages/index.html",
+  "/Research/MyoHMI": "pages/Research/MyoHMI.html",
+  "/Research/TenaSensor": "pages/Research/TenaSensor.html",
   "/_document": "pages/_document.js",
-  "/Research/TenaSensor": "pages/Research/TenaSensor.js"
+  "/404": "pages/404.html"
 }
