@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../../public/components/Header'
+import CommentBox from '../../public/components/CommentBox'
 
 function IC() {
 
@@ -81,11 +82,14 @@ function IC() {
                             </div>
                         </div>
                         <div class="doc-container">
-                            <object data="../Projects/src/IC/SRAM/ENGR848_SRAM_Modan_Apte.pdf" type="application/pdf" frameborder="0"
+                            <object data="/src/IC/SRAM/ENGR848_SRAM_Modan_Apte.pdf" type="application/pdf" frameborder="0"
                                 width="100%" height="600px">
                                 <embed src="https://drive.google.com/file/d/1TYNUO_HmEJ3H92P_0mU3gYhHs3PWXg4f/preview?usp=sharing"
                                     width="100%" height="600px" />
                             </object>
+                        </div>
+                        <div className="textbox-container">
+                            <CommentBox pageName="SRAM" />
                         </div>
                     </div>
                 </div>

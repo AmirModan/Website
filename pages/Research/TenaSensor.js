@@ -2,6 +2,7 @@ import React from "react";
 import Head from 'next/head'
 import Header from '../../public/components/Header'
 import Slideshow from '../../public/components/Slideshow'
+import CommentBox from '../../public/components/CommentBox'
 
 function TenaSensor() {
 
@@ -93,6 +94,9 @@ function TenaSensor() {
                                 <embed src="https://drive.google.com/file/d/16BwV6nx6hPrzn0U1XlZGfKsn7M-9K-vs/preview?usp=sharing"
                                     width="100%" height="600px" />
                             </object>
+                        </div>
+                        <div className="textbox-container">
+                            <CommentBox pageName="Tena Sensor" />
                         </div>
                     </div>
                 </div>
