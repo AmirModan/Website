@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../../public/components/Header'
+import CommentBox from '../../public/components/CommentBox'
 
 function CNNGestureRecognition() {
 
@@ -60,6 +61,9 @@ function CNNGestureRecognition() {
                                 <div class="image-container">
                                 </div>
                             </div>
+                        </div>
+                        <div className="textbox-container">
+                            <CommentBox pageName="Gesture Recognition" />
                         </div>
                     </div>
                 </div>

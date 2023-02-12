@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head'
 import Header from '../../public/components/Header'
+import CommentBox from '../../public/components/CommentBox'
 import styles from '../../public/css/Projects/Tic-Tac-Toe_React.module.css'
 
 /*
@@ -179,6 +180,9 @@ class Game extends React.Component {
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div className="textbox-container">
+                                <CommentBox pageName="Tic-Tac-Toe" />
                             </div>
                         </div>
                     </div>

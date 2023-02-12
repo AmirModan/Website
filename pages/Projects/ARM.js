@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../../public/components/Header'
+import CommentBox from '../../public/components/CommentBox'
 
 function ARM() {
 
@@ -118,6 +119,9 @@ function ARM() {
                                 <div class="image-container">
                                 </div>
                             </div>
+                        </div>
+                        <div className="textbox-container">
+                            <CommentBox pageName="Quake Detector" />
                         </div>
                     </div>
                 </div>

@@ -25,8 +25,6 @@ function Game() {
                     <script src="/src/Game/Level.js"></script>
                     <script src="/src/Game/game.js"></script>
                 </div>
-
-
             </div>
         </>
     )

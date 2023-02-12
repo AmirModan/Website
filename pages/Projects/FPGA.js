@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../../public/components/Header'
+import CommentBox from '../../public/components/CommentBox'
 
 function FPGA() {
 
@@ -63,6 +64,9 @@ function FPGA() {
                                 <div class="image-container">
                                 </div>
                             </div>
+                        </div>
+                        <div className="textbox-container">
+                            <CommentBox pageName="FPGA" />
                         </div>
                     </div>
                 </div>
