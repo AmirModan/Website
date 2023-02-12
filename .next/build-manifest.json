@@ -15,10 +15,10 @@
   ],
   "rootMainFiles": [],
   "pages": {
-    "/Research/TenaSensor": [
+    "/Projects/ARM": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/Research/TenaSensor.js"
+      "static/chunks/pages/Projects/ARM.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",

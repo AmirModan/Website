@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from '../../public/components/Header'
+import CommentBox from '../../public/components/CommentBox'
 
 function MyoHMI() {
 
@@ -46,6 +47,9 @@ function MyoHMI() {
                                 <embed src="https://drive.google.com/file/d/16M8crwlrKFKA6MSE2h9FxvXB8K7Ss69h/preview?usp=sharing"
                                     width="100%" height="600px" />
                             </object>
+                        </div>
+                        <div className="textbox-container">
+                            <CommentBox pageName="MyoHMI" />
                         </div>
                     </div>
                 </div>

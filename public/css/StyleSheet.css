@@ -24,6 +24,7 @@ p {
   position: relative;
   top: 5.3125rem;
   /* To offset for fixed header. */
+  margin-bottom: 8rem;
 }
 
 .project {
@@ -334,6 +335,18 @@ header .mobile {
   max-width: 100%;
   padding: 10%;
   border-top: 2px solid #FFFFFF;
+}
+
+#projects-section .textbox-container {
+  text-align: center;
+  max-width: 100%;
+  border-top: 2px solid #FFFFFF;
+}
+
+#projects-section .comment-container {
+  text-align: left;
+  display: flex;
+  border-bottom: 1px solid #000000;
 }
 
 #projects-section .image-container {
