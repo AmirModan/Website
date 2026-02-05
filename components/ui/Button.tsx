@@ -25,11 +25,12 @@ export const Button: React.FC<ButtonProps> = ({
   disabled = false,
 }) => {
   const baseClasses = `
-    inline-flex items-center justify-center font-semibold rounded-xl
-    transition-all duration-200 ease-out
+    relative inline-flex items-center justify-center font-semibold rounded-xl
+    transition-all duration-300 ease-out
     focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-transparent
-    disabled:opacity-50 disabled:cursor-not-allowed
-    transform hover:scale-105 active:scale-95
+    disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100
+    transform hover:scale-105 active:scale-95 hover:-translate-y-0.5
+    overflow-hidden
     ${className}
   `;
 
@@ -39,15 +40,22 @@ export const Button: React.FC<ButtonProps> = ({
       text-white shadow-lg hover:shadow-xl
       hover:from-primary-600 hover:to-primary-700
       focus:ring-primary-500
+      before:absolute before:inset-0 before:bg-gradient-to-r before:from-primary-400 before:to-primary-600
+      before:opacity-0 hover:before:opacity-20 before:transition-opacity before:duration-300
+      before:rounded-xl before:blur-sm
     `,
     secondary: `
       glass-morphism text-white border border-white/20
-      hover:bg-white/20 hover:border-white/30
+      hover:bg-white/20 hover:border-white/30 hover:backdrop-blur-lg
       focus:ring-white
+      before:absolute before:inset-0 before:bg-white before:opacity-0 hover:before:opacity-10
+      before:transition-opacity before:duration-300 before:rounded-xl
     `,
     ghost: `
       text-gray-300 hover:text-white hover:bg-white/10
       focus:ring-white
+      before:absolute before:inset-0 before:bg-white before:opacity-0 hover:before:opacity-5
+      before:transition-opacity before:duration-300 before:rounded-xl
     `,
   };
 

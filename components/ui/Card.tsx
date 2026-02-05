@@ -20,10 +20,10 @@ export const Card: React.FC<CardProps> = ({
   as: Component = 'div',
 }) => {
   const baseClasses = `
-    rounded-2xl p-6 shadow-xl transition-all duration-300 ease-in-out
-    ${glass ? 'glass-morphism' : ''}
+    rounded-2xl p-4 sm:p-6 shadow-xl transition-all duration-300 ease-in-out
+    ${glass ? 'glass-morphism hover:backdrop-blur-lg' : ''}
     ${gradient ? 'bg-gradient-to-br from-primary-600/20 to-accent-600/20 backdrop-blur-md' : ''}
-    ${hover ? 'cursor-pointer hover:scale-105 hover:shadow-2xl' : ''}
+    ${hover ? 'cursor-pointer hover:scale-[1.02] hover:shadow-2xl hover:-translate-y-1' : ''}
     ${className}
   `;
 
@@ -56,7 +56,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       className={`overflow-hidden ${className}`}
       onClick={() => href && window.open(href, '_blank')}
     >
-      <div className="aspect-video mb-4 overflow-hidden rounded-xl">
+      <div className="aspect-video sm:aspect-[16/10] lg:aspect-video mb-3 sm:mb-4 overflow-hidden rounded-xl">
         <img
           src={image}
           alt={title}
@@ -64,16 +64,18 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         />
       </div>
 
-      <h3 className="text-xl font-bold text-white mb-2">{title}</h3>
+      <h3 className="text-lg sm:text-xl font-bold text-white mb-2">{title}</h3>
 
-      <p className="text-gray-300 mb-4 line-clamp-3">{description}</p>
+      <p className="text-sm sm:text-base text-gray-300 mb-3 sm:mb-4 line-clamp-3 leading-relaxed">
+        {description}
+      </p>
 
       {technologies.length > 0 && (
-        <div className="flex flex-wrap gap-2 mb-4">
+        <div className="flex flex-wrap gap-1 sm:gap-2 mb-3 sm:mb-4">
           {technologies.map((tech, index) => (
             <span
               key={index}
-              className="px-3 py-1 bg-primary-500/20 text-primary-300 rounded-full text-sm font-medium"
+              className="px-2 sm:px-3 py-1 bg-primary-500/20 text-primary-300 rounded-full text-xs sm:text-sm font-medium"
             >
               {tech}
             </span>
@@ -82,10 +84,10 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       )}
 
       {href && (
-        <button className="text-primary-400 hover:text-primary-300 font-medium flex items-center gap-1 group">
+        <button className="text-primary-400 hover:text-primary-300 font-medium flex items-center gap-1 group text-sm sm:text-base">
           Learn more
           <svg
-            className="w-4 h-4 transition-transform group-hover:translate-x-1"
+            className="w-3 h-3 sm:w-4 sm:h-4 transition-transform group-hover:translate-x-1"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"

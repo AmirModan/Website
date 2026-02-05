@@ -46,34 +46,34 @@ export const Navigation: React.FC = () => {
           ${scrolled ? 'glass-morphism shadow-lg' : 'bg-transparent'}
         `}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="section-container">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <a
               href="#aboutMe-section"
               onClick={handleLogoClick}
-              className="flex items-center space-x-3 group transition-transform hover:scale-105"
+              className="flex items-center space-x-2 sm:space-x-3 group transition-transform hover:scale-105"
             >
-              <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-accent-500 rounded-lg flex items-center justify-center group-hover:shadow-lg transition-shadow">
+              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-primary-500 to-accent-500 rounded-lg flex items-center justify-center group-hover:shadow-lg transition-shadow">
                 <img
                   src="/Images/Home-Icon.png"
                   alt="Home"
-                  className="w-6 h-6"
+                  className="w-4 h-4 sm:w-6 sm:h-6"
                 />
               </div>
-              <span className="text-xl font-bold gradient-text hidden sm:block">
+              <span className="text-lg sm:text-xl font-bold gradient-text hidden sm:block">
                 Amir Modan
               </span>
             </a>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-1">
+            <div className="hidden lg:flex items-center space-x-1">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href)}
-                  className="nav-link"
+                  className="nav-link text-sm sm:text-base"
                 >
                   {item.name}
                 </a>
@@ -82,9 +82,31 @@ export const Navigation: React.FC = () => {
                 variant="primary"
                 size="sm"
                 onClick={() => router.push('/contact')}
-                className="ml-4"
+                className="ml-2 sm:ml-4"
               >
                 Contact Me
+              </Button>
+            </div>
+
+            {/* Tablet Navigation */}
+            <div className="hidden md:flex lg:hidden items-center space-x-1">
+              {navItems.slice(0, 2).map((item) => (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  onClick={(e) => handleNavClick(e, item.href)}
+                  className="nav-link text-sm px-3 py-1"
+                >
+                  {item.name}
+                </a>
+              ))}
+              <Button
+                variant="primary"
+                size="sm"
+                onClick={() => router.push('/contact')}
+                className="ml-2"
+              >
+                Contact
               </Button>
             </div>
 
@@ -94,9 +116,9 @@ export const Navigation: React.FC = () => {
               className="md:hidden p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-colors"
             >
               {isOpen ? (
-                <XMarkIcon className="h-6 w-6" />
+                <XMarkIcon className="h-5 w-5 sm:h-6 sm:w-6" />
               ) : (
-                <Bars3Icon className="h-6 w-6" />
+                <Bars3Icon className="h-5 w-5 sm:h-6 sm:w-6" />
               )}
             </button>
           </div>
@@ -104,19 +126,19 @@ export const Navigation: React.FC = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden glass-morphism border-t border-white/20 transition-all duration-200">
-            <div className="px-4 py-6 space-y-2">
+          <div className="md:hidden glass-morphism border-t border-white/20 transition-all duration-300">
+            <div className="px-4 py-6 space-y-1">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href)}
-                  className="block px-4 py-3 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-200"
+                  className="block px-4 py-3 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-200 font-medium text-sm"
                 >
                   {item.name}
                 </a>
               ))}
-              <div className="pt-4">
+              <div className="pt-4 border-t border-white/10">
                 <Button
                   variant="primary"
                   className="w-full"

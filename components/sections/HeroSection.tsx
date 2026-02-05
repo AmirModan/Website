@@ -41,27 +41,27 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       </div>
 
       <div className="relative z-10 section-container">
-        <div className="text-center max-w-4xl mx-auto">
+        <div className="text-center max-w-5xl mx-auto">
           {/* Profile Image */}
-          <div className="mb-8">
+          <div className="mb-8 sm:mb-10">
             <div className="relative inline-block">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full blur-lg opacity-60 animate-glow" />
+              <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full blur-xl opacity-60 animate-glow" />
               <img
                 src="/Images/Profile.jpg"
                 alt="Amir Modan"
-                className="relative w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-white/20 shadow-2xl object-cover"
+                className="relative w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full border-4 border-white/20 shadow-2xl object-cover"
               />
             </div>
           </div>
 
           {/* Title */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-6 animate-fade-in leading-tight">
             <span className="gradient-text">{title}</span>
           </h1>
 
           {/* Subtitle */}
           <h2
-            className="text-2xl md:text-3xl text-gray-300 mb-6 animate-fade-in"
+            className="text-xl sm:text-2xl md:text-3xl text-gray-300 mb-4 sm:mb-6 animate-fade-in leading-relaxed"
             style={{ animationDelay: '0.2s' }}
           >
             {subtitle}
@@ -69,7 +69,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
           {/* Description */}
           <p
-            className="text-lg md:text-xl text-gray-400 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in"
+            className="text-base sm:text-lg md:text-xl text-gray-400 mb-8 sm:mb-10 md:mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in px-4 sm:px-0"
             style={{ animationDelay: '0.3s' }}
           >
             {description}
@@ -77,7 +77,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
           {/* CTA Buttons */}
           <div
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in"
+            className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-fade-in mb-8 sm:mb-10"
             style={{ animationDelay: '0.4s' }}
           >
             <Button
@@ -85,6 +85,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               size="lg"
               onClick={onPrimaryClick}
               icon={<ArrowRightIcon className="w-5 h-5" />}
+              className="w-full sm:w-auto min-w-[160px]"
             >
               {ctaText}
             </Button>
@@ -93,6 +94,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               size="lg"
               onClick={onSecondaryClick}
               icon={<DocumentTextIcon className="w-5 h-5" />}
+              className="w-full sm:w-auto min-w-[160px]"
             >
               {secondaryCtaText}
             </Button>
@@ -100,31 +102,31 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
           {/* Social Links */}
           <div
-            className="mt-12 flex justify-center items-center gap-6 animate-fade-in"
+            className="flex justify-center items-center gap-4 sm:gap-6 animate-fade-in"
             style={{ animationDelay: '0.5s' }}
           >
             <a
               href="https://github.com/AmirModan"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors transform hover:scale-110 hover:rotate-5"
+              className="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-110 hover:rotate-5 p-2"
             >
               <img
                 src="/Images/GitHub-logo.png"
                 alt="GitHub"
-                className="w-8 h-8"
+                className="w-6 h-6 sm:w-8 sm:h-8"
               />
             </a>
             <a
               href="https://www.linkedin.com/in/amir-modan-8320b0194"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-colors transform hover:scale-110 hover:-rotate-5"
+              className="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-110 hover:-rotate-5 p-2"
             >
               <img
                 src="/Images/LinkedIn-Logo.jpg"
                 alt="LinkedIn"
-                className="w-8 h-8 rounded"
+                className="w-6 h-6 sm:w-8 sm:h-8 rounded"
               />
             </a>
           </div>

@@ -139,21 +139,21 @@ function Home() {
       />
 
       {/* About Section */}
-      <section id="aboutMe-section" className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+      <section id="aboutMe-section" className="py-16 sm:py-20">
+        <div className="section-container">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
               <span className="gradient-text">About Me</span>
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <Card>
-                <h3 className="text-2xl font-bold text-white mb-4">
+              <Card className="p-6 sm:p-8">
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">
                   My Journey
                 </h3>
-                <p className="text-gray-300 mb-6 leading-relaxed">
+                <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">
                   Hey, my name is Amir, and I am a Computer Engineering graduate
                   (M.S) from San Francisco State University. In my spare time, I
                   like to learn new programming languages/concepts, then
@@ -165,6 +165,7 @@ function Home() {
                   <Button
                     variant="primary"
                     onClick={() => router.push('/contact')}
+                    className="min-w-[120px]"
                   >
                     Contact Me
                   </Button>
@@ -172,24 +173,24 @@ function Home() {
                     href="https://github.com/AmirModan"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center"
+                    className="inline-flex items-center p-2 rounded-lg hover:bg-white/10 transition-all duration-300 transform hover:scale-110"
                   >
                     <img
                       src="/Images/GitHub-logo.png"
                       alt="GitHub"
-                      className="w-8 h-8"
+                      className="w-6 h-6 sm:w-8 sm:h-8"
                     />
                   </a>
                   <a
                     href="https://www.linkedin.com/in/amir-modan-8320b0194"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center"
+                    className="inline-flex items-center p-2 rounded-lg hover:bg-white/10 transition-all duration-300 transform hover:scale-110"
                   >
                     <img
                       src="/Images/LinkedIn-Logo.jpg"
                       alt="LinkedIn"
-                      className="w-8 h-8 rounded"
+                      className="w-6 h-6 sm:w-8 sm:h-8 rounded"
                     />
                   </a>
                 </div>
@@ -202,7 +203,7 @@ function Home() {
                 <img
                   src="/Images/Profile.jpg"
                   alt="Amir Modan"
-                  className="relative w-80 h-80 rounded-2xl border-4 border-white/20 shadow-2xl object-cover"
+                  className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-2xl border-4 border-white/20 shadow-2xl object-cover"
                 />
               </div>
             </div>
@@ -225,30 +226,30 @@ function Home() {
       />
 
       {/* Resume Section */}
-      <section id="resume-section" className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+      <section id="resume-section" className="py-16 sm:py-20">
+        <div className="section-container">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
               <span className="gradient-text">My Resume</span>
             </h2>
           </div>
 
-          <div className="glass-morphism rounded-2xl p-8">
+          <div className="glass-morphism rounded-2xl p-4 sm:p-6 md:p-8">
             <div className="aspect-video w-full max-w-4xl mx-auto">
               <object
                 data="/Documents/Resume.pdf"
                 type="application/pdf"
                 width="100%"
-                height="600px"
+                height="400px sm:h-500px md:h-600px"
                 className="rounded-lg"
               >
                 <embed
                   src="https://drive.google.com/file/d/1HBpCghRHuGDHIoxWbIUfzUKGuvrbDd8R/preview?usp=sharing"
                   width="100%"
-                  height="600px"
+                  height="400px sm:h-500px md:h-600px"
                 />
-                <div className="text-center py-8">
-                  <p className="text-gray-400 mb-4">
+                <div className="text-center py-6 sm:py-8">
+                  <p className="text-gray-400 mb-4 text-sm sm:text-base">
                     Unable to display PDF? View it directly:
                   </p>
                   <Button
@@ -259,6 +260,7 @@ function Home() {
                         '_blank'
                       )
                     }
+                    className="min-w-[140px]"
                   >
                     Open Resume
                   </Button>
