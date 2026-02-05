@@ -29,13 +29,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   onSecondaryClick,
 }) => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
       {/* Background gradient and effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary-900/20 via-transparent to-accent-900/20" />
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-500/20 rounded-full blur-3xl animate-pulse-slow" />
+        <div className="absolute top-1/4 left-1/4 w-48 h-48 sm:w-64 sm:h-64 bg-primary-500/20 rounded-full blur-2xl animate-pulse-slow" />
         <div
-          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent-500/20 rounded-full blur-3xl animate-pulse-slow"
+          className="absolute bottom-1/4 right-1/4 w-48 h-48 sm:w-64 sm:h-64 bg-accent-500/20 rounded-full blur-2xl animate-pulse-slow"
           style={{ animationDelay: '2s' }}
         />
       </div>
@@ -49,19 +50,19 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               <img
                 src="/Images/Profile.jpg"
                 alt="Amir Modan"
-                className="relative w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 rounded-full border-4 border-white/20 shadow-2xl object-cover"
+                className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full border-2 border-white/20 shadow-xl object-cover"
               />
             </div>
           </div>
 
           {/* Title */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-6 animate-fade-in leading-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 animate-fade-in leading-tight">
             <span className="gradient-text">{title}</span>
           </h1>
 
           {/* Subtitle */}
           <h2
-            className="text-xl sm:text-2xl md:text-3xl text-gray-300 mb-4 sm:mb-6 animate-fade-in leading-relaxed"
+            className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-3 sm:mb-4 animate-fade-in leading-relaxed"
             style={{ animationDelay: '0.2s' }}
           >
             {subtitle}
@@ -69,7 +70,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
           {/* Description */}
           <p
-            className="text-base sm:text-lg md:text-xl text-gray-400 mb-8 sm:mb-10 md:mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in px-4 sm:px-0"
+            className="text-sm sm:text-base md:text-lg text-gray-400 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in px-4 sm:px-0"
             style={{ animationDelay: '0.3s' }}
           >
             {description}
@@ -82,19 +83,19 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           >
             <Button
               variant="primary"
-              size="lg"
+              size="md"
               onClick={onPrimaryClick}
-              icon={<ArrowRightIcon className="w-5 h-5" />}
-              className="w-full sm:w-auto min-w-[160px]"
+              icon={<ArrowRightIcon className="w-4 h-4" />}
+              className="w-full sm:w-auto min-w-[120px]"
             >
               {ctaText}
             </Button>
             <Button
               variant="secondary"
-              size="lg"
+              size="md"
               onClick={onSecondaryClick}
-              icon={<DocumentTextIcon className="w-5 h-5" />}
-              className="w-full sm:w-auto min-w-[160px]"
+              icon={<DocumentTextIcon className="w-4 h-4" />}
+              className="w-full sm:w-auto min-w-[120px]"
             >
               {secondaryCtaText}
             </Button>
@@ -114,7 +115,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               <img
                 src="/Images/GitHub-logo.png"
                 alt="GitHub"
-                className="w-6 h-6 sm:w-8 sm:h-8"
+                className="w-4 h-4 sm:w-5 sm:h-5"
               />
             </a>
             <a
@@ -126,7 +127,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               <img
                 src="/Images/LinkedIn-Logo.jpg"
                 alt="LinkedIn"
-                className="w-6 h-6 sm:w-8 sm:h-8 rounded"
+                className="w-4 h-4 sm:w-5 sm:h-5 rounded"
               />
             </a>
           </div>

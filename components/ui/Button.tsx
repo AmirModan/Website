@@ -60,9 +60,9 @@ export const Button: React.FC<ButtonProps> = ({
   };
 
   const sizeClasses = {
-    sm: 'px-4 py-2 text-sm',
-    md: 'px-6 py-3 text-base',
-    lg: 'px-8 py-4 text-lg',
+    sm: 'px-3 py-1.5 text-xs',
+    md: 'px-4 py-2 text-sm',
+    lg: 'px-6 py-3 text-base',
   };
 
   const buttonClasses = `${baseClasses} ${variantClasses[variant]} ${sizeClasses[size]}`;
@@ -106,9 +106,9 @@ export const IconButton: React.FC<{
   ariaLabel,
 }) => {
   const sizeClasses = {
-    sm: 'p-2',
-    md: 'p-3',
-    lg: 'p-4',
+    sm: 'p-1.5',
+    md: 'p-2',
+    lg: 'p-3',
   };
 
   const variantClasses = {

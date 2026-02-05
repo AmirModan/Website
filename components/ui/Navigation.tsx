@@ -47,21 +47,21 @@ export const Navigation: React.FC = () => {
         `}
       >
         <div className="section-container">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-12">
             {/* Logo */}
             <a
               href="#aboutMe-section"
               onClick={handleLogoClick}
-              className="flex items-center space-x-2 sm:space-x-3 group transition-transform hover:scale-105"
+              className="flex items-center space-x-1.5 sm:space-x-2 group transition-transform hover:scale-102"
             >
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-primary-500 to-accent-500 rounded-lg flex items-center justify-center group-hover:shadow-lg transition-shadow">
+              <div className="w-5 h-5 sm:w-6 sm:h-6 bg-gradient-to-br from-primary-500 to-accent-500 rounded-md flex items-center justify-center group-hover:shadow-md transition-shadow">
                 <img
                   src="/Images/Home-Icon.png"
                   alt="Home"
-                  className="w-4 h-4 sm:w-6 sm:h-6"
+                  className="w-2.5 h-2.5 sm:w-3 sm:h-3"
                 />
               </div>
-              <span className="text-lg sm:text-xl font-bold gradient-text hidden sm:block">
+              <span className="text-sm sm:text-base font-bold gradient-text hidden sm:block">
                 Amir Modan
               </span>
             </a>
@@ -116,9 +116,9 @@ export const Navigation: React.FC = () => {
               className="md:hidden p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-colors"
             >
               {isOpen ? (
-                <XMarkIcon className="h-5 w-5 sm:h-6 sm:w-6" />
+                <XMarkIcon className="h-4 w-4 sm:h-5 sm:w-5" />
               ) : (
-                <Bars3Icon className="h-5 w-5 sm:h-6 sm:w-6" />
+                <Bars3Icon className="h-4 w-4 sm:h-5 sm:w-5" />
               )}
             </button>
           </div>
@@ -156,7 +156,7 @@ export const Navigation: React.FC = () => {
       </nav>
 
       {/* Spacer for fixed nav */}
-      <div className="h-16" />
+      <div className="h-12" />
     </>
   );
 };
