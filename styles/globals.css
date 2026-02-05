@@ -232,6 +232,20 @@
     text-wrap: balance;
   }
 
+  /* Force smaller icons */
+  img[alt='Home'],
+  img[alt='GitHub'],
+  img[alt='LinkedIn'] {
+    width: 12px !important;
+    height: 12px !important;
+  }
+
+  /* Force smaller heroicons */
+  svg {
+    width: 12px !important;
+    height: 12px !important;
+  }
+
   .animate-float {
     animation: float 6s ease-in-out infinite;
   }
