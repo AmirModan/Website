@@ -8,6 +8,7 @@ interface CardProps {
   gradient?: boolean;
   onClick?: () => void;
   as?: 'div' | 'article' | 'section';
+  style?: React.CSSProperties;
 }
 
 export const Card: React.FC<CardProps> = ({
@@ -18,6 +19,7 @@ export const Card: React.FC<CardProps> = ({
   gradient = false,
   onClick,
   as: Component = 'div',
+  style,
 }) => {
   const baseClasses = `
     rounded-xl p-3 sm:p-4 shadow-lg transition-all duration-300 ease-in-out
@@ -28,7 +30,7 @@ export const Card: React.FC<CardProps> = ({
   `;
 
   return (
-    <Component className={baseClasses} onClick={onClick}>
+    <Component className={baseClasses} onClick={onClick} style={style}>
       {children}
     </Component>
   );
@@ -53,7 +55,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <Card
-      className={`overflow-hidden ${className}`}
+      className={`overflow-hidden h-full project-card ${className}`}
       onClick={() => href && window.open(href, '_blank')}
     >
       <div className="aspect-video sm:aspect-[16/10] lg:aspect-video mb-2 sm:mb-3 overflow-hidden rounded-lg">

@@ -37,7 +37,10 @@ export const ResearchSection: React.FC<ResearchSectionProps> = ({
         </div>
 
         {/* Research Items */}
-        <div className="space-y-8 sm:space-y-12">
+        <div
+          className="space-y-8 sm:space-y-12"
+          style={{ width: '100%', maxWidth: '1200px', margin: '0 auto' }}
+        >
           {researchItems.map((item, index) => (
             <div
               key={item.title}
@@ -46,7 +49,10 @@ export const ResearchSection: React.FC<ResearchSectionProps> = ({
               } gap-6 sm:gap-8 items-center`}
             >
               <div className="flex-1 w-full">
-                <Card className="h-full">
+                <Card
+                  className="h-full"
+                  style={{ width: '100%', height: '100%' }}
+                >
                   <div className="aspect-video sm:aspect-[16/10] lg:aspect-video mb-4 overflow-hidden rounded-xl">
                     <img
                       src={item.image}

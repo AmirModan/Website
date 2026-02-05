@@ -96,13 +96,27 @@
 
   @media (min-width: 640px) {
     .section-container {
+      max-width: 56rem;
       padding: 0 0.75rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .section-container {
+      max-width: 64rem;
     }
   }
 
   @media (min-width: 1024px) {
     .section-container {
+      max-width: 75rem;
       padding: 0 1rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .section-container {
+      max-width: 85rem;
     }
   }
 
@@ -244,6 +258,18 @@
   svg {
     width: 12px !important;
     height: 12px !important;
+  }
+
+  /* Consistent project card sizing */
+  .project-grid {
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+  }
+
+  .project-card {
+    width: 100% !important;
+    height: 100% !important;
   }
 
   .animate-float {
