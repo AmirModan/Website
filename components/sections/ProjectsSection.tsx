@@ -35,7 +35,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
 
       <div className="section-container relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-12 sm:mb-16">
+        <div className="text-center mb-10 sm:mb-14">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
             <span className="gradient-text">{title}</span>
           </h2>
@@ -45,11 +45,11 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-12 mb-10 sm:mb-14 justify-items-center">
           {projects.map((project, index) => (
             <div
               key={project.title}
-              className="transform transition-all duration-300 hover:-translate-y-2"
+              className="transform transition-all duration-300 hover:-translate-y-2 max-w-sm w-full"
               onClick={() => onProjectClick?.(project)}
             >
               <ProjectCard

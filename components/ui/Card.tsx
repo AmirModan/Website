@@ -20,10 +20,10 @@ export const Card: React.FC<CardProps> = ({
   as: Component = 'div',
 }) => {
   const baseClasses = `
-    rounded-2xl p-4 sm:p-6 shadow-xl transition-all duration-300 ease-in-out
+    rounded-xl p-3 sm:p-4 shadow-lg transition-all duration-300 ease-in-out
     ${glass ? 'glass-morphism hover:backdrop-blur-lg' : ''}
     ${gradient ? 'bg-gradient-to-br from-primary-600/20 to-accent-600/20 backdrop-blur-md' : ''}
-    ${hover ? 'cursor-pointer hover:scale-[1.02] hover:shadow-2xl hover:-translate-y-1' : ''}
+    ${hover ? 'cursor-pointer hover:scale-[1.02] hover:shadow-xl hover:-translate-y-1' : ''}
     ${className}
   `;
 
@@ -56,7 +56,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       className={`overflow-hidden ${className}`}
       onClick={() => href && window.open(href, '_blank')}
     >
-      <div className="aspect-video sm:aspect-[16/10] lg:aspect-video mb-3 sm:mb-4 overflow-hidden rounded-xl">
+      <div className="aspect-video sm:aspect-[16/10] lg:aspect-video mb-2 sm:mb-3 overflow-hidden rounded-lg">
         <img
           src={image}
           alt={title}
@@ -64,18 +64,20 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         />
       </div>
 
-      <h3 className="text-lg sm:text-xl font-bold text-white mb-2">{title}</h3>
+      <h3 className="text-base sm:text-lg font-bold text-white mb-1.5">
+        {title}
+      </h3>
 
-      <p className="text-sm sm:text-base text-gray-300 mb-3 sm:mb-4 line-clamp-3 leading-relaxed">
+      <p className="text-xs sm:text-sm text-gray-300 mb-2 sm:mb-3 line-clamp-3 leading-relaxed">
         {description}
       </p>
 
       {technologies.length > 0 && (
-        <div className="flex flex-wrap gap-1 sm:gap-2 mb-3 sm:mb-4">
+        <div className="flex flex-wrap gap-1 sm:gap-1.5 mb-2 sm:mb-3">
           {technologies.map((tech, index) => (
             <span
               key={index}
-              className="px-2 sm:px-3 py-1 bg-primary-500/20 text-primary-300 rounded-full text-xs sm:text-sm font-medium"
+              className="px-1.5 sm:px-2 py-0.5 bg-primary-500/20 text-primary-300 rounded-full text-xs font-medium"
             >
               {tech}
             </span>
