@@ -29,7 +29,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
   onSecondaryClick,
 }) => {
   return (
-    <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden">
       {/* Background gradient and effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary-900/20 via-transparent to-accent-900/20" />
       <div className="absolute inset-0">
@@ -43,18 +43,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
       <div className="relative z-10 section-container">
         <div className="text-center max-w-5xl mx-auto">
-          {/* Profile Image */}
-          <div className="mb-8 sm:mb-10">
-            <div className="relative inline-block">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full blur-xl opacity-60 animate-glow" />
-              <img
-                src="/Images/Profile.jpg"
-                alt="Amir Modan"
-                className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full border-2 border-white/20 shadow-xl object-cover"
-              />
-            </div>
-          </div>
-
           {/* Title */}
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 animate-fade-in leading-tight">
             <span className="gradient-text">{title}</span>

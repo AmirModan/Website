@@ -139,7 +139,7 @@ function Home() {
       />
 
       {/* About Section */}
-      <section id="aboutMe-section" className="py-16 sm:py-20">
+      <section id="aboutMe-section" className="py-8 sm:py-12">
         <div className="section-container">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
@@ -178,7 +178,7 @@ function Home() {
                     <img
                       src="/Images/GitHub-logo.png"
                       alt="GitHub"
-                      className="w-6 h-6 sm:w-8 sm:h-8"
+                      className="w-4 h-4 sm:w-5 sm:h-5"
                     />
                   </a>
                   <a
@@ -190,7 +190,7 @@ function Home() {
                     <img
                       src="/Images/LinkedIn-Logo.jpg"
                       alt="LinkedIn"
-                      className="w-6 h-6 sm:w-8 sm:h-8 rounded"
+                      className="w-4 h-4 sm:w-5 sm:h-5 rounded"
                     />
                   </a>
                 </div>
@@ -203,7 +203,7 @@ function Home() {
                 <img
                   src="/Images/Profile.jpg"
                   alt="Amir Modan"
-                  className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-2xl border-4 border-white/20 shadow-2xl object-cover"
+                  className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-xl border-2 border-white/20 shadow-xl object-cover"
                 />
               </div>
             </div>
@@ -226,7 +226,7 @@ function Home() {
       />
 
       {/* Resume Section */}
-      <section id="resume-section" className="py-16 sm:py-20">
+      <section id="resume-section" className="py-8 sm:py-12">
         <div className="section-container">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">

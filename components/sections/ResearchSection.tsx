@@ -21,14 +21,14 @@ export const ResearchSection: React.FC<ResearchSectionProps> = ({
   subtitle = 'Advancing technology through academic research and innovation',
 }) => {
   return (
-    <section className="py-16 sm:py-20 relative">
+    <section className="py-8 sm:py-12 relative">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-b from-accent-900/10 via-transparent to-primary-900/10" />
 
       <div className="section-container relative z-10">
         {/* Section Header */}
         <div className="text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">
             <span className="gradient-text">{title}</span>
           </h2>
           <p className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed px-4 sm:px-0">
