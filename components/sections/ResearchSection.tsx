@@ -38,7 +38,7 @@ export const ResearchSection: React.FC<ResearchSectionProps> = ({
 
         {/* Research Items */}
         <div
-          className="space-y-8 sm:space-y-12"
+          className="space-y-12 sm:space-y-16 lg:space-y-20"
           style={{ width: '100%', maxWidth: '1200px', margin: '0 auto' }}
         >
           {researchItems.map((item, index) => (
@@ -47,6 +47,7 @@ export const ResearchSection: React.FC<ResearchSectionProps> = ({
               className={`flex flex-col ${
                 index % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'
               } gap-6 sm:gap-8 items-center`}
+              style={{ margin: '2rem 0' }}
             >
               <div className="flex-1 w-full">
                 <Card

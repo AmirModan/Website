@@ -265,11 +265,17 @@
     width: 100% !important;
     max-width: 1200px !important;
     margin: 0 auto !important;
+    gap: 3rem !important;
   }
 
   .project-card {
     width: 100% !important;
     height: 100% !important;
+  }
+
+  /* Research section spacing */
+  .research-section {
+    gap: 4rem !important;
   }
 
   .animate-float {

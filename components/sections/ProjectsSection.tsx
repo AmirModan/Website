@@ -45,13 +45,16 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-10 sm:mb-14 project-grid">
+        <div
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 lg:gap-16 mb-10 sm:mb-14 project-grid"
+          style={{ gap: '3rem' }}
+        >
           {projects.map((project, index) => (
             <div
               key={project.title}
               className="transform transition-all duration-300 hover:-translate-y-2 w-full"
               onClick={() => onProjectClick?.(project)}
-              style={{ width: '100%' }}
+              style={{ width: '100%', margin: '1rem 0' }}
             >
               <ProjectCard
                 title={project.title}
