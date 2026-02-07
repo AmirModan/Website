@@ -149,7 +149,7 @@ function Home() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
             <div className="order-2 lg:order-1">
-              <Card className="p-6 sm:p-8">
+              <Card className="p-6 sm:p-8 text-center">
                 <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">
                   My Journey
                 </h3>
@@ -161,7 +161,7 @@ function Home() {
                   my Raspberry Pi, exercise at the gym, play pool, and "cube"
                   with my Rubik's Cube.
                 </p>
-                <div className="flex flex-wrap gap-3">
+                <div className="flex flex-wrap gap-3 justify-center">
                   <Button
                     variant="primary"
                     onClick={() => router.push('/contact')}
