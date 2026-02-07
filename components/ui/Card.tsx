@@ -58,7 +58,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       className={`overflow-hidden h-full project-card text-center ${className}`}
       onClick={() => href && window.open(href, '_blank')}
     >
-      <div className="aspect-[4/3] sm:aspect-[3/2] mb-2 sm:mb-3 overflow-hidden rounded-lg max-h-24 sm:max-h-32">
+      <div className="aspect-[3/2] mb-2 sm:mb-3 overflow-hidden rounded-lg max-h-20 sm:max-h-24">
         <img
           src={image}
           alt={title}
@@ -75,11 +75,15 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       </p>
 
       {technologies.length > 0 && (
-        <div className="flex flex-wrap gap-6 sm:gap-8 mb-8 sm:mb-10 justify-center">
+        <div
+          className="flex flex-wrap gap-4 sm:gap-6 mb-6 sm:mb-8 justify-center"
+          style={{ gap: '1.5rem', marginBottom: '2rem' }}
+        >
           {technologies.map((tech, index) => (
             <span
               key={index}
-              className="px-5 sm:px-6 py-3 bg-primary-500/30 text-primary-200 rounded-full text-sm sm:text-base font-medium border-2 border-primary-500/50 shadow-lg"
+              className="px-4 py-2 bg-primary-500/30 text-primary-200 rounded-full text-sm font-medium border-2 border-primary-500/50 shadow-lg"
+              style={{ padding: '0.75rem 1rem', fontSize: '0.875rem' }}
             >
               {tech}
             </span>

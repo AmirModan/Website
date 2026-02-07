@@ -54,7 +54,7 @@ export const ResearchSection: React.FC<ResearchSectionProps> = ({
                   className="h-full"
                   style={{ width: '100%', height: '100%' }}
                 >
-                  <div className="aspect-[4/3] sm:aspect-[3/2] mb-4 overflow-hidden rounded-xl max-h-32 sm:max-h-40">
+                  <div className="aspect-[3/2] mb-4 overflow-hidden rounded-xl max-h-24 sm:max-h-32">
                     <img
                       src={item.image}
                       alt={item.title}

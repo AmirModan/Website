@@ -236,19 +236,22 @@ function Home() {
             </h2>
           </div>
 
-          <div className="glass-morphism rounded-2xl p-4 sm:p-6 md:p-8">
-            <div className="aspect-video w-full max-w-4xl mx-auto">
+          <div className="glass-morphism rounded-2xl p-6 sm:p-8 md:p-12">
+            <div
+              className="w-full max-w-6xl mx-auto"
+              style={{ minHeight: '600px', height: '80vh' }}
+            >
               <object
                 data="/Documents/Resume.pdf"
                 type="application/pdf"
                 width="100%"
-                height="400px sm:h-500px md:h-600px"
+                height="100%"
                 className="rounded-lg"
               >
                 <embed
                   src="https://drive.google.com/file/d/1HBpCghRHuGDHIoxWbIUfzUKGuvrbDd8R/preview?usp=sharing"
                   width="100%"
-                  height="400px sm:h-500px md:h-600px"
+                  height="100%"
                 />
                 <div className="text-center py-6 sm:py-8">
                   <p className="text-gray-400 mb-4 text-sm sm:text-base">

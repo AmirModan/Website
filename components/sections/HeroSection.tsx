@@ -98,26 +98,31 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               href="https://github.com/AmirModan"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-110 hover:rotate-5 p-2"
+              className="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-110 hover:rotate-5 p-4"
+              style={{ padding: '1rem' }}
             >
               <img
                 src="/Images/GitHub-logo.png"
                 alt="GitHub"
-                className="w-16 h-16 sm:w-20 sm:h-20"
-                style={{ width: '80px', height: '80px' }}
+                style={{ width: '120px', height: '120px', display: 'block' }}
               />
             </a>
             <a
               href="https://www.linkedin.com/in/amir-modan-8320b0194"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-110 hover:-rotate-5 p-2"
+              className="text-gray-400 hover:text-white transition-all duration-300 transform hover:scale-110 hover:-rotate-5 p-4"
+              style={{ padding: '1rem' }}
             >
               <img
                 src="/Images/LinkedIn-Logo.jpg"
                 alt="LinkedIn"
-                className="w-16 h-16 sm:w-20 sm:h-20 rounded"
-                style={{ width: '80px', height: '80px' }}
+                style={{
+                  width: '120px',
+                  height: '120px',
+                  display: 'block',
+                  borderRadius: '0.5rem',
+                }}
               />
             </a>
           </div>
