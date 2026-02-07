@@ -147,68 +147,72 @@ function Home() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
-            <div className="order-2 lg:order-1">
-              <Card className="p-6 sm:p-8 text-center">
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">
-                  My Journey
-                </h3>
-                <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">
-                  Hey, my name is Amir, and I am a Computer Engineering graduate
-                  (M.S) from San Francisco State University. In my spare time, I
-                  like to learn new programming languages/concepts, then
-                  implement them in various projects. I also like to tinker with
-                  my Raspberry Pi, exercise at the gym, play pool, and "cube"
-                  with my Rubik's Cube.
-                </p>
-                <div className="flex flex-wrap gap-3 justify-center">
-                  <Button
-                    variant="primary"
-                    onClick={() => router.push('/contact')}
-                    className="min-w-[120px]"
-                  >
-                    Contact Me
-                  </Button>
-                  <a
-                    href="https://github.com/AmirModan"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center p-2 rounded-lg hover:bg-white/10 transition-all duration-300 transform hover:scale-110"
-                  >
+          <div className="flex justify-center">
+            <Card className="p-6 sm:p-8 max-w-4xl w-full">
+              <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8">
+                {/* Picture */}
+                <div className="flex-shrink-0">
+                  <div className="relative">
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-accent-500 rounded-2xl blur-xl opacity-30" />
                     <img
-                      src="/Images/GitHub-logo.png"
-                      alt="GitHub"
-                      className="w-3 h-3 sm:w-3.5 sm:h-3.5"
-                      style={{ width: '12px', height: '12px' }}
+                      src="/Images/Profile.jpg"
+                      alt="Amir Modan"
+                      className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-xl border-2 border-white/20 shadow-xl object-cover"
                     />
-                  </a>
-                  <a
-                    href="https://www.linkedin.com/in/amir-modan-8320b0194"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center p-2 rounded-lg hover:bg-white/10 transition-all duration-300 transform hover:scale-110"
-                  >
-                    <img
-                      src="/Images/LinkedIn-Logo.jpg"
-                      alt="LinkedIn"
-                      className="w-3 h-3 sm:w-3.5 sm:h-3.5 rounded"
-                      style={{ width: '12px', height: '12px' }}
-                    />
-                  </a>
+                  </div>
                 </div>
-              </Card>
-            </div>
 
-            <div className="order-1 lg:order-2 flex justify-center">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-accent-500 rounded-2xl blur-xl opacity-30" />
-                <img
-                  src="/Images/Profile.jpg"
-                  alt="Amir Modan"
-                  className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-xl border-2 border-white/20 shadow-xl object-cover"
-                />
+                {/* My Journey Content */}
+                <div className="flex-1 text-center lg:text-left">
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">
+                    My Journey
+                  </h3>
+                  <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">
+                    Hey, my name is Amir, and I am a Computer Engineering
+                    graduate (M.S) from San Francisco State University. In my
+                    spare time, I like to learn new programming
+                    languages/concepts, then implement them in various projects.
+                    I also like to tinker with my Raspberry Pi, exercise at the
+                    gym, play pool, and "cube" with my Rubik's Cube.
+                  </p>
+                  <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+                    <Button
+                      variant="primary"
+                      onClick={() => router.push('/contact')}
+                      className="min-w-[120px]"
+                    >
+                      Contact Me
+                    </Button>
+                    <a
+                      href="https://github.com/AmirModan"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center p-2 rounded-lg hover:bg-white/10 transition-all duration-300 transform hover:scale-110"
+                    >
+                      <img
+                        src="/Images/GitHub-logo.png"
+                        alt="GitHub"
+                        className="w-3 h-3 sm:w-3.5 sm:h-3.5"
+                        style={{ width: '12px', height: '12px' }}
+                      />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/amir-modan-8320b0194"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center p-2 rounded-lg hover:bg-white/10 transition-all duration-300 transform hover:scale-110"
+                    >
+                      <img
+                        src="/Images/LinkedIn-Logo.jpg"
+                        alt="LinkedIn"
+                        className="w-3 h-3 sm:w-3.5 sm:h-3.5 rounded"
+                        style={{ width: '12px', height: '12px' }}
+                      />
+                    </a>
+                  </div>
+                </div>
               </div>
-            </div>
+            </Card>
           </div>
         </div>
       </section>

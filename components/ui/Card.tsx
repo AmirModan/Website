@@ -58,7 +58,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       className={`overflow-hidden h-full project-card text-center ${className}`}
       onClick={() => href && window.open(href, '_blank')}
     >
-      <div className="aspect-[3/2] mb-2 sm:mb-3 overflow-hidden rounded-lg max-h-20 sm:max-h-24">
+      <div className="aspect-[3/2] mb-3 sm:mb-4 p-3 sm:p-4 overflow-hidden rounded-lg max-h-16 sm:max-h-20 bg-white/5">
         <img
           src={image}
           alt={title}
