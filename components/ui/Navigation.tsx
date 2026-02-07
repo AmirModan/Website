@@ -54,7 +54,7 @@ export const Navigation: React.FC = () => {
         `}
       >
         <div className="section-container">
-          <div className="flex items-center justify-between h-12 px-4">
+          <div className="flex items-center justify-between h-12 px-8">
             {/* Logo */}
             <a
               href="#aboutMe-section"
@@ -74,7 +74,7 @@ export const Navigation: React.FC = () => {
             </a>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-8">
+            <div className="hidden lg:flex items-center space-x-10">
               {navItems.map((item) => (
                 <a
                   key={item.name}
@@ -91,14 +91,14 @@ export const Navigation: React.FC = () => {
                 variant="primary"
                 size="sm"
                 onClick={() => router.push('/contact')}
-                className="ml-8"
+                className="ml-10"
               >
                 Contact Me
               </Button>
             </div>
 
             {/* Tablet Navigation */}
-            <div className="hidden md:flex lg:hidden items-center space-x-6">
+            <div className="hidden md:flex lg:hidden items-center space-x-8">
               {navItems.slice(0, 2).map((item) => (
                 <a
                   key={item.name}
@@ -115,7 +115,7 @@ export const Navigation: React.FC = () => {
                 variant="primary"
                 size="sm"
                 onClick={() => router.push('/contact')}
-                className="ml-6"
+                className="ml-8"
               >
                 Contact
               </Button>
