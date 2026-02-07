@@ -126,7 +126,6 @@ function Home() {
       {/* Hero Section */}
       <HeroSection
         title="Hi, I'm Amir Modan"
-        subtitle="Computer Engineering Graduate"
         description="Passionate about creating innovative solutions through cutting-edge technology. Specializing in machine learning, embedded systems, and full-stack development."
         ctaText="Contact Me"
         onPrimaryClick={() => router.push('/contact')}
@@ -154,7 +153,7 @@ function Home() {
                     <img
                       src="/Images/Profile.jpg"
                       alt="Amir Modan"
-                      className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-xl border-2 border-white/20 shadow-xl object-cover"
+                      className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-xl border-2 border-white/20 shadow-xl object-cover"
                     />
                   </div>
                 </div>
@@ -190,8 +189,8 @@ function Home() {
                         src="/Images/GitHub-logo.png"
                         alt="GitHub"
                         style={{
-                          width: '32px !important',
-                          height: '32px !important',
+                          width: '48px !important',
+                          height: '48px !important',
                           display: 'block !important',
                         }}
                       />
@@ -206,8 +205,8 @@ function Home() {
                         src="/Images/LinkedIn-Logo.jpg"
                         alt="LinkedIn"
                         style={{
-                          width: '32px !important',
-                          height: '32px !important',
+                          width: '48px !important',
+                          height: '48px !important',
                           display: 'block !important',
                           borderRadius: '0.25rem !important',
                         }}

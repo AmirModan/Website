@@ -105,8 +105,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 src="/Images/GitHub-logo.png"
                 alt="GitHub"
                 style={{
-                  width: '200px !important',
-                  height: '200px !important',
+                  width: '240px !important',
+                  height: '240px !important',
                   display: 'block !important',
                   maxWidth: 'none !important',
                   maxHeight: 'none !important',
@@ -124,8 +124,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 src="/Images/LinkedIn-Logo.jpg"
                 alt="LinkedIn"
                 style={{
-                  width: '200px !important',
-                  height: '200px !important',
+                  width: '240px !important',
+                  height: '240px !important',
                   display: 'block !important',
                   borderRadius: '0.5rem !important',
                   maxWidth: 'none !important',

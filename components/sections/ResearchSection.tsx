@@ -54,8 +54,8 @@ export const ResearchSection: React.FC<ResearchSectionProps> = ({
                   className="h-full"
                   style={{ width: '100%', height: '100%' }}
                 >
-                  <div className="w-full py-6 px-6 overflow-hidden rounded-xl bg-white/5">
-                    <div className="w-full aspect-[3/2] max-h-40 overflow-hidden rounded">
+                  <div className="w-full py-4 px-4 overflow-hidden rounded-xl bg-white/5">
+                    <div className="w-full aspect-[3/2] max-h-32 overflow-hidden rounded">
                       <img
                         src={item.image}
                         alt={item.title}
