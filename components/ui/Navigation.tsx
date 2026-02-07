@@ -76,15 +76,13 @@ export const Navigation: React.FC = () => {
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-1">
               {navItems.map((item) => (
-                <a
+                <div
                   key={item.name}
-                  href={item.href}
-                  onClick={(e) => handleNavClick(e, item.href)}
-                  className="nav-link text-sm sm:text-base flex items-center gap-2"
+                  className="nav-link text-sm sm:text-base flex items-center gap-2 cursor-default"
                 >
                   <item.icon className="w-4 h-4 sm:w-5 sm:h-5" />
                   {item.name}
-                </a>
+                </div>
               ))}
               <Button
                 variant="primary"
@@ -99,15 +97,13 @@ export const Navigation: React.FC = () => {
             {/* Tablet Navigation */}
             <div className="hidden md:flex lg:hidden items-center space-x-1">
               {navItems.slice(0, 2).map((item) => (
-                <a
+                <div
                   key={item.name}
-                  href={item.href}
-                  onClick={(e) => handleNavClick(e, item.href)}
-                  className="nav-link text-sm px-3 py-1 flex items-center gap-2"
+                  className="nav-link text-sm px-3 py-1 flex items-center gap-2 cursor-default"
                 >
                   <item.icon className="w-4 h-4" />
                   {item.name}
-                </a>
+                </div>
               ))}
               <Button
                 variant="primary"
@@ -138,15 +134,13 @@ export const Navigation: React.FC = () => {
           <div className="md:hidden glass-morphism border-t border-white/20 transition-all duration-300">
             <div className="px-4 py-6 space-y-1">
               {navItems.map((item) => (
-                <a
+                <div
                   key={item.name}
-                  href={item.href}
-                  onClick={(e) => handleNavClick(e, item.href)}
-                  className="block px-4 py-3 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-200 font-medium text-sm flex items-center gap-3"
+                  className="block px-4 py-3 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-200 font-medium text-sm flex items-center gap-3 cursor-default"
                 >
                   <item.icon className="w-5 h-5" />
                   {item.name}
-                </a>
+                </div>
               ))}
               <div className="pt-4 border-t border-white/10">
                 <Button

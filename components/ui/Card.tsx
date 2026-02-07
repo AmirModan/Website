@@ -75,11 +75,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       </p>
 
       {technologies.length > 0 && (
-        <div className="flex flex-wrap gap-4 sm:gap-6 mb-6 sm:mb-8 justify-center">
+        <div className="flex flex-wrap gap-6 sm:gap-8 mb-8 sm:mb-10 justify-center">
           {technologies.map((tech, index) => (
             <span
               key={index}
-              className="px-4 sm:px-5 py-2 bg-primary-500/20 text-primary-300 rounded-full text-xs sm:text-sm font-medium border border-primary-500/30"
+              className="px-5 sm:px-6 py-3 bg-primary-500/30 text-primary-200 rounded-full text-sm sm:text-base font-medium border-2 border-primary-500/50 shadow-lg"
             >
               {tech}
             </span>
