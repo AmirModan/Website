@@ -1,13 +1,20 @@
 import React, { useState, useEffect } from 'react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import {
+  Bars3Icon,
+  XMarkIcon,
+  UserIcon,
+  AcademicCapIcon,
+  CodeBracketIcon,
+  DocumentTextIcon,
+} from '@heroicons/react/24/outline';
 import { Button } from './Button';
 import { useRouter } from 'next/router';
 
 const navItems = [
-  { name: 'About Me', href: '#aboutMe-section' },
-  { name: 'My Research', href: '#research-section' },
-  { name: 'My Projects', href: '#projects-section' },
-  { name: 'My Resume', href: '#resume-section' },
+  { name: 'About Me', href: '#aboutMe-section', icon: UserIcon },
+  { name: 'My Research', href: '#research-section', icon: AcademicCapIcon },
+  { name: 'My Projects', href: '#projects-section', icon: CodeBracketIcon },
+  { name: 'My Resume', href: '#resume-section', icon: DocumentTextIcon },
 ];
 
 export const Navigation: React.FC = () => {
@@ -54,11 +61,11 @@ export const Navigation: React.FC = () => {
               onClick={handleLogoClick}
               className="flex items-center space-x-1.5 sm:space-x-2 group transition-transform hover:scale-102"
             >
-              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-primary-500 to-accent-500 rounded-sm flex items-center justify-center group-hover:shadow-sm transition-shadow">
+              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-primary-500 to-accent-500 rounded-sm flex items-center justify-center group-hover:shadow-sm transition-shadow">
                 <img
                   src="/Images/Home-Icon.png"
                   alt="Home"
-                  className="w-6 h-6 sm:w-8 sm:h-8"
+                  className="w-10 h-10 sm:w-12 sm:h-12"
                 />
               </div>
               <span className="text-sm sm:text-base font-bold gradient-text hidden sm:block">
@@ -73,8 +80,9 @@ export const Navigation: React.FC = () => {
                   key={item.name}
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href)}
-                  className="nav-link text-sm sm:text-base"
+                  className="nav-link text-sm sm:text-base flex items-center gap-2"
                 >
+                  <item.icon className="w-4 h-4 sm:w-5 sm:h-5" />
                   {item.name}
                 </a>
               ))}
@@ -95,8 +103,9 @@ export const Navigation: React.FC = () => {
                   key={item.name}
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href)}
-                  className="nav-link text-sm px-3 py-1"
+                  className="nav-link text-sm px-3 py-1 flex items-center gap-2"
                 >
+                  <item.icon className="w-4 h-4" />
                   {item.name}
                 </a>
               ))}
@@ -116,9 +125,9 @@ export const Navigation: React.FC = () => {
               className="md:hidden p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-colors"
             >
               {isOpen ? (
-                <XMarkIcon className="h-8 w-8 sm:h-10 sm:w-10" />
+                <XMarkIcon className="h-10 w-10 sm:h-12 sm:w-12" />
               ) : (
-                <Bars3Icon className="h-8 w-8 sm:h-10 sm:w-10" />
+                <Bars3Icon className="h-10 w-10 sm:h-12 sm:w-12" />
               )}
             </button>
           </div>
@@ -133,8 +142,9 @@ export const Navigation: React.FC = () => {
                   key={item.name}
                   href={item.href}
                   onClick={(e) => handleNavClick(e, item.href)}
-                  className="block px-4 py-3 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-200 font-medium text-sm"
+                  className="block px-4 py-3 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-200 font-medium text-sm flex items-center gap-3"
                 >
+                  <item.icon className="w-5 h-5" />
                   {item.name}
                 </a>
               ))}
