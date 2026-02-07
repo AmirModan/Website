@@ -128,14 +128,8 @@ function Home() {
         title="Hi, I'm Amir Modan"
         subtitle="Computer Engineering Graduate"
         description="Passionate about creating innovative solutions through cutting-edge technology. Specializing in machine learning, embedded systems, and full-stack development."
-        ctaText="View My Work"
-        secondaryCtaText="Contact Me"
-        onPrimaryClick={() =>
-          document
-            .getElementById('projects-section')
-            ?.scrollIntoView({ behavior: 'smooth' })
-        }
-        onSecondaryClick={() => router.push('/contact')}
+        ctaText="Contact Me"
+        onPrimaryClick={() => router.push('/contact')}
       />
 
       {/* About Section */}
@@ -149,7 +143,10 @@ function Home() {
 
           <div className="flex justify-center">
             <Card className="p-6 sm:p-8 max-w-4xl w-full">
-              <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8">
+              <div
+                className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8"
+                style={{ flexDirection: 'row' }}
+              >
                 {/* Picture */}
                 <div className="flex-shrink-0">
                   <div className="relative">
@@ -192,8 +189,11 @@ function Home() {
                       <img
                         src="/Images/GitHub-logo.png"
                         alt="GitHub"
-                        className="w-3 h-3 sm:w-3.5 sm:h-3.5"
-                        style={{ width: '12px', height: '12px' }}
+                        style={{
+                          width: '32px !important',
+                          height: '32px !important',
+                          display: 'block !important',
+                        }}
                       />
                     </a>
                     <a
@@ -205,8 +205,12 @@ function Home() {
                       <img
                         src="/Images/LinkedIn-Logo.jpg"
                         alt="LinkedIn"
-                        className="w-3 h-3 sm:w-3.5 sm:h-3.5 rounded"
-                        style={{ width: '12px', height: '12px' }}
+                        style={{
+                          width: '32px !important',
+                          height: '32px !important',
+                          display: 'block !important',
+                          borderRadius: '0.25rem !important',
+                        }}
                       />
                     </a>
                   </div>
@@ -221,15 +225,7 @@ function Home() {
       <ResearchSection researchItems={researchItems} />
 
       {/* Projects Section */}
-      <ProjectsSection
-        projects={projects.slice(0, 6)}
-        showAllButton={true}
-        onViewAllClick={() =>
-          document
-            .getElementById('more-projects')
-            ?.scrollIntoView({ behavior: 'smooth' })
-        }
-      />
+      <ProjectsSection projects={projects.slice(0, 6)} showAllButton={false} />
 
       {/* Resume Section */}
       <section id="resume-section" className="py-8 sm:py-12">
