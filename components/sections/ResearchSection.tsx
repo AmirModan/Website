@@ -54,11 +54,11 @@ export const ResearchSection: React.FC<ResearchSectionProps> = ({
                   className="h-full"
                   style={{ width: '100%', height: '100%' }}
                 >
-                  <div className="aspect-video sm:aspect-[16/10] lg:aspect-video mb-4 overflow-hidden rounded-xl">
+                  <div className="aspect-[4/3] sm:aspect-[3/2] mb-4 overflow-hidden rounded-xl max-h-32 sm:max-h-40">
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+                      className="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
                     />
                   </div>
                 </Card>
@@ -72,11 +72,18 @@ export const ResearchSection: React.FC<ResearchSectionProps> = ({
                   {item.description}
                 </p>
                 {item.technologies && item.technologies.length > 0 && (
-                  <div className="flex flex-wrap gap-1 sm:gap-2 mb-4 sm:mb-6 justify-center lg:justify-start">
+                  <div
+                    className="flex flex-wrap gap-4 sm:gap-6 mb-6 sm:mb-8 justify-center lg:justify-start"
+                    style={{ gap: '1.5rem', marginBottom: '2rem' }}
+                  >
                     {item.technologies.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="px-2 sm:px-3 py-1 bg-accent-500/20 text-accent-300 rounded-full text-xs sm:text-sm font-medium"
+                        className="px-4 py-2 bg-accent-500/30 text-accent-200 rounded-full text-sm font-medium border-2 border-accent-500/50 shadow-lg"
+                        style={{
+                          padding: '0.75rem 1rem',
+                          fontSize: '0.875rem',
+                        }}
                       >
                         {tech}
                       </span>
