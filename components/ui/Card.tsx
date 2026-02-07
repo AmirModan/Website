@@ -55,7 +55,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <Card
-      className={`overflow-hidden h-full project-card ${className}`}
+      className={`overflow-hidden h-full project-card text-center ${className}`}
       onClick={() => href && window.open(href, '_blank')}
     >
       <div className="aspect-video sm:aspect-[16/10] lg:aspect-video mb-2 sm:mb-3 overflow-hidden rounded-lg">
@@ -75,11 +75,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       </p>
 
       {technologies.length > 0 && (
-        <div className="flex flex-wrap gap-2 sm:gap-2.5 mb-3 sm:mb-4">
+        <div className="flex flex-wrap gap-3 sm:gap-4 mb-4 sm:mb-5 justify-center">
           {technologies.map((tech, index) => (
             <span
               key={index}
-              className="px-2 sm:px-3 py-1 bg-primary-500/20 text-primary-300 rounded-full text-xs sm:text-sm font-medium border border-primary-500/30"
+              className="px-3 sm:px-4 py-1.5 bg-primary-500/20 text-primary-300 rounded-full text-xs sm:text-sm font-medium border border-primary-500/30"
             >
               {tech}
             </span>
@@ -88,7 +88,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       )}
 
       {href && (
-        <button className="text-primary-400 hover:text-primary-300 font-medium flex items-center gap-1 group text-sm sm:text-base">
+        <button className="text-primary-400 hover:text-primary-300 font-medium flex items-center gap-1 group text-sm sm:text-base mx-auto">
           Learn more
           <svg
             className="w-3 h-3 sm:w-4 sm:h-4 transition-transform group-hover:translate-x-1"

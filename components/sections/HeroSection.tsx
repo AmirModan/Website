@@ -103,7 +103,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               <img
                 src="/Images/GitHub-logo.png"
                 alt="GitHub"
-                className="w-6 h-6 sm:w-7 sm:h-7"
+                className="w-8 h-8 sm:w-10 sm:h-10"
               />
             </a>
             <a
@@ -115,7 +115,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               <img
                 src="/Images/LinkedIn-Logo.jpg"
                 alt="LinkedIn"
-                className="w-6 h-6 sm:w-7 sm:h-7 rounded"
+                className="w-8 h-8 sm:w-10 sm:h-10 rounded"
               />
             </a>
           </div>
