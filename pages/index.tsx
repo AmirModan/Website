@@ -148,8 +148,7 @@ function Home() {
               <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
                 {/* Image Container */}
                 <div className="flex justify-center md:w-1/2 w-full mb-4 md:mb-0">
-                  {/* Image container should take up 50% of the width */}
-                  <div className="relative w-full max-w-[150px] max-h-[150px] rounded-full overflow-hidden">
+                  <div className="relative w-full max-w-[200px] max-h-[200px] rounded-full overflow-hidden flex-shrink-0">
                     <img
                       src="/Images/Profile.jpg"
                       alt="Amir Modan"
@@ -159,7 +158,7 @@ function Home() {
                 </div>
 
                 {/* My Journey Content */}
-                <div className="text-center md:text-left md:w-1/2 w-full">
+                <div className="text-center md:text-left md:w-1/2 w-full flex-shrink-0">
                   <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6">
                     My Journey
                   </h3>
