@@ -145,21 +145,21 @@ function Home() {
 
           <div className="flex justify-center">
             <Card className="p-8 sm:p-12 max-w-5xl w-full">
-              <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+              <div className="flex flex-col md:flex-row items-center gap-8">
                 {/* Picture */}
-                <div className="flex justify-center">
-                  {/* Inline styles for fixed container size */}
-                  <div style={{ width: "40px", height: "40px" }} className="relative rounded-full overflow-hidden">
+                <div className="flex justify-center" style={{ width: "50%" }}>
+                  {/* Set the image container to be 50% of the width of its parent */}
+                  <div className="relative w-full h-full max-w-[150px] max-h-[150px] rounded-full overflow-hidden">
                     <img
                       src="/Images/Profile.jpg"
                       alt="Amir Modan"
-                      style={{ width: "100%", height: "100%", objectFit: "cover" }} // Ensure it fills the container
+                      style={{ width: "100%", height: "100%", objectFit: "cover" }}
                     />
                   </div>
                 </div>
 
                 {/* My Journey Content */}
-                <div className="text-center md:text-left">
+                <div className="text-center md:text-left" style={{ width: "50%" }}>
                   <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6">
                     My Journey
                   </h3>
