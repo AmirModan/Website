@@ -148,12 +148,12 @@ function Home() {
               <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
                 {/* Picture */}
                 <div className="flex justify-center">
-                  {/* Container with fixed size */}
-                  <div className="relative w-16 h-16 sm:w-16 sm:h-16 md:w-16 md:h-16 rounded-full overflow-hidden">
+                  {/* Inline styles for fixed container size */}
+                  <div style={{ width: "40px", height: "40px" }} className="relative rounded-full overflow-hidden">
                     <img
                       src="/Images/Profile.jpg"
                       alt="Amir Modan"
-                      className="object-cover w-full h-full"  // Force the image to cover the container exactly
+                      style={{ width: "100%", height: "100%", objectFit: "cover" }} // Ensure it fills the container
                     />
                   </div>
                 </div>
