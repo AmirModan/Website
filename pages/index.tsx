@@ -124,13 +124,15 @@ function Home() {
       <Navigation />
 
       {/* Hero Section */}
-      <HeroSection
-        title="Hi, I'm Amir Modan"
-        subtitle=""
-        description="Passionate about creating innovative solutions through cutting-edge technology. Specializing in machine learning, embedded systems, and full-stack development."
-        ctaText="Contact Me"
-        onPrimaryClick={() => router.push('/contact')}
-      />
+      <section className="relative py-8 sm:py-12">
+        <div className="section-container">
+          <div className="text-center">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
+              <span className="gradient-text">Hi, I'm Amir Modan</span>
+            </h1>
+          </div>
+        </div>
+      </section>
 
       {/* About Section */}
       <section id="aboutMe-section" className="py-8 sm:py-12">
@@ -145,19 +147,19 @@ function Home() {
             <Card className="p-8 sm:p-12 max-w-5xl w-full">
               <div className="flex flex-col lg:flex-row items-center gap-8 sm:gap-12">
                 {/* Picture */}
-                <div className="flex-shrink-0 w-1/3 lg:w-1/2">
+                <div className="flex-shrink-0 w-1/4">
                   <div className="relative">
                     <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-accent-500 rounded-2xl blur-xl opacity-30" />
                     <img
                       src="/Images/Profile.jpg"
                       alt="Amir Modan"
-                      className="relative w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-xl border-2 border-white/20 shadow-xl object-cover"
+                      className="relative w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-xl border-2 border-white/20 shadow-xl object-cover"
                     />
                   </div>
                 </div>
 
                 {/* My Journey Content */}
-                <div className="flex-1 text-center lg:text-left w-2/3 lg:w-1/2">
+                <div className="flex-1 text-center lg:text-left w-3/4">
                   <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6">
                     My Journey
                   </h3>
@@ -186,7 +188,10 @@ function Home() {
                       <img
                         src="/Images/GitHub-logo.png"
                         alt="GitHub"
-                        className="w-12 h-12 object-contain"
+                        style={{
+                          width: '32px',
+                          height: '32px',
+                        }}
                       />
                     </a>
                     <a
@@ -198,7 +203,11 @@ function Home() {
                       <img
                         src="/Images/LinkedIn-Logo.jpg"
                         alt="LinkedIn"
-                        className="w-12 h-12 object-contain rounded"
+                        style={{
+                          width: '32px',
+                          height: '32px',
+                          borderRadius: '0.25rem',
+                        }}
                       />
                     </a>
                   </div>
