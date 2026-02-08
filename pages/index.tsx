@@ -145,7 +145,7 @@ function Home() {
 
           <div className="flex justify-center">
             <Card className="p-8 sm:p-12 max-w-5xl w-full">
-              <div className="flex flex-col lg:flex-row items-center gap-8 sm:gap-12">
+              <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-6">
                 {/* Picture */}
                 <div className="flex-shrink-0">
                   <div className="relative">
@@ -153,7 +153,7 @@ function Home() {
                     <img
                       src="/Images/Profile.jpg"
                       alt="Amir Modan"
-                      className="relative w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-xl border-2 border-white/20 shadow-xl object-cover"
+                      className="relative w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-xl border-2 border-white/20 shadow-xl object-cover"
                     />
                   </div>
                 </div>
