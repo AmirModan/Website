@@ -148,7 +148,8 @@ function Home() {
               <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
                 {/* Picture */}
                 <div className="flex justify-center">
-                  <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-xl border-2 border-white/20 shadow-xl overflow-hidden">
+                  {/* Set width/height of container explicitly */}
+                  <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-xl border-2 border-white/20 shadow-xl overflow-hidden">
                     <img
                       src="/Images/Profile.jpg"
                       alt="Amir Modan"
