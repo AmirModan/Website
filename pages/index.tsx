@@ -145,15 +145,15 @@ function Home() {
 
     <div className="flex justify-center">
       <Card className="p-8 sm:p-12 max-w-5xl w-full">
-        <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
           {/* Picture */}
-          <div className="flex-shrink-0 w-full lg:w-1/4">
+          <div className="flex justify-center">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-accent-500 rounded-2xl blur-xl opacity-30" />
+              <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-accent-500 rounded-xl blur-lg opacity-30" />
               <img
                 src="/Images/Profile.jpg"
                 alt="Amir Modan"
-                className="relative w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-xl border-2 border-white/20 shadow-xl object-cover"
+                className="relative w-24 h-24 rounded-xl border-2 border-white/20 shadow-xl object-cover"
               />
             </div>
           </div>
