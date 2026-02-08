@@ -153,7 +153,7 @@ function Home() {
               <img
                 src="/Images/Profile.jpg"
                 alt="Amir Modan"
-                className="relative w-24 h-24 rounded-xl border-2 border-white/20 shadow-xl object-cover"
+                className="relative w-16 h-16 rounded-xl border-2 border-white/20 shadow-xl object-cover"
               />
             </div>
           </div>
