@@ -44,59 +44,48 @@ export const ResearchSection: React.FC<ResearchSectionProps> = ({
           {researchItems.map((item, index) => (
             <div
               key={item.title}
-              className={`flex flex-col ${
-                index % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'
-              } gap-6 sm:gap-8 items-center`}
-              style={{ margin: '2rem 0' }}
+              className="transform transition-all duration-300 hover:-translate-y-2 w-full"
+              onClick={() => item.href && window.open(item.href, '_blank')}
+              style={{ width: '100%', margin: '1rem 0' }}
             >
-              <div className="flex-1 w-full">
-                <Card
-                  className="h-full"
-                  style={{ width: '100%', height: '100%' }}
-                >
-                  <div className="w-full py-4 px-4 overflow-hidden rounded-xl bg-white/5">
-                    <div className="w-full aspect-[3/2] max-h-32 overflow-hidden rounded">
-                      <img
-                        src={item.image}
-                        alt={item.title}
-                        className="w-full h-full object-contain transition-transform duration-300 hover:scale-105"
-                      />
-                    </div>
+              <Card className="overflow-hidden h-full research-card">
+                <div className="w-full py-4 px-4 overflow-hidden rounded-xl bg-white/5">
+                  <div className="w-full aspect-[3/2] max-h-32 overflow-hidden rounded">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-full object-contain transition-transform duration-300 hover:scale-110"
+                    />
                   </div>
-                </Card>
-              </div>
+                </div>
 
-              <div className="flex-1 text-center lg:text-left">
-                <h3 className="text-2xl sm:text-3xl font-bold text-white mb-3 sm:mb-4">
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 text-center">
                   {item.title}
                 </h3>
-                <p className="text-base sm:text-lg text-gray-300 mb-4 sm:mb-6 leading-relaxed">
+
+                <p className="text-sm sm:text-base text-gray-300 mb-4 line-clamp-3 leading-relaxed text-center px-4">
                   {item.description}
                 </p>
+
                 {item.technologies && item.technologies.length > 0 && (
                   <div
-                    className="flex flex-wrap gap-4 sm:gap-6 mb-6 sm:mb-8 justify-center lg:justify-start"
-                    style={{ gap: '1.5rem', marginBottom: '2rem' }}
+                    className="flex flex-wrap gap-3 sm:gap-4 mb-4 justify-center"
+                    style={{ gap: '1rem' }}
                   >
                     {item.technologies.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="px-4 py-2 bg-accent-500/30 text-accent-200 rounded-full text-sm font-medium border-2 border-accent-500/50 shadow-lg"
-                        style={{
-                          padding: '0.75rem 1rem',
-                          fontSize: '0.875rem',
-                        }}
+                        className="px-3 py-1.5 bg-accent-500/30 text-accent-200 rounded-full text-xs sm:text-sm font-medium border border-accent-500/50"
+                        style={{ padding: '0.375rem 0.75rem' }}
                       >
                         {tech}
                       </span>
                     ))}
                   </div>
                 )}
+
                 {item.href && (
-                  <button
-                    onClick={() => window.open(item.href, '_blank')}
-                    className="text-accent-400 hover:text-accent-300 font-medium flex items-center gap-1 group mx-auto lg:mx-0 text-sm sm:text-base"
-                  >
+                  <button className="text-accent-400 hover:text-accent-300 font-medium flex items-center gap-1 group mx-auto text-sm sm:text-base mb-4">
                     Learn more
                     <svg
                       className="w-3 h-3 sm:w-4 sm:h-4 transition-transform group-hover:translate-x-1"
@@ -113,7 +102,7 @@ export const ResearchSection: React.FC<ResearchSectionProps> = ({
                     </svg>
                   </button>
                 )}
-              </div>
+              </Card>
             </div>
           ))}
         </div>

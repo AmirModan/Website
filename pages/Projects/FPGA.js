@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Header from '../../public/components/Header';
 import CommentBox from '../../public/components/CommentBox';
+import { HomeIcon } from '@heroicons/react/24/outline';
 
 function FPGA() {
   return (
@@ -11,6 +12,17 @@ function FPGA() {
       </Head>
 
       <div className="min-h-screen bg-gradient-to-br from-slate-900 via-green-900 to-slate-900">
+        {/* Home Button */}
+        <div className="fixed top-4 left-4 z-50">
+          <a
+            href="/"
+            className="group flex items-center justify-center w-12 h-12 bg-white/10 backdrop-blur-lg rounded-full border border-white/20 hover:bg-white/20 hover:border-white/30 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-110 active:scale-95"
+            aria-label="Home"
+          >
+            <HomeIcon className="w-6 h-6 text-white group-hover:text-green-300 transition-colors duration-200" />
+          </a>
+        </div>
+
         <div className="container mx-auto px-4 py-8">
           <div className="text-center mb-12">
             <h1 className="text-5xl font-bold text-white mb-4 bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-600">

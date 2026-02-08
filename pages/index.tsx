@@ -141,9 +141,9 @@ function Home() {
           </div>
 
           <div className="flex justify-center">
-            <Card className="p-6 sm:p-8 max-w-4xl w-full">
+            <Card className="p-8 sm:p-12 max-w-5xl w-full">
               <div
-                className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8"
+                className="flex flex-col lg:flex-row items-center gap-8 sm:gap-12"
                 style={{ flexDirection: 'row' }}
               >
                 {/* Picture */}
@@ -153,17 +153,17 @@ function Home() {
                     <img
                       src="/Images/Profile.jpg"
                       alt="Amir Modan"
-                      className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-xl border-2 border-white/20 shadow-xl object-cover"
+                      className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 rounded-xl border-2 border-white/20 shadow-xl object-cover"
                     />
                   </div>
                 </div>
 
                 {/* My Journey Content */}
                 <div className="flex-1 text-center lg:text-left">
-                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6">
                     My Journey
                   </h3>
-                  <p className="text-gray-300 mb-6 leading-relaxed text-sm sm:text-base">
+                  <p className="text-gray-300 mb-8 leading-relaxed text-base sm:text-lg">
                     Hey, my name is Amir, and I am a Computer Engineering
                     graduate (M.S) from San Francisco State University. In my
                     spare time, I like to learn new programming
