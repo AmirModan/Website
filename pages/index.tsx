@@ -147,19 +147,19 @@ function Home() {
             <Card className="p-8 sm:p-12 max-w-5xl w-full">
               <div className="flex flex-col lg:flex-row items-center gap-4 sm:gap-6">
                 {/* Picture */}
-                <div className="flex-shrink-0 w-1/2 lg:w-1/2">
+                <div className="flex-shrink-0 w-full lg:w-1/3"> {/* 1/3 width for image */}
                   <div className="relative">
                     <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-accent-500 rounded-2xl blur-xl opacity-30" />
                     <img
                       src="/Images/Profile.jpg"
                       alt="Amir Modan"
-                      className="relative w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-xl border-2 border-white/20 shadow-xl object-cover"
+                      className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-xl border-2 border-white/20 shadow-xl object-cover"
                     />
                   </div>
                 </div>
 
                 {/* My Journey Content */}
-                <div className="flex-1 w-1/2 lg:w-1/2 text-center lg:text-left">
+                <div className="flex-1 w-full lg:w-2/3 text-center lg:text-left"> {/* 2/3 width for content */}
                   <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6">
                     My Journey
                   </h3>
