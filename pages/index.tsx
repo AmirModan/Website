@@ -145,11 +145,11 @@ function Home() {
 
           <div className="flex justify-center">
             <Card className="p-8 sm:p-12 max-w-5xl w-full">
-              <div className="flex flex-col md:flex-row items-center gap-8">
+              <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
                 {/* Image Container */}
                 <div className="flex justify-center md:w-1/2 w-full mb-4 md:mb-0">
                   {/* Image container should take up 50% of the width */}
-                  <div className="relative w-full max-w-[200px] max-h-[200px] rounded-full overflow-hidden">
+                  <div className="relative w-full max-w-[150px] max-h-[150px] rounded-full overflow-hidden">
                     <img
                       src="/Images/Profile.jpg"
                       alt="Amir Modan"
