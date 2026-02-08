@@ -59,13 +59,13 @@ export const Navigation: React.FC = () => {
             <a
               href="#aboutMe-section"
               onClick={handleLogoClick}
-              className="flex items-center space-x-1.5 sm:space-x-2 group transition-transform hover:scale-102"
+              className="flex items-center space-x-3 sm:space-x-4 group transition-transform hover:scale-102"
             >
-              <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-primary-500 to-accent-500 rounded-sm flex items-center justify-center group-hover:shadow-sm transition-shadow">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-primary-500 to-accent-500 rounded-sm flex items-center justify-center group-hover:shadow-sm transition-shadow">
                 <img
                   src="/Images/Home-Icon.png"
                   alt="Home"
-                  className="w-10 h-10 sm:w-12 sm:h-12"
+                  className="w-12 h-12 sm:w-16 sm:h-16"
                 />
               </div>
               <span className="text-sm sm:text-base font-bold gradient-text hidden sm:block">
@@ -124,12 +124,12 @@ export const Navigation: React.FC = () => {
             {/* Mobile menu button */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="md:hidden p-2 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-colors"
+              className="md:hidden p-3 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-colors"
             >
               {isOpen ? (
-                <XMarkIcon className="h-10 w-10 sm:h-12 sm:w-12" />
+                <XMarkIcon className="h-12 w-12 sm:h-14 sm:w-14" />
               ) : (
-                <Bars3Icon className="h-10 w-10 sm:h-12 sm:w-12" />
+                <Bars3Icon className="h-12 w-12 sm:h-14 sm:w-14" />
               )}
             </button>
           </div>
