@@ -135,88 +135,87 @@ function Home() {
       </section>
 
       {/* About Section */}
-<section id="aboutMe-section" className="py-8 sm:py-12">
-  <div className="section-container">
-    <div className="text-center mb-12 sm:mb-16">
-      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
-        <span className="gradient-text">About Me</span>
-      </h2>
-    </div>
-
-    <div className="flex justify-center">
-      <Card className="p-8 sm:p-12 max-w-5xl w-full">
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-          {/* Picture */}
-          <div className="flex justify-center">
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-accent-500 rounded-xl blur-lg opacity-30" />
-              <img
-                src="/Images/Profile.jpg"
-                alt="Amir Modan"
-                className="relative w-16 h-16 rounded-xl border-2 border-white/20 shadow-xl object-cover"
-              />
-            </div>
+      <section id="aboutMe-section" className="py-8 sm:py-12">
+        <div className="section-container">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6">
+              <span className="gradient-text">About Me</span>
+            </h2>
           </div>
 
-          {/* My Journey Content */}
-          <div className="flex-1 w-full lg:w-3/4 text-center lg:text-left">
-            <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6">
-              My Journey
-            </h3>
-            <p className="text-gray-300 mb-8 leading-relaxed text-base sm:text-lg">
-              Hey, my name is Amir, and I am a Computer Engineering
-              graduate (M.S) from San Francisco State University. In my
-              spare time, I like to learn new programming
-              languages/concepts, then implement them in various projects.
-              I also like to tinker with my Raspberry Pi, exercise at the
-              gym, play pool, and "cube" with my Rubik's Cube.
-            </p>
-            <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-              <Button
-                variant="primary"
-                onClick={() => router.push('/contact')}
-                className="min-w-[120px]"
-              >
-                Contact Me
-              </Button>
-              <a
-                href="https://github.com/AmirModan"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center p-2 rounded-lg hover:bg-white/10 transition-all duration-300 transform hover:scale-110"
-              >
-                <img
-                  src="/Images/GitHub-logo.png"
-                  alt="GitHub"
-                  style={{
-                    width: '32px',
-                    height: '32px',
-                  }}
-                />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/amir-modan-8320b0194"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center p-2 rounded-lg hover:bg-white/10 transition-all duration-300 transform hover:scale-110"
-              >
-                <img
-                  src="/Images/LinkedIn-Logo.jpg"
-                  alt="LinkedIn"
-                  style={{
-                    width: '32px',
-                    height: '32px',
-                    borderRadius: '0.25rem',
-                  }}
-                />
-              </a>
-            </div>
+          <div className="flex justify-center">
+            <Card className="p-8 sm:p-12 max-w-5xl w-full">
+              <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+                {/* Picture */}
+                <div className="flex justify-center">
+                  <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-xl border-2 border-white/20 shadow-xl overflow-hidden">
+                    <img
+                      src="/Images/Profile.jpg"
+                      alt="Amir Modan"
+                      className="object-cover w-full h-full"
+                    />
+                  </div>
+                </div>
+
+                {/* My Journey Content */}
+                <div className="text-center md:text-left">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6">
+                    My Journey
+                  </h3>
+                  <p className="text-gray-300 mb-8 leading-relaxed text-base sm:text-lg">
+                    Hey, my name is Amir, and I am a Computer Engineering
+                    graduate (M.S) from San Francisco State University. In my
+                    spare time, I like to learn new programming
+                    languages/concepts, then implement them in various projects.
+                    I also like to tinker with my Raspberry Pi, exercise at the
+                    gym, play pool, and "cube" with my Rubik's Cube.
+                  </p>
+                  <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+                    <Button
+                      variant="primary"
+                      onClick={() => router.push('/contact')}
+                      className="min-w-[120px]"
+                    >
+                      Contact Me
+                    </Button>
+                    <a
+                      href="https://github.com/AmirModan"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center p-2 rounded-lg hover:bg-white/10 transition-all duration-300 transform hover:scale-110"
+                    >
+                      <img
+                        src="/Images/GitHub-logo.png"
+                        alt="GitHub"
+                        style={{
+                          width: '32px',
+                          height: '32px',
+                        }}
+                      />
+                    </a>
+                    <a
+                      href="https://www.linkedin.com/in/amir-modan-8320b0194"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center p-2 rounded-lg hover:bg-white/10 transition-all duration-300 transform hover:scale-110"
+                    >
+                      <img
+                        src="/Images/LinkedIn-Logo.jpg"
+                        alt="LinkedIn"
+                        style={{
+                          width: '32px',
+                          height: '32px',
+                          borderRadius: '0.25rem',
+                        }}
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </Card>
           </div>
         </div>
-      </Card>
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* Research Section */}
       <ResearchSection researchItems={researchItems} />
