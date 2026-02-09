@@ -136,36 +136,39 @@ export const Navigation: React.FC = () => {
         </div>
 
         {/* Mobile Navigation */}
-        {isOpen && (
-          <div className="md:hidden glass-morphism border-t border-white/20 transition-all duration-300">
-            <div className="px-4 py-6 space-y-1">
-              {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  onClick={(e) => handleNavClick(e, item.href)}
-                  className="block px-4 py-3 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-200 font-medium text-sm flex items-center gap-3"
-                  style={{ textDecoration: 'none' }}
-                >
-                  <item.icon className="w-5 h-5" />
-                  {item.name}
-                </a>
-              ))}
-              <div className="pt-4 border-t border-white/10">
-                <Button
-                  variant="primary"
-                  className="w-full"
-                  onClick={() => {
-                    router.push('/contact');
-                    setIsOpen(false);
-                  }}
-                >
-                  Contact Me
-                </Button>
-              </div>
+        <div
+          className={`
+            md:hidden glass-morphism border-t border-white/20 transition-all duration-300 overflow-hidden
+            ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}
+          `}
+        >
+          <div className="px-4 py-6 space-y-1">
+            {navItems.map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                onClick={(e) => handleNavClick(e, item.href)}
+                className="block px-4 py-3 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-200 font-medium text-sm flex items-center gap-3"
+                style={{ textDecoration: 'none' }}
+              >
+                <item.icon className="w-5 h-5" />
+                {item.name}
+              </a>
+            ))}
+            <div className="pt-4 border-t border-white/10">
+              <Button
+                variant="primary"
+                className="w-full"
+                onClick={() => {
+                  router.push('/contact');
+                  setIsOpen(false);
+                }}
+              >
+                Contact Me
+              </Button>
             </div>
           </div>
-        )}
+        </div>
       </nav>
 
       {/* Spacer for fixed nav */}
