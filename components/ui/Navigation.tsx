@@ -138,7 +138,7 @@ export const Navigation: React.FC = () => {
         <div
           className={`
             md:hidden glass-morphism border-t border-white/20 transition-all duration-300 overflow-hidden
-            ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}
+            ${isOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'}
           `}
         >
           <div className="px-4 py-6 space-y-1">
