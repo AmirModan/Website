@@ -29,7 +29,10 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({
   onViewAllClick,
 }) => {
   return (
-    <section className="py-8 sm:py-12 relative overflow-hidden">
+    <section
+      id="projects-section"
+      className="py-8 sm:py-12 relative overflow-hidden"
+    >
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary-900/5 to-transparent" />
 

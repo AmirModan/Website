@@ -21,7 +21,7 @@ export const ResearchSection: React.FC<ResearchSectionProps> = ({
   subtitle = 'Advancing technology through academic research and innovation',
 }) => {
   return (
-    <section className="py-8 sm:py-12 relative">
+    <section id="research-section" className="py-8 sm:py-12 relative">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-b from-accent-900/10 via-transparent to-primary-900/10" />
 
