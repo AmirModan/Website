@@ -53,7 +53,7 @@ export const Navigation: React.FC = () => {
         `}
       >
         <div className="section-container">
-          <div className="flex items-center justify-between h-12 px-8">
+          <div className="flex items-center justify-between h-12 px-12">
             {/* Logo */}
             <a
               href="#aboutMe-section"

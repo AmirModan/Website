@@ -164,7 +164,7 @@ function Home() {
                   <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6">
                     My Journey
                   </h3>
-                  <p className="text-gray-300 mb-8 leading-relaxed text-base sm:text-lg">
+                  <p className="text-gray-300 mb-8 leading-relaxed text-base sm:text-lg px-4 sm:px-0">
                     Hey, my name is Amir, and I am a Computer Engineering
                     graduate (M.S) from San Francisco State University. In my
                     spare time, I like to learn new programming
@@ -218,7 +218,6 @@ function Home() {
           </div>
         </div>
       </section>
-
 
       {/* Research Section */}
       <ResearchSection researchItems={researchItems} />
