@@ -144,15 +144,15 @@ export const Navigation: React.FC = () => {
           <div className="px-4 py-6 space-y-1">
             {navItems.map((item) => (
               <a
-                key={item.name}
-                href={item.href}
-                onClick={(e) => handleNavClick(e, item.href)}
-                className="block px-4 py-3 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-200 font-medium text-sm flex items-center gap-3"
-                style={{ textDecoration: 'none' }}
-              >
-                <item.icon className="w-5 h-5" />
-                {item.name}
-              </a>
+              key={item.name}
+              href={item.href}
+              onClick={(e) => handleNavClick(e, item.href)}
+              className="block px-4 py-4 rounded-lg text-gray-300 hover:text-white hover:bg-white/10 transition-all duration-200 font-medium text-sm flex items-center gap-3"
+              style={{ textDecoration: 'none' }}
+            >
+              <item.icon className="w-5 h-5" />
+              {item.name}
+            </a>
             ))}
             <div className="pt-4 border-t border-white/10">
               <Button
