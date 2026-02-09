@@ -148,7 +148,7 @@ function Home() {
               {/* Parent flex container to handle side-by-side layout */}
               <div className="flex flex-col md:flex-row gap-8 w-full">
                 {/* Image Container */}
-                <div className="flex justify-center md:w-1/2 w-full mb-4 md:mb-0">
+                <div className="flex justify-center md:w-1/3 w-full mb-4 md:mb-0">
                   {/* Max width for image container */}
                   <div className="relative w-full max-w-[150px] max-h-[150px] rounded-full overflow-hidden">
                     <img
@@ -160,7 +160,7 @@ function Home() {
                 </div>
 
                 {/* My Journey Content */}
-                <div className="text-center md:text-left md:w-1/2 w-full">
+                <div className="text-center md:text-left md:w-2/3 w-full">
                   <h3 className="text-2xl sm:text-3xl font-bold text-white mb-6">
                     My Journey
                   </h3>
@@ -218,6 +218,7 @@ function Home() {
           </div>
         </div>
       </section>
+
 
       {/* Research Section */}
       <ResearchSection researchItems={researchItems} />
