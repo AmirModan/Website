@@ -141,7 +141,7 @@ export const Navigation: React.FC = () => {
             ${isOpen ? 'max-h-[400px] opacity-100' : 'max-h-0 opacity-0'}
           `}
         >
-          <div className="px-4 py-6 space-y-1">
+          <div className="px-4 py-8 space-y-4">
             {navItems.map((item) => (
               <a
               key={item.name}
