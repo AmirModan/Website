@@ -50,7 +50,7 @@ export const Navigation: React.FC = () => {
       <nav
         className={`
           fixed top-0 left-0 right-0 z-50 transition-all duration-300
-          ${scrolled ? 'glass-morphism shadow-lg' : 'bg-transparent'}
+          ${scrolled && !isOpen ? 'glass-morphism shadow-lg' : 'bg-transparent'}
         `}
       >
         <div className="section-container">
